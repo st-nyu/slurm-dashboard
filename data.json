@@ -1,4 +1,27 @@
 {
-  "updated_at": null,
-  "jobs": []
+  "updated_at": "2026-03-16T19:29:31Z",
+  "jobs": [
+    {
+      "job_id": "4358847",
+      "name": "wrap",
+      "state": "RUNNING",
+      "partition": "cpu_short",
+      "nodes": "cs601",
+      "gpus": "-",
+      "elapsed": "2:49:13",
+      "time_limit": "6:00:00",
+      "submit_time": "2026-03-16T12:40:15"
+    },
+    {
+      "job_id": "4369805",
+      "name": "dashboard-updater",
+      "state": "RUNNING",
+      "partition": "cpu_short",
+      "nodes": "cs601",
+      "gpus": "-",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-16T15:29:28"
+    }
+  ]
 }
