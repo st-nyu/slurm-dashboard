@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T19:49:40Z",
+  "updated_at": "2026-03-16T19:54:42Z",
   "jobs": [
     {
       "job_id": "4358847",
@@ -8,7 +8,7 @@
       "partition": "cpu_short",
       "nodes": "cs601",
       "gpus": "-",
-      "elapsed": "3:09:22",
+      "elapsed": "3:14:24",
       "time_limit": "6:00:00",
       "submit_time": "2026-03-16T12:40:15"
     },
@@ -19,7 +19,7 @@
       "partition": "cpu_short",
       "nodes": "cs601",
       "gpus": "-",
-      "elapsed": "20:09",
+      "elapsed": "25:11",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-16T15:29:28"
     }
