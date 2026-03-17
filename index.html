@@ -431,7 +431,6 @@
 
             return `<span class="gpu-cell" title="${escapeAttr(title)}">` +
                 `<span class="${colorClass}">${pct}%</span>` +
-                `<span class="gpu-bar"><span class="gpu-bar-fill" style="width:${Math.min(pct, 100)}%;background:${barColor}"></span></span>` +
                 `${sparkline}</span>`;
         }
 
