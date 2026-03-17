@@ -33,13 +33,56 @@ if [ -n "$SINCE" ]; then
         --allocations 2>/dev/null || true)
 fi
 
+# --- Query GPU utilization via SSH for running jobs ---
+GPU_SMI_OUTPUT=""
+while IFS='|' read -r job_id name state partition node gres elapsed tlimit submit; do
+    state_upper=$(echo "$state" | tr '[:lower:]' '[:upper:]')
+    [[ "$state_upper" != "RUNNING" ]] && continue
+    [[ -z "$node" ]] && continue
+    echo "$gres" | grep -qi "gpu" || continue
+    # SSH to node, query nvidia-smi
+    gpu_data=$(ssh -o ConnectTimeout=5 -o BatchMode=yes -o StrictHostKeyChecking=no "$node" \
+        'nvidia-smi --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.total --format=csv,noheader,nounits' 2>/dev/null || true)
+    if [ -n "$gpu_data" ]; then
+        # Format: job_id|node|line1;line2;... (each line: util,mem_util,mem_used,mem_total)
+        gpu_lines=$(echo "$gpu_data" | tr '\n' ';' | sed 's/;$//')
+        GPU_SMI_OUTPUT="${GPU_SMI_OUTPUT}${job_id}|${node}|${gpu_lines}"$'\n'
+    fi
+done <<< "$squeue_jobs"
+
+# --- Collect log tails for all jobs ---
+LOG_TAILS=""
+all_job_ids=""
+# Extract job IDs from squeue
+while IFS='|' read -r job_id rest; do
+    [ -z "$job_id" ] && continue
+    all_job_ids="${all_job_ids} ${job_id}"
+done <<< "$squeue_jobs"
+# Extract job IDs from sacct
+while IFS='|' read -r job_id rest; do
+    [ -z "$job_id" ] && continue
+    all_job_ids="${all_job_ids} ${job_id}"
+done <<< "$sacct_jobs"
+
+for jid in $all_job_ids; do
+    stdout_path=$(scontrol show job "$jid" 2>/dev/null | grep -oP 'StdOut=\K\S+' || true)
+    if [ -n "$stdout_path" ] && [ -f "$stdout_path" ]; then
+        log_b64=$(tail -c 51200 "$stdout_path" 2>/dev/null | tail -100 | base64 -w0 2>/dev/null || true)
+        if [ -n "$log_b64" ]; then
+            LOG_TAILS="${LOG_TAILS}${jid}|${log_b64}"$'\n'
+        fi
+    fi
+done
+
 # --- Build JSON with Python ---
 export SQUEUE_OUTPUT="$squeue_jobs"
 export SACCT_OUTPUT="$sacct_jobs"
 export UPDATED_AT="$UPDATED_AT"
+export GPU_SMI_OUTPUT="$GPU_SMI_OUTPUT"
+export LOG_TAILS="$LOG_TAILS"
 
 python3 << 'PYEOF'
-import json, os
+import json, os, base64
 from datetime import datetime
 
 jobs = []
@@ -100,8 +143,87 @@ for line in sacct_raw.splitlines():
         "submit_time": parts[8].strip() if parts[8].strip() != "Unknown" else None,
     })
 
+# --- Parse GPU utilization data ---
+gpu_current = {}  # {job_id: [{util, mem_util, mem_used, mem_total}, ...]}
+gpu_smi_raw = os.environ.get("GPU_SMI_OUTPUT", "").strip()
+for line in gpu_smi_raw.splitlines():
+    parts = line.split("|", 2)
+    if len(parts) < 3:
+        continue
+    job_id, node, gpu_lines = parts[0].strip(), parts[1].strip(), parts[2].strip()
+    gpus_list = []
+    for gl in gpu_lines.split(";"):
+        vals = [v.strip() for v in gl.split(",")]
+        if len(vals) >= 4:
+            gpus_list.append({
+                "util": float(vals[0]),
+                "mem_util": float(vals[1]),
+                "mem_used": float(vals[2]),
+                "mem_total": float(vals[3]),
+            })
+    if gpus_list:
+        gpu_current[job_id] = gpus_list
+
+# --- Update GPU history (rolling 12 samples = 1 hour at 5-min intervals) ---
+HISTORY_FILE = "gpu_history.json"
+MAX_SAMPLES = 12
+
+try:
+    with open(HISTORY_FILE) as f:
+        gpu_history = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    gpu_history = {}
+
+now_str = os.environ.get("UPDATED_AT", datetime.utcnow().isoformat() + "Z")
+active_ids = {j["job_id"] for j in jobs}
+
+# Append new samples
+for job_id, gpus_list in gpu_current.items():
+    if job_id not in gpu_history:
+        gpu_history[job_id] = []
+    gpu_history[job_id].append({"timestamp": now_str, "gpus": gpus_list})
+    # Trim to MAX_SAMPLES
+    gpu_history[job_id] = gpu_history[job_id][-MAX_SAMPLES:]
+
+# Prune jobs no longer in active list
+gpu_history = {k: v for k, v in gpu_history.items() if k in active_ids}
+
+with open(HISTORY_FILE, "w") as f:
+    json.dump(gpu_history, f, indent=2)
+
+# --- Compute average GPU utilization per job ---
+gpu_avg = {}
+for job_id, samples in gpu_history.items():
+    all_utils = []
+    for s in samples:
+        for g in s["gpus"]:
+            all_utils.append(g["util"])
+    if all_utils:
+        gpu_avg[job_id] = round(sum(all_utils) / len(all_utils), 1)
+
+# --- Parse log tails ---
+log_tails = {}
+log_raw = os.environ.get("LOG_TAILS", "").strip()
+for line in log_raw.splitlines():
+    parts = line.split("|", 1)
+    if len(parts) < 2:
+        continue
+    job_id, b64 = parts[0].strip(), parts[1].strip()
+    try:
+        log_tails[job_id] = base64.b64decode(b64).decode("utf-8", errors="replace")
+    except Exception:
+        pass
+
+# --- Attach new fields to jobs ---
+for j in jobs:
+    jid = j["job_id"]
+    j["gpu_avg_util"] = gpu_avg.get(jid)
+    j["gpu_current"] = gpu_current.get(jid)
+    j["log_tail"] = log_tails.get(jid)
+
 data = {
-    "updated_at": os.environ.get("UPDATED_AT", datetime.utcnow().isoformat() + "Z"),
+    "updated_at": now_str,
+    "gpu_history": gpu_history,
     "jobs": jobs,
 }
 
@@ -111,12 +233,20 @@ print(f"Wrote {len(jobs)} jobs to data.json")
 PYEOF
 
 # --- Git commit and push ---
-if git diff --quiet "$DATA_FILE" 2>/dev/null && git diff --cached --quiet "$DATA_FILE" 2>/dev/null; then
-    echo "No changes to data.json, skipping push"
+GPU_HISTORY_FILE="gpu_history.json"
+has_changes=false
+for f in "$DATA_FILE" "$GPU_HISTORY_FILE"; do
+    if [ -f "$f" ]; then
+        git diff --quiet "$f" 2>/dev/null && git diff --cached --quiet "$f" 2>/dev/null || has_changes=true
+    fi
+done
+if [ "$has_changes" = false ]; then
+    echo "No changes, skipping push"
     exit 0
 fi
 
 git add "$DATA_FILE"
+[ -f "$GPU_HISTORY_FILE" ] && git add "$GPU_HISTORY_FILE"
 git commit -m "Update job data $(date -u +%Y-%m-%dT%H:%M:%SZ)" --allow-empty-message 2>/dev/null || true
 git push origin main 2>/dev/null || git push origin master 2>/dev/null || {
     echo "ERROR: git push failed. Check your remote configuration."

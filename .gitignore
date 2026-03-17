@@ -1,2 +1,4 @@
 setup.sh
+run_dashboard.sh
+dashboard_worker.sh
 *.log

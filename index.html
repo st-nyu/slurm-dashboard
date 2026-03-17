@@ -90,6 +90,64 @@
         .badge-completed  { background: #374151; color: #9ca3af; }
         .badge-cancelled  { background: #4a1d6a; color: #d8b4fe; }
         .badge-timeout    { background: #7f1d1d; color: #fca5a5; }
+        /* GPU utilization colors */
+        .gpu-low { color: #6ee7b7; }
+        .gpu-med { color: #fde68a; }
+        .gpu-high { color: #fca5a5; }
+        .gpu-cell {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .gpu-bar {
+            width: 40px;
+            height: 8px;
+            background: #334155;
+            border-radius: 4px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .gpu-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+        /* Sparkline */
+        .sparkline { vertical-align: middle; }
+        /* Log viewer */
+        .log-toggle {
+            background: #334155;
+            color: #94a3b8;
+            border: 1px solid #475569;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.72rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .log-toggle:hover { background: #475569; color: #e2e8f0; }
+        .log-row td {
+            padding: 0;
+            border-top: none;
+        }
+        .log-container {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            margin: 4px 12px 12px;
+            max-height: 300px;
+            overflow: auto;
+        }
+        .log-container pre {
+            padding: 12px;
+            margin: 0;
+            font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: #cbd5e1;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
         .empty {
             text-align: center;
             padding: 40px;
@@ -175,9 +233,11 @@
                         <th>Partition</th>
                         <th>Nodes</th>
                         <th>GPUs</th>
+                        <th>GPU Util</th>
                         <th>Elapsed</th>
                         <th>Time Limit</th>
                         <th>Submitted</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="jobs-body"></tbody>
@@ -187,10 +247,9 @@
     </div>
 
     <script>
+        const COL_COUNT = 11;
+
         // --- Auth ---
-        // To set/change the password, update this SHA-256 hash.
-        // Generate with: echo -n "yourpassword" | sha256sum
-        // Default: "changeme"
         const PASSWORD_HASH = "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08";
 
         async function sha256(str) {
@@ -225,7 +284,7 @@
             showApp();
         }
 
-        // --- Dashboard ---
+        // --- Helpers ---
         function badgeClass(state) {
             const s = state.toUpperCase();
             if (s.includes("RUNNING")) return "badge-running";
@@ -246,6 +305,105 @@
             });
         }
 
+        function gpuUtilColor(pct) {
+            if (pct < 50) return "gpu-low";
+            if (pct < 80) return "gpu-med";
+            return "gpu-high";
+        }
+
+        function gpuBarColor(pct) {
+            if (pct < 50) return "#6ee7b7";
+            if (pct < 80) return "#fde68a";
+            return "#fca5a5";
+        }
+
+        function renderGpuCell(job, gpuHistory) {
+            if (job.gpu_avg_util == null) return "-";
+            const pct = job.gpu_avg_util;
+            const colorClass = gpuUtilColor(pct);
+            const barColor = gpuBarColor(pct);
+
+            // Tooltip with per-GPU current stats
+            let title = `Avg: ${pct}%`;
+            if (job.gpu_current) {
+                title += "\n" + job.gpu_current.map((g, i) =>
+                    `GPU ${i}: ${g.util}% util, ${g.mem_used}/${g.mem_total} MiB`
+                ).join("\n");
+            }
+
+            let sparkline = "";
+            const hist = gpuHistory && gpuHistory[job.job_id];
+            if (hist && hist.length > 1) {
+                sparkline = renderSparkline(hist);
+            }
+
+            return `<span class="gpu-cell" title="${escapeAttr(title)}">` +
+                `<span class="${colorClass}">${pct}%</span>` +
+                `<span class="gpu-bar"><span class="gpu-bar-fill" style="width:${Math.min(pct, 100)}%;background:${barColor}"></span></span>` +
+                `${sparkline}</span>`;
+        }
+
+        function renderSparkline(samples) {
+            // Extract average util per sample
+            const points = samples.map(s => {
+                const avg = s.gpus.reduce((sum, g) => sum + g.util, 0) / s.gpus.length;
+                return avg;
+            });
+            if (points.length < 2) return "";
+
+            const w = 48, h = 16, pad = 1;
+            const max = 100; // GPU util is 0-100
+            const step = (w - 2 * pad) / (points.length - 1);
+
+            const coords = points.map((v, i) => {
+                const x = pad + i * step;
+                const y = h - pad - ((v / max) * (h - 2 * pad));
+                return `${x.toFixed(1)},${y.toFixed(1)}`;
+            });
+
+            const lastPt = points[points.length - 1];
+            const color = gpuBarColor(lastPt);
+
+            return `<svg class="sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">` +
+                `<polyline points="${coords.join(" ")}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round"/>` +
+                `</svg>`;
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement("div");
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function escapeAttr(str) {
+            return str.replace(/&/g, "&amp;").replace(/"/g, "&quot;")
+                      .replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+        function toggleLog(jobId) {
+            const existing = document.getElementById("log-" + jobId);
+            if (existing) {
+                existing.remove();
+                return;
+            }
+            const trigger = document.querySelector(`[data-log-job="${jobId}"]`);
+            if (!trigger) return;
+            const jobRow = trigger.closest("tr");
+            const logData = trigger.getAttribute("data-log");
+            if (!logData) return;
+
+            const tr = document.createElement("tr");
+            tr.id = "log-" + jobId;
+            tr.className = "log-row";
+            tr.innerHTML = `<td colspan="${COL_COUNT}">
+                <div class="log-container">
+                    <pre>${escapeHtml(logData)}</pre>
+                </div>
+            </td>`;
+            jobRow.after(tr);
+        }
+
+        // --- Dashboard ---
         async function loadData() {
             const body = document.getElementById("jobs-body");
             const summary = document.getElementById("summary");
@@ -253,6 +411,8 @@
                 const resp = await fetch("data.json?t=" + Date.now());
                 if (!resp.ok) throw new Error("No data yet");
                 const data = await resp.json();
+
+                const gpuHistory = data.gpu_history || {};
 
                 // Updated timestamp
                 document.getElementById("updated").textContent =
@@ -281,7 +441,7 @@
 
                 // Job rows
                 if (data.jobs.length === 0) {
-                    body.innerHTML = '<tr><td colspan="9" class="empty">No jobs found</td></tr>';
+                    body.innerHTML = `<tr><td colspan="${COL_COUNT}" class="empty">No jobs found</td></tr>`;
                     return;
                 }
 
@@ -294,20 +454,27 @@
                     return (b.submit_time || "").localeCompare(a.submit_time || "");
                 });
 
-                body.innerHTML = data.jobs.map(j => `<tr>
-                    <td>${j.job_id}</td>
-                    <td>${j.name}</td>
-                    <td><span class="badge ${badgeClass(j.state)}">${j.state}</span></td>
-                    <td>${j.partition || "-"}</td>
-                    <td>${j.nodes || "-"}</td>
-                    <td>${j.gpus || "-"}</td>
-                    <td>${j.elapsed || "-"}</td>
-                    <td>${j.time_limit || "-"}</td>
-                    <td>${formatTime(j.submit_time)}</td>
-                </tr>`).join("");
+                body.innerHTML = data.jobs.map(j => {
+                    const logBtn = j.log_tail
+                        ? `<button class="log-toggle" data-log-job="${j.job_id}" data-log="${escapeAttr(j.log_tail)}" onclick="toggleLog('${j.job_id}')">Logs</button>`
+                        : "-";
+                    return `<tr>
+                        <td>${j.job_id}</td>
+                        <td>${j.name}</td>
+                        <td><span class="badge ${badgeClass(j.state)}">${j.state}</span></td>
+                        <td>${j.partition || "-"}</td>
+                        <td>${j.nodes || "-"}</td>
+                        <td>${j.gpus || "-"}</td>
+                        <td>${renderGpuCell(j, gpuHistory)}</td>
+                        <td>${j.elapsed || "-"}</td>
+                        <td>${j.time_limit || "-"}</td>
+                        <td>${formatTime(j.submit_time)}</td>
+                        <td>${logBtn}</td>
+                    </tr>`;
+                }).join("");
 
             } catch (e) {
-                body.innerHTML = `<tr><td colspan="9" class="error">
+                body.innerHTML = `<tr><td colspan="${COL_COUNT}" class="error">
                     Could not load data. Run update.sh to generate data.json
                 </td></tr>`;
             }
