@@ -114,6 +114,25 @@
         }
         /* Sparkline */
         .sparkline { vertical-align: middle; }
+        /* W&B loss */
+        .wandb-cell {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .wandb-cell a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.7rem;
+        }
+        .wandb-cell a:hover { color: #e2e8f0; }
+        .loss-value {
+            font-variant-numeric: tabular-nums;
+            color: #e2e8f0;
+        }
+        .loss-trend-down { color: #6ee7b7; }
+        .loss-trend-flat { color: #fde68a; }
+        .loss-trend-up { color: #fca5a5; }
         /* Log viewer */
         .log-toggle {
             background: #334155;
@@ -234,6 +253,7 @@
                         <th>Nodes</th>
                         <th>GPUs</th>
                         <th>GPU Util</th>
+                        <th>Loss</th>
                         <th>Elapsed</th>
                         <th>Time Limit</th>
                         <th>Submitted</th>
@@ -247,7 +267,7 @@
     </div>
 
     <script>
-        const COL_COUNT = 11;
+        const COL_COUNT = 12;
 
         // --- Auth ---
         const PASSWORD_HASH = "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08";
@@ -403,6 +423,76 @@
             jobRow.after(tr);
         }
 
+        function renderLossCell(job) {
+            const wb = job.wandb;
+            if (!wb) return "-";
+            const hist = wb.metric_history || [];
+            const latest = wb.metric_latest;
+
+            // Determine trend from last 10 points
+            let trendClass = "loss-trend-flat";
+            if (hist.length >= 4) {
+                const recent = hist.slice(-4);
+                const older = hist.slice(-8, -4);
+                if (older.length > 0) {
+                    const avgRecent = recent.reduce((a, b) => a + b, 0) / recent.length;
+                    const avgOlder = older.reduce((a, b) => a + b, 0) / older.length;
+                    const pctChange = (avgRecent - avgOlder) / Math.abs(avgOlder || 1);
+                    if (pctChange < -0.02) trendClass = "loss-trend-down";
+                    else if (pctChange > 0.02) trendClass = "loss-trend-up";
+                }
+            }
+
+            // Format loss value
+            let display;
+            if (latest < 0.001) display = latest.toExponential(2);
+            else if (latest < 1) display = latest.toFixed(4);
+            else display = latest.toFixed(3);
+
+            // Sparkline for loss history
+            let sparkline = "";
+            if (hist.length > 1) {
+                sparkline = renderLossSparkline(hist);
+            }
+
+            const metricLabel = wb.metric_name || "loss";
+            const stepLabel = wb.step ? ` (step ${wb.step.toLocaleString()})` : "";
+            const title = `${metricLabel}: ${latest}${stepLabel}`;
+
+            const link = wb.url
+                ? ` <a href="${escapeAttr(wb.url)}" target="_blank" title="Open in W&B">↗</a>`
+                : "";
+
+            return `<span class="wandb-cell" title="${escapeAttr(title)}">` +
+                `<span class="loss-value ${trendClass}">${display}</span>` +
+                `${sparkline}${link}</span>`;
+        }
+
+        function renderLossSparkline(points) {
+            if (points.length < 2) return "";
+
+            const w = 56, h = 18, pad = 1;
+            const min = Math.min(...points);
+            const max = Math.max(...points);
+            const range = max - min || 1;
+            const step = (w - 2 * pad) / (points.length - 1);
+
+            const coords = points.map((v, i) => {
+                const x = pad + i * step;
+                const y = h - pad - (((v - min) / range) * (h - 2 * pad));
+                return `${x.toFixed(1)},${y.toFixed(1)}`;
+            });
+
+            // Color based on trend of last few points
+            const lastFew = points.slice(-4);
+            const trending = lastFew[lastFew.length - 1] < lastFew[0];
+            const color = trending ? "#6ee7b7" : (lastFew[lastFew.length - 1] > lastFew[0] ? "#fca5a5" : "#fde68a");
+
+            return `<svg class="sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">` +
+                `<polyline points="${coords.join(" ")}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round"/>` +
+                `</svg>`;
+        }
+
         // --- Dashboard ---
         async function loadData() {
             const body = document.getElementById("jobs-body");
@@ -466,6 +556,7 @@
                         <td>${j.nodes || "-"}</td>
                         <td>${j.gpus || "-"}</td>
                         <td>${renderGpuCell(j, gpuHistory)}</td>
+                        <td>${renderLossCell(j)}</td>
                         <td>${j.elapsed || "-"}</td>
                         <td>${j.time_limit || "-"}</td>
                         <td>${formatTime(j.submit_time)}</td>

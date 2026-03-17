@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # update.sh — Query SLURM and push job data to GitHub Pages
-# Usage: ./update.sh (or via cron)
+# Usage: ./update.sh [--metric <wandb_metric_key>]
 
 set -euo pipefail
 
@@ -8,6 +8,25 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 DATA_FILE="data.json"
+WANDB_METRIC_OVERRIDE=""
+
+# Parse flags
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --metric)
+            WANDB_METRIC_OVERRIDE="$2"
+            shift 2
+            ;;
+        *)
+            shift
+            ;;
+    esac
+done
+
+# Activate venv if present (for wandb)
+if [ -f "$SCRIPT_DIR/.venv/bin/activate" ]; then
+    source "$SCRIPT_DIR/.venv/bin/activate"
+fi
 
 # Get current user
 SLURM_USER="${USER}"
@@ -80,10 +99,12 @@ export SACCT_OUTPUT="$sacct_jobs"
 export UPDATED_AT="$UPDATED_AT"
 export GPU_SMI_OUTPUT="$GPU_SMI_OUTPUT"
 export LOG_TAILS="$LOG_TAILS"
+export WANDB_METRIC_OVERRIDE="$WANDB_METRIC_OVERRIDE"
+export WANDB_CONFIG_FILE="$SCRIPT_DIR/wandb_config.json"
 
 python3 << 'PYEOF'
 import json, os, base64
-from datetime import datetime
+from datetime import datetime, timedelta
 
 jobs = []
 seen_ids = set()
@@ -214,12 +235,95 @@ for line in log_raw.splitlines():
     except Exception:
         pass
 
+# --- W&B metrics ---
+wandb_data = {}  # {job_id: {run_id, url, metric_name, metric_latest, metric_history, step}}
+try:
+    import wandb
+
+    config_path = os.environ.get("WANDB_CONFIG_FILE", "")
+    wandb_cfg = {}
+    if config_path and os.path.exists(config_path):
+        with open(config_path) as f:
+            wandb_cfg = json.load(f)
+
+    entity = wandb_cfg.get("entity", "")
+    project = wandb_cfg.get("project", "")
+    metric_key = os.environ.get("WANDB_METRIC_OVERRIDE", "") or wandb_cfg.get("metric", "loss_metric/global_avg_loss")
+
+    if entity and project:
+        api = wandb.Api()
+        # Fetch recent runs (last 24h, running or finished)
+        runs = api.runs(
+            f"{entity}/{project}",
+            filters={"created_at": {"$gte": (datetime.utcnow() - timedelta(days=1)).isoformat()}},
+            per_page=50,
+        )
+
+        # Build lookup: slurm_job_id -> run (from config), and name -> run (fallback)
+        runs_by_slurm_id = {}
+        runs_by_name = {}
+        for run in runs:
+            slurm_id = run.config.get("slurm_job_id", "")
+            if slurm_id:
+                runs_by_slurm_id[str(slurm_id)] = run
+            runs_by_name[run.name] = run
+
+        for j in jobs:
+            jid = j["job_id"]
+            jname = j["name"]
+            # Match: config.slurm_job_id first, then run name contains job name
+            run = runs_by_slurm_id.get(jid)
+            if not run:
+                run = runs_by_name.get(jname)
+            if not run:
+                # Fuzzy: check if any run name contains the job name or vice versa
+                for rname, r in runs_by_name.items():
+                    if jname in rname or rname in jname:
+                        run = r
+                        break
+            if not run:
+                continue
+
+            try:
+                # Fetch metric history (last 50 points)
+                history = run.scan_history(keys=[metric_key, "_step"], page_size=50)
+                points = []
+                last_step = 0
+                for row in history:
+                    val = row.get(metric_key)
+                    if val is not None:
+                        points.append(round(float(val), 6))
+                        last_step = row.get("_step", last_step)
+                # Keep last 50 points for sparkline
+                points = points[-50:]
+                if points:
+                    wandb_data[jid] = {
+                        "run_id": run.id,
+                        "url": run.url,
+                        "metric_name": metric_key,
+                        "metric_latest": points[-1],
+                        "metric_history": points,
+                        "step": last_step,
+                    }
+            except Exception:
+                pass
+
+        print(f"W&B: matched {len(wandb_data)} jobs to runs")
+    else:
+        print("W&B: skipped (no entity/project in wandb_config.json)")
+
+except ImportError:
+    print("W&B: skipped (wandb not installed)")
+except Exception as e:
+    print(f"W&B: error ({e})")
+
 # --- Attach new fields to jobs ---
 for j in jobs:
     jid = j["job_id"]
     j["gpu_avg_util"] = gpu_avg.get(jid)
     j["gpu_current"] = gpu_current.get(jid)
     j["log_tail"] = log_tails.get(jid)
+    j["wandb"] = wandb_data.get(jid)
 
 data = {
     "updated_at": now_str,
