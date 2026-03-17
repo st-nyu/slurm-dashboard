@@ -220,11 +220,82 @@
             margin-top: 8px;
             font-size: 0.85rem;
         }
-        @media (max-width: 600px) {
+        /* Mobile card layout */
+        .mobile-cards { display: none; }
+        @media (max-width: 700px) {
             body { padding: 10px; }
             h1 { font-size: 1.1rem; }
-            table { font-size: 0.78rem; }
-            td, th { padding: 8px 6px; }
+            .table-container { display: none; }
+            .mobile-cards { display: block; }
+            .job-card {
+                background: #1e293b;
+                border-radius: 8px;
+                padding: 14px;
+                margin-bottom: 10px;
+            }
+            .job-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+            }
+            .job-card-name {
+                font-weight: 600;
+                font-size: 0.95rem;
+                color: #f8fafc;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 60%;
+            }
+            .job-card-id {
+                font-size: 0.7rem;
+                color: #64748b;
+            }
+            .job-card-metrics {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+            .job-card-metric {
+                background: #0f172a;
+                border-radius: 6px;
+                padding: 8px 10px;
+            }
+            .job-card-metric .metric-label {
+                font-size: 0.65rem;
+                color: #64748b;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-bottom: 2px;
+            }
+            .job-card-metric .metric-value {
+                font-size: 0.85rem;
+            }
+            .job-card-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.75rem;
+                color: #94a3b8;
+            }
+            .job-card-footer .log-toggle {
+                padding: 4px 12px;
+                font-size: 0.75rem;
+            }
+            .job-card .log-container {
+                margin: 8px 0 0;
+                max-height: 200px;
+            }
+            .job-card .log-container pre {
+                font-size: 0.68rem;
+            }
+            .summary-card {
+                min-width: 70px;
+                padding: 8px 10px;
+            }
+            .summary-card .count { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -263,6 +334,7 @@
                 <tbody id="jobs-body"></tbody>
             </table>
         </div>
+        <div class="mobile-cards" id="mobile-cards"></div>
         <div class="refresh-note">Auto-refreshes every 60 seconds</div>
     </div>
 
@@ -408,19 +480,96 @@
             }
             const trigger = document.querySelector(`[data-log-job="${jobId}"]`);
             if (!trigger) return;
-            const jobRow = trigger.closest("tr");
             const logData = trigger.getAttribute("data-log");
             if (!logData) return;
 
-            const tr = document.createElement("tr");
-            tr.id = "log-" + jobId;
-            tr.className = "log-row";
-            tr.innerHTML = `<td colspan="${COL_COUNT}">
-                <div class="log-container">
-                    <pre>${escapeHtml(logData)}</pre>
-                </div>
-            </td>`;
-            jobRow.after(tr);
+            const logHtml = `<div class="log-container" id="log-${jobId}">
+                <pre>${escapeHtml(logData)}</pre>
+            </div>`;
+
+            // Table row mode
+            const jobRow = trigger.closest("tr");
+            if (jobRow) {
+                const tr = document.createElement("tr");
+                tr.id = "log-" + jobId;
+                tr.className = "log-row";
+                tr.innerHTML = `<td colspan="${COL_COUNT}">${logHtml}</td>`;
+                jobRow.after(tr);
+                return;
+            }
+            // Card mode
+            const card = trigger.closest(".job-card");
+            if (card) {
+                const div = document.createElement("div");
+                div.id = "log-" + jobId;
+                div.innerHTML = logHtml;
+                card.appendChild(div);
+            }
+        }
+
+        function renderMobileCards(jobs, gpuHistory) {
+            return jobs.map(j => {
+                const logBtn = j.log_tail
+                    ? `<button class="log-toggle" data-log-job="${j.job_id}" data-log="${escapeAttr(j.log_tail)}" onclick="toggleLog('${j.job_id}')">Logs</button>`
+                    : "";
+
+                // Build metric cells — only show non-empty ones
+                let metrics = "";
+
+                // State is always shown
+                metrics += `<div class="job-card-metric">
+                    <div class="metric-label">State</div>
+                    <div class="metric-value"><span class="badge ${badgeClass(j.state)}">${j.state}</span></div>
+                </div>`;
+
+                // Elapsed
+                metrics += `<div class="job-card-metric">
+                    <div class="metric-label">Elapsed</div>
+                    <div class="metric-value">${j.elapsed || "-"}</div>
+                </div>`;
+
+                // GPU Util
+                if (j.gpu_avg_util != null) {
+                    metrics += `<div class="job-card-metric">
+                        <div class="metric-label">GPU Util</div>
+                        <div class="metric-value">${renderGpuCell(j, gpuHistory)}</div>
+                    </div>`;
+                }
+
+                // Loss
+                if (j.wandb) {
+                    metrics += `<div class="job-card-metric">
+                        <div class="metric-label">Loss</div>
+                        <div class="metric-value">${renderLossCell(j)}</div>
+                    </div>`;
+                }
+
+                // GPUs (if present)
+                if (j.gpus && j.gpus !== "-") {
+                    metrics += `<div class="job-card-metric">
+                        <div class="metric-label">GPUs</div>
+                        <div class="metric-value">${j.gpus}</div>
+                    </div>`;
+                }
+
+                // Partition
+                metrics += `<div class="job-card-metric">
+                    <div class="metric-label">Partition</div>
+                    <div class="metric-value">${j.partition || "-"}</div>
+                </div>`;
+
+                return `<div class="job-card">
+                    <div class="job-card-header">
+                        <div class="job-card-name">${j.name}</div>
+                        <span class="badge ${badgeClass(j.state)}">${j.state}</span>
+                    </div>
+                    <div class="job-card-metrics">${metrics}</div>
+                    <div class="job-card-footer">
+                        <span><span class="job-card-id">#${j.job_id}</span> · ${j.nodes || "-"} · ${formatTime(j.submit_time)}</span>
+                        ${logBtn}
+                    </div>
+                </div>`;
+            }).join("");
         }
 
         function renderLossCell(job) {
@@ -496,6 +645,7 @@
         // --- Dashboard ---
         async function loadData() {
             const body = document.getElementById("jobs-body");
+            const mobileCards = document.getElementById("mobile-cards");
             const summary = document.getElementById("summary");
             try {
                 const resp = await fetch("data.json?t=" + Date.now());
@@ -532,6 +682,7 @@
                 // Job rows
                 if (data.jobs.length === 0) {
                     body.innerHTML = `<tr><td colspan="${COL_COUNT}" class="empty">No jobs found</td></tr>`;
+                    mobileCards.innerHTML = '<div class="empty">No jobs found</div>';
                     return;
                 }
 
@@ -564,10 +715,13 @@
                     </tr>`;
                 }).join("");
 
+                // Mobile cards
+                mobileCards.innerHTML = renderMobileCards(data.jobs, gpuHistory);
+
             } catch (e) {
-                body.innerHTML = `<tr><td colspan="${COL_COUNT}" class="error">
-                    Could not load data. Run update.sh to generate data.json
-                </td></tr>`;
+                const errMsg = "Could not load data. Run update.sh to generate data.json";
+                body.innerHTML = `<tr><td colspan="${COL_COUNT}" class="error">${errMsg}</td></tr>`;
+                mobileCards.innerHTML = `<div class="error">${errMsg}</div>`;
             }
         }
 
