@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T05:24:22Z",
+  "updated_at": "2026-03-17T05:24:17Z",
   "gpu_history": {
     "4391878": [
       {
@@ -25,7 +25,7 @@
         ]
       },
       {
-        "timestamp": "2026-03-17T05:24:22Z",
+        "timestamp": "2026-03-17T05:24:17Z",
         "gpus": [
           {
             "util": 100.0,
@@ -45,7 +45,7 @@
       "partition": "cpu_short",
       "nodes": "cs663",
       "gpus": "-",
-      "elapsed": "4:11:41",
+      "elapsed": "4:11:36",
       "time_limit": "6:00:00",
       "submit_time": "2026-03-16T21:12:40",
       "gpu_avg_util": null,
@@ -60,7 +60,7 @@
       "partition": "cpu_short",
       "nodes": "cs602",
       "gpus": "-",
-      "elapsed": "30:22",
+      "elapsed": "30:17",
       "time_limit": "2:00:00",
       "submit_time": "2026-03-17T00:53:58",
       "gpu_avg_util": null,
@@ -90,7 +90,7 @@
       "partition": "l40s_mren",
       "nodes": "gl016",
       "gpus": "1",
-      "elapsed": "8:56",
+      "elapsed": "8:51",
       "time_limit": "10:00",
       "submit_time": "2026-03-17T01:15:25",
       "gpu_avg_util": 66.7,
