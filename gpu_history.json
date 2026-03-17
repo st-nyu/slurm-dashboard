@@ -1,17 +1,6 @@
 {
   "4392787": [
     {
-      "timestamp": "2026-03-17T06:04:22Z",
-      "gpus": [
-        {
-          "util": 81.0,
-          "mem_util": 36.0,
-          "mem_used": 9741.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
       "timestamp": "2026-03-17T06:06:35Z",
       "gpus": [
         {
@@ -127,6 +116,17 @@
         {
           "util": 71.0,
           "mem_util": 32.0,
+          "mem_used": 9741.0,
+          "mem_total": 143771.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-17T06:47:23Z",
+      "gpus": [
+        {
+          "util": 83.0,
+          "mem_util": 39.0,
           "mem_used": 9741.0,
           "mem_total": 143771.0
         }
