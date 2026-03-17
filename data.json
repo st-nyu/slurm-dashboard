@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T02:25:12Z",
+  "updated_at": "2026-03-17T02:27:29Z",
   "gpu_history": {
     "4386274": [
       {
@@ -23,6 +23,17 @@
             "mem_total": 46068.0
           }
         ]
+      },
+      {
+        "timestamp": "2026-03-17T02:27:29Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 0.0,
+            "mem_total": 46068.0
+          }
+        ]
       }
     ]
   },
@@ -34,7 +45,7 @@
       "partition": "cpu_short",
       "nodes": "cs663",
       "gpus": "-",
-      "elapsed": "1:12:31",
+      "elapsed": "1:14:48",
       "time_limit": "6:00:00",
       "submit_time": "2026-03-16T21:12:40",
       "gpu_avg_util": null,
@@ -49,12 +60,12 @@
       "partition": "cpu_short",
       "nodes": "cs635",
       "gpus": "-",
-      "elapsed": "2:22",
+      "elapsed": "4:39",
       "time_limit": "2:00:00",
       "submit_time": "2026-03-16T22:22:49",
       "gpu_avg_util": null,
       "gpu_current": null,
-      "log_tail": "Dashboard updater started: Mon Mar 16 10:22:50 PM EDT 2026\nInterval: 2 minutes\nDuration: 2 hours\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\n<stdin>:153: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nW&B: matched 0 jobs to runs\nWrote 3 jobs to data.json\n[main f8f489e] Update job data 2026-03-17T02:23:11Z\n 2 files changed, 66 insertions(+), 16 deletions(-)\nPushed updated data.json\n",
+      "log_tail": "Dashboard updater started: Mon Mar 16 10:22:50 PM EDT 2026\nInterval: 2 minutes\nDuration: 2 hours\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\n<stdin>:153: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nW&B: matched 0 jobs to runs\nWrote 3 jobs to data.json\n[main f8f489e] Update job data 2026-03-17T02:23:11Z\n 2 files changed, 66 insertions(+), 16 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\n<stdin>:153: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nW&B: matched 0 jobs to runs\nWrote 3 jobs to data.json\n[main d25ad3f] Update job data 2026-03-17T02:25:28Z\n 2 files changed, 27 insertions(+), 5 deletions(-)\nPushed updated data.json\n",
       "wandb": null
     },
     {
@@ -64,7 +75,7 @@
       "partition": "l40s_courant",
       "nodes": "gl001",
       "gpus": "1",
-      "elapsed": "6:47",
+      "elapsed": "9:04",
       "time_limit": "10:00",
       "submit_time": "2026-03-16T22:18:13",
       "gpu_avg_util": 0.0,
