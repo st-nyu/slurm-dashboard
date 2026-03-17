@@ -259,19 +259,22 @@ try:
             per_page=50,
         )
 
-        # Build lookup: slurm_job_id -> run (from config), and name -> run (fallback)
+        # Build lookup: slurm_job_id -> run (from config.job.description), and name -> run (fallback)
         runs_by_slurm_id = {}
         runs_by_name = {}
         for run in runs:
-            slurm_id = run.config.get("slurm_job_id", "")
-            if slurm_id:
-                runs_by_slurm_id[str(slurm_id)] = run
+            # Look for SLURM job ID in config.job.description
+            job_cfg = run.config.get("job", {})
+            if isinstance(job_cfg, dict):
+                slurm_id = str(job_cfg.get("description", "")).strip()
+                if slurm_id:
+                    runs_by_slurm_id[slurm_id] = run
             runs_by_name[run.name] = run
 
         for j in jobs:
             jid = j["job_id"]
             jname = j["name"]
-            # Match: config.slurm_job_id first, then run name contains job name
+            # Match: config.job.description first, then run name, then fuzzy
             run = runs_by_slurm_id.get(jid)
             if not run:
                 run = runs_by_name.get(jname)
