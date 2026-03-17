@@ -76,6 +76,12 @@
             white-space: nowrap;
         }
         tr:hover td { background: #263348; }
+        td.partition-cell {
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         .badge {
             display: inline-block;
             padding: 2px 8px;
@@ -702,7 +708,7 @@
                         <td>${j.job_id}</td>
                         <td>${j.name}</td>
                         <td><span class="badge ${badgeClass(j.state)}">${j.state}</span></td>
-                        <td>${j.partition || "-"}</td>
+                        <td class="partition-cell" title="${j.partition || "-"}">${j.partition || "-"}</td>
                         <td>${j.nodes || "-"}</td>
                         <td>${j.gpus || "-"}</td>
                         <td>${renderGpuCell(j, gpuHistory)}</td>

@@ -52,25 +52,43 @@ if [ -n "$SINCE" ]; then
         --allocations 2>/dev/null || true)
 fi
 
-# --- Query GPU utilization via SSH for running jobs ---
-GPU_SMI_OUTPUT=""
+# --- Query GPU utilization via SSH for running jobs (parallel) ---
+GPU_SMI_DIR=$(mktemp -d)
+gpu_pids=""
 while IFS='|' read -r job_id name state partition node gres elapsed tlimit submit; do
     state_upper=$(echo "$state" | tr '[:lower:]' '[:upper:]')
     [[ "$state_upper" != "RUNNING" ]] && continue
     [[ -z "$node" ]] && continue
     echo "$gres" | grep -qi "gpu" || continue
-    # SSH to node, query nvidia-smi
-    gpu_data=$(ssh -o ConnectTimeout=5 -o BatchMode=yes -o StrictHostKeyChecking=no "$node" \
-        'nvidia-smi --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.total --format=csv,noheader,nounits' 2>/dev/null || true)
-    if [ -n "$gpu_data" ]; then
-        # Format: job_id|node|line1;line2;... (each line: util,mem_util,mem_used,mem_total)
-        gpu_lines=$(echo "$gpu_data" | tr '\n' ';' | sed 's/;$//')
-        GPU_SMI_OUTPUT="${GPU_SMI_OUTPUT}${job_id}|${node}|${gpu_lines}"$'\n'
-    fi
+    # SSH in background, write result to a temp file
+    (
+        gpu_data=$(ssh -o ConnectTimeout=30 -o BatchMode=yes -o StrictHostKeyChecking=no "$node" \
+            'nvidia-smi --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.total --format=csv,noheader,nounits' 2>/dev/null || true)
+        if [ -n "$gpu_data" ]; then
+            gpu_lines=$(echo "$gpu_data" | tr '\n' ';' | sed 's/;$//')
+            echo "${job_id}|${node}|${gpu_lines}" > "$GPU_SMI_DIR/${job_id}"
+        fi
+    ) &
+    gpu_pids="$gpu_pids $!"
 done <<< "$squeue_jobs"
 
-# --- Collect log tails for all jobs ---
-LOG_TAILS=""
+# Wait for all SSH calls (with a global timeout)
+for pid in $gpu_pids; do
+    wait "$pid" 2>/dev/null || true
+done
+
+# Collect results
+GPU_SMI_OUTPUT=""
+for f in "$GPU_SMI_DIR"/*; do
+    [ -f "$f" ] && GPU_SMI_OUTPUT="${GPU_SMI_OUTPUT}$(cat "$f")"$'\n'
+done
+rm -rf "$GPU_SMI_DIR"
+
+# --- Collect log tails for all jobs (write to temp file to avoid env size limits) ---
+LOG_TAILS_FILE=$(mktemp)
+GPU_SMI_FILE=$(mktemp)
+trap 'rm -f "$LOG_TAILS_FILE" "$GPU_SMI_FILE"' EXIT
+
 all_job_ids=""
 # Extract job IDs from squeue
 while IFS='|' read -r job_id rest; do
@@ -88,17 +106,20 @@ for jid in $all_job_ids; do
     if [ -n "$stdout_path" ] && [ -f "$stdout_path" ]; then
         log_b64=$(tail -c 51200 "$stdout_path" 2>/dev/null | tail -100 | base64 -w0 2>/dev/null || true)
         if [ -n "$log_b64" ]; then
-            LOG_TAILS="${LOG_TAILS}${jid}|${log_b64}"$'\n'
+            echo "${jid}|${log_b64}" >> "$LOG_TAILS_FILE"
         fi
     fi
 done
+
+# Write GPU SMI data to temp file too
+echo -n "$GPU_SMI_OUTPUT" > "$GPU_SMI_FILE"
 
 # --- Build JSON with Python ---
 export SQUEUE_OUTPUT="$squeue_jobs"
 export SACCT_OUTPUT="$sacct_jobs"
 export UPDATED_AT="$UPDATED_AT"
-export GPU_SMI_OUTPUT="$GPU_SMI_OUTPUT"
-export LOG_TAILS="$LOG_TAILS"
+export GPU_SMI_FILE="$GPU_SMI_FILE"
+export LOG_TAILS_FILE="$LOG_TAILS_FILE"
 export WANDB_METRIC_OVERRIDE="$WANDB_METRIC_OVERRIDE"
 export WANDB_CONFIG_FILE="$SCRIPT_DIR/wandb_config.json"
 
@@ -166,7 +187,11 @@ for line in sacct_raw.splitlines():
 
 # --- Parse GPU utilization data ---
 gpu_current = {}  # {job_id: [{util, mem_util, mem_used, mem_total}, ...]}
-gpu_smi_raw = os.environ.get("GPU_SMI_OUTPUT", "").strip()
+gpu_smi_file = os.environ.get("GPU_SMI_FILE", "")
+gpu_smi_raw = ""
+if gpu_smi_file and os.path.exists(gpu_smi_file):
+    with open(gpu_smi_file) as f:
+        gpu_smi_raw = f.read().strip()
 for line in gpu_smi_raw.splitlines():
     parts = line.split("|", 2)
     if len(parts) < 3:
@@ -224,7 +249,11 @@ for job_id, samples in gpu_history.items():
 
 # --- Parse log tails ---
 log_tails = {}
-log_raw = os.environ.get("LOG_TAILS", "").strip()
+log_tails_file = os.environ.get("LOG_TAILS_FILE", "")
+log_raw = ""
+if log_tails_file and os.path.exists(log_tails_file):
+    with open(log_tails_file) as f:
+        log_raw = f.read().strip()
 for line in log_raw.splitlines():
     parts = line.split("|", 1)
     if len(parts) < 2:
@@ -248,59 +277,68 @@ try:
 
     entity = wandb_cfg.get("entity", "")
     project = wandb_cfg.get("project", "")
-    metric_key = os.environ.get("WANDB_METRIC_OVERRIDE", "") or wandb_cfg.get("metric", "loss_metric/global_avg_loss")
+    metric_key = os.environ.get("WANDB_METRIC_OVERRIDE", "") or wandb_cfg.get("metric", "loss_metrics/global_avg_loss")
 
     if entity and project:
-        api = wandb.Api()
-        # Fetch recent runs (last 24h, running or finished)
+        api = wandb.Api(timeout=30)
+        # Fetch recent runs — only running/finished, limit to active SLURM job count
         runs = api.runs(
             f"{entity}/{project}",
-            filters={"created_at": {"$gte": (datetime.utcnow() - timedelta(days=1)).isoformat()}},
-            per_page=50,
+            filters={"state": "running"},
+            per_page=min(len(jobs) * 2, 50),
         )
 
-        # Build lookup: slurm_job_id -> run (from config.job.description), and name -> run (fallback)
+        # Build lookups for matching W&B runs to SLURM jobs
         runs_by_slurm_id = {}
         runs_by_name = {}
         for run in runs:
-            # Look for SLURM job ID in config.job.description
-            job_cfg = run.config.get("job", {})
-            if isinstance(job_cfg, dict):
-                slurm_id = str(job_cfg.get("description", "")).strip()
-                if slurm_id:
-                    runs_by_slurm_id[slurm_id] = run
             runs_by_name[run.name] = run
+            # Check W&B metadata for SLURM_JOB_ID (auto-captured by wandb)
+            metadata = getattr(run, "metadata", {}) or {}
+            slurm_id = str(metadata.get("slurm", "").get("jobid", "") or metadata.get("SLURM_JOB_ID", "")).strip()
+            if not slurm_id:
+                # Also check run config and tags
+                slurm_id = str(run.config.get("SLURM_JOB_ID", "")).strip()
+            if not slurm_id:
+                # Check run notes/tags for a numeric job ID
+                for tag in (run.tags or []):
+                    if tag.isdigit():
+                        slurm_id = tag
+                        break
+            if slurm_id:
+                runs_by_slurm_id[slurm_id] = run
 
+        # Match jobs to runs
+        matched = []  # [(jid, run), ...]
         for j in jobs:
             jid = j["job_id"]
             jname = j["name"]
-            # Match: config.job.description first, then run name, then fuzzy
             run = runs_by_slurm_id.get(jid)
             if not run:
                 run = runs_by_name.get(jname)
             if not run:
-                # Fuzzy: check if any run name contains the job name or vice versa
                 for rname, r in runs_by_name.items():
                     if jname in rname or rname in jname:
                         run = r
                         break
-            if not run:
-                continue
+            if run:
+                matched.append((jid, run))
 
+        # Fetch metrics in parallel
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        def fetch_metric(jid, run):
             try:
-                # Fetch metric history (last 50 points)
-                history = run.scan_history(keys=[metric_key, "_step"], page_size=50)
+                hist = run.history(keys=[metric_key, "_step"], samples=50, pandas=False)
                 points = []
                 last_step = 0
-                for row in history:
+                for row in hist:
                     val = row.get(metric_key)
                     if val is not None:
                         points.append(round(float(val), 6))
                         last_step = row.get("_step", last_step)
-                # Keep last 50 points for sparkline
-                points = points[-50:]
                 if points:
-                    wandb_data[jid] = {
+                    return jid, {
                         "run_id": run.id,
                         "url": run.url,
                         "metric_name": metric_key,
@@ -308,10 +346,18 @@ try:
                         "metric_history": points,
                         "step": last_step,
                     }
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"W&B: error fetching metric for job {jid}: {e}")
+            return jid, None
 
-        print(f"W&B: matched {len(wandb_data)} jobs to runs")
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            futures = {pool.submit(fetch_metric, jid, run): jid for jid, run in matched}
+            for fut in as_completed(futures):
+                jid, result = fut.result()
+                if result:
+                    wandb_data[jid] = result
+
+        print(f"W&B: matched {len(wandb_data)}/{len(matched)} jobs to runs")
     else:
         print("W&B: skipped (no entity/project in wandb_config.json)")
 
