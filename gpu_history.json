@@ -54,6 +54,28 @@
           "mem_total": 143771.0
         }
       ]
+    },
+    {
+      "timestamp": "2026-03-17T06:00:09Z",
+      "gpus": [
+        {
+          "util": 85.0,
+          "mem_util": 35.0,
+          "mem_used": 9741.0,
+          "mem_total": 143771.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-17T06:00:28Z",
+      "gpus": [
+        {
+          "util": 84.0,
+          "mem_util": 35.0,
+          "mem_used": 9741.0,
+          "mem_total": 143771.0
+        }
+      ]
     }
   ]
 }
