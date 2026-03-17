@@ -472,23 +472,24 @@
                       .replace(/</g, "&lt;").replace(/>/g, "&gt;");
         }
 
-        function toggleLog(jobId) {
-            const existing = document.getElementById("log-" + jobId);
+        function toggleLog(jobId, btn) {
+            // Find existing log in same context (table or card)
+            const container = btn.closest("tr") || btn.closest(".job-card");
+            if (!container) return;
+            const existing = container.parentElement.querySelector(`#log-${CSS.escape(jobId)}`);
             if (existing) {
                 existing.remove();
                 return;
             }
-            const trigger = document.querySelector(`[data-log-job="${jobId}"]`);
-            if (!trigger) return;
-            const logData = trigger.getAttribute("data-log");
+            const logData = btn.getAttribute("data-log");
             if (!logData) return;
 
-            const logHtml = `<div class="log-container" id="log-${jobId}">
+            const logHtml = `<div class="log-container">
                 <pre>${escapeHtml(logData)}</pre>
             </div>`;
 
             // Table row mode
-            const jobRow = trigger.closest("tr");
+            const jobRow = btn.closest("tr");
             if (jobRow) {
                 const tr = document.createElement("tr");
                 tr.id = "log-" + jobId;
@@ -498,7 +499,7 @@
                 return;
             }
             // Card mode
-            const card = trigger.closest(".job-card");
+            const card = btn.closest(".job-card");
             if (card) {
                 const div = document.createElement("div");
                 div.id = "log-" + jobId;
@@ -510,7 +511,7 @@
         function renderMobileCards(jobs, gpuHistory) {
             return jobs.map(j => {
                 const logBtn = j.log_tail
-                    ? `<button class="log-toggle" data-log-job="${j.job_id}" data-log="${escapeAttr(j.log_tail)}" onclick="toggleLog('${j.job_id}')">Logs</button>`
+                    ? `<button class="log-toggle" data-log-job="${j.job_id}" data-log="${escapeAttr(j.log_tail)}" onclick="toggleLog('${j.job_id}', this)">Logs</button>`
                     : "";
 
                 // Build metric cells — only show non-empty ones
@@ -697,7 +698,7 @@
 
                 body.innerHTML = data.jobs.map(j => {
                     const logBtn = j.log_tail
-                        ? `<button class="log-toggle" data-log-job="${j.job_id}" data-log="${escapeAttr(j.log_tail)}" onclick="toggleLog('${j.job_id}')">Logs</button>`
+                        ? `<button class="log-toggle" data-log-job="${j.job_id}" data-log="${escapeAttr(j.log_tail)}" onclick="toggleLog('${j.job_id}', this)">Logs</button>`
                         : "-";
                     return `<tr>
                         <td>${j.job_id}</td>
