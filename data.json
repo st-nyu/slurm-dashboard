@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-03-17T01:54:14Z",
-  "gpu_history": {
-    "4385999": [
-      {
-        "timestamp": "2026-03-17T01:47:35Z",
-        "gpus": [
-          {
-            "util": 0.0,
-            "mem_util": 0.0,
-            "mem_used": 1.0,
-            "mem_total": 46068.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-17T01:49:49Z",
-        "gpus": [
-          {
-            "util": 0.0,
-            "mem_util": 0.0,
-            "mem_used": 1.0,
-            "mem_total": 46068.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-17T01:52:02Z",
-        "gpus": [
-          {
-            "util": 0.0,
-            "mem_util": 0.0,
-            "mem_used": 1.0,
-            "mem_total": 46068.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-17T01:54:14Z",
-        "gpus": [
-          {
-            "util": 0.0,
-            "mem_util": 0.0,
-            "mem_used": 1.0,
-            "mem_total": 46068.0
-          }
-        ]
-      }
-    ]
-  },
+  "updated_at": "2026-03-17T01:56:27Z",
+  "gpu_history": {},
   "jobs": [
     {
       "job_id": "4385711",
@@ -56,12 +9,12 @@
       "partition": "cpu_short",
       "nodes": "cs681",
       "gpus": "-",
-      "elapsed": "37:00",
+      "elapsed": "39:13",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-16T21:17:12",
       "gpu_avg_util": null,
       "gpu_current": null,
-      "log_tail": "Dashboard updater started: Mon Mar 16 09:17:14 PM EDT 2026\nInterval: 2 minutes\nDuration: 1 hours\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main b22e35d] Update job data 2026-03-17T01:17:14Z\n 1 file changed, 13 insertions(+), 13 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main dd561b6] Update job data 2026-03-17T01:19:16Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 9807f9d] Update job data 2026-03-17T01:21:17Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main c1afbe8] Update job data 2026-03-17T01:23:18Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 32da49d] Update job data 2026-03-17T01:25:20Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main fea3dd4] Update job data 2026-03-17T01:27:21Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 3ebd3cd] Update job data 2026-03-17T01:29:22Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 0306288] Update job data 2026-03-17T01:31:23Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 35ef23c] Update job data 2026-03-17T01:33:25Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 73e5406] Update job data 2026-03-17T01:35:26Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 49b5006] Update job data 2026-03-17T01:37:28Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 30c4158] Update job data 2026-03-17T01:39:30Z\n 2 files changed, 13 insertions(+), 5 deletions(-)\n create mode 100644 gpu_history.json\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 07ea8d3] Update job data 2026-03-17T01:41:32Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 0be99f1] Update job data 2026-03-17T01:43:33Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main 1130518] Update job data 2026-03-17T01:45:35Z\n 1 file changed, 18 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main a5dd1c6] Update job data 2026-03-17T01:47:48Z\n 2 files changed, 47 insertions(+), 12 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main 58c2b17] Update job data 2026-03-17T01:50:01Z\n 2 files changed, 27 insertions(+), 5 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main 113071d] Update job data 2026-03-17T01:52:13Z\n 2 files changed, 27 insertions(+), 5 deletions(-)\nPushed updated data.json\n"
+      "log_tail": "Dashboard updater started: Mon Mar 16 09:17:14 PM EDT 2026\nInterval: 2 minutes\nDuration: 1 hours\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main b22e35d] Update job data 2026-03-17T01:17:14Z\n 1 file changed, 13 insertions(+), 13 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main dd561b6] Update job data 2026-03-17T01:19:16Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 9807f9d] Update job data 2026-03-17T01:21:17Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main c1afbe8] Update job data 2026-03-17T01:23:18Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 32da49d] Update job data 2026-03-17T01:25:20Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main fea3dd4] Update job data 2026-03-17T01:27:21Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 3ebd3cd] Update job data 2026-03-17T01:29:22Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 0306288] Update job data 2026-03-17T01:31:23Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 35ef23c] Update job data 2026-03-17T01:33:25Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 73e5406] Update job data 2026-03-17T01:35:26Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 49b5006] Update job data 2026-03-17T01:37:28Z\n 1 file changed, 3 insertions(+), 3 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 30c4158] Update job data 2026-03-17T01:39:30Z\n 2 files changed, 13 insertions(+), 5 deletions(-)\n create mode 100644 gpu_history.json\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 07ea8d3] Update job data 2026-03-17T01:41:32Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 2 jobs to data.json\n[main 0be99f1] Update job data 2026-03-17T01:43:33Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main 1130518] Update job data 2026-03-17T01:45:35Z\n 1 file changed, 18 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main a5dd1c6] Update job data 2026-03-17T01:47:48Z\n 2 files changed, 47 insertions(+), 12 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main 58c2b17] Update job data 2026-03-17T01:50:01Z\n 2 files changed, 27 insertions(+), 5 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main 113071d] Update job data 2026-03-17T01:52:13Z\n 2 files changed, 27 insertions(+), 5 deletions(-)\nPushed updated data.json\n<stdin>:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nWrote 3 jobs to data.json\n[main dd269a0] Update job data 2026-03-17T01:54:26Z\n 2 files changed, 27 insertions(+), 5 deletions(-)\nPushed updated data.json\n"
     },
     {
       "job_id": "4385629",
@@ -70,32 +23,11 @@
       "partition": "cpu_short",
       "nodes": "cs663",
       "gpus": "-",
-      "elapsed": "41:33",
+      "elapsed": "43:46",
       "time_limit": "6:00:00",
       "submit_time": "2026-03-16T21:12:40",
       "gpu_avg_util": null,
       "gpu_current": null,
-      "log_tail": null
-    },
-    {
-      "job_id": "4385999",
-      "name": "wrap",
-      "state": "RUNNING",
-      "partition": "l40s_courant",
-      "nodes": "gl017",
-      "gpus": "1",
-      "elapsed": "8:35",
-      "time_limit": "10:00",
-      "submit_time": "2026-03-16T21:44:42",
-      "gpu_avg_util": 0.0,
-      "gpu_current": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 1.0,
-          "mem_total": 46068.0
-        }
-      ],
       "log_tail": null
     }
   ]
