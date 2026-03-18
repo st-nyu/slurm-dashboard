@@ -21,11 +21,33 @@
           "mem_total": 143771.0
         }
       ]
+    },
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
+      "gpus": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 4.0,
+          "mem_total": 143771.0
+        }
+      ]
     }
   ],
   "4470691": [
     {
       "timestamp": "2026-03-18T04:43:53Z",
+      "gpus": [
+        {
+          "util": 100.0,
+          "mem_util": 54.0,
+          "mem_used": 90601.0,
+          "mem_total": 143771.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
       "gpus": [
         {
           "util": 100.0,
@@ -47,6 +69,17 @@
           "mem_total": 143771.0
         }
       ]
+    },
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
+      "gpus": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 4.0,
+          "mem_total": 143771.0
+        }
+      ]
     }
   ],
   "4470693": [
@@ -57,6 +90,56 @@
           "util": 100.0,
           "mem_util": 0.0,
           "mem_used": 527.0,
+          "mem_total": 143771.0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
+      "gpus": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 4.0,
+          "mem_total": 143771.0
+        }
+      ]
+    }
+  ],
+  "4470694": [
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
+      "gpus": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 4.0,
+          "mem_total": 143771.0
+        }
+      ]
+    }
+  ],
+  "4470697": [
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
+      "gpus": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 4.0,
+          "mem_total": 143771.0
+        }
+      ]
+    }
+  ],
+  "4470698": [
+    {
+      "timestamp": "2026-03-18T04:49:15Z",
+      "gpus": [
+        {
+          "util": 93.0,
+          "mem_util": 49.0,
+          "mem_used": 91235.0,
           "mem_total": 143771.0
         }
       ]
