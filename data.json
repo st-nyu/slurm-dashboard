@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-18T03:33:44Z",
+  "updated_at": "2026-03-18T03:39:10Z",
   "gpu_history": {
     "4467774": [
       {
@@ -15,6 +15,17 @@
       },
       {
         "timestamp": "2026-03-18T03:33:44Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 3.0,
+            "mem_total": 46068.0
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
         "gpus": [
           {
             "util": 0.0,
@@ -47,16 +58,14 @@
             "mem_total": 46068.0
           }
         ]
-      }
-    ],
-    "4469210": [
+      },
       {
-        "timestamp": "2026-03-18T03:33:44Z",
+        "timestamp": "2026-03-18T03:39:10Z",
         "gpus": [
           {
             "util": 0.0,
             "mem_util": 0.0,
-            "mem_used": 1.0,
+            "mem_used": 3.0,
             "mem_total": 46068.0
           }
         ]
@@ -73,6 +82,17 @@
             "mem_total": 46068.0
           }
         ]
+      },
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 90.0,
+            "mem_util": 8.0,
+            "mem_used": 33107.0,
+            "mem_total": 46068.0
+          }
+        ]
       }
     ],
     "4469212": [
@@ -83,6 +103,17 @@
             "util": 0.0,
             "mem_util": 0.0,
             "mem_used": 1.0,
+            "mem_total": 46068.0
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 53.0,
+            "mem_util": 1.0,
+            "mem_used": 33119.0,
             "mem_total": 46068.0
           }
         ]
@@ -99,6 +130,17 @@
             "mem_total": 46068.0
           }
         ]
+      },
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 100.0,
+            "mem_util": 9.0,
+            "mem_used": 23003.0,
+            "mem_total": 46068.0
+          }
+        ]
       }
     ],
     "4469214": [
@@ -109,6 +151,121 @@
             "util": 0.0,
             "mem_util": 0.0,
             "mem_used": 1.0,
+            "mem_total": 46068.0
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 66.0,
+            "mem_util": 26.0,
+            "mem_used": 33123.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469216": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 57.0,
+            "mem_util": 12.0,
+            "mem_used": 33143.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469217": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 49.0,
+            "mem_util": 0.0,
+            "mem_used": 32565.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469218": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 49.0,
+            "mem_util": 0.0,
+            "mem_used": 33121.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469219": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 89.0,
+            "mem_util": 18.0,
+            "mem_used": 31305.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469225": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 3.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469226": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 3.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469245": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 3.0,
+            "mem_total": 46068.0
+          }
+        ]
+      }
+    ],
+    "4469246": [
+      {
+        "timestamp": "2026-03-18T03:39:10Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 3.0,
             "mem_total": 46068.0
           }
         ]
@@ -123,7 +280,7 @@
       "partition": "cpu_short",
       "nodes": "cs621",
       "gpus": "-",
-      "elapsed": "25:00",
+      "elapsed": "30:27",
       "time_limit": "2:00:00",
       "submit_time": "2026-03-17T23:08:41",
       "gpu_avg_util": null,
@@ -138,12 +295,12 @@
       "partition": "cpu_short",
       "nodes": "cs642",
       "gpus": "-",
-      "elapsed": "5:31",
+      "elapsed": "10:58",
       "time_limit": "2:00:00",
       "submit_time": "2026-03-17T23:28:11",
       "gpu_avg_util": null,
       "gpu_current": null,
-      "log_tail": "Dashboard updater started: Tue Mar 17 11:28:14 PM EDT 2026\nInterval: 5 minutes\nDuration: 2 hours\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 19 jobs to data.json\n[main ae19150] Update job data 2026-03-18T03:28:42Z\n 2 files changed, 465 insertions(+), 1595 deletions(-)\nPushed updated data.json\n",
+      "log_tail": "Dashboard updater started: Tue Mar 17 11:28:14 PM EDT 2026\nInterval: 5 minutes\nDuration: 2 hours\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 19 jobs to data.json\n[main ae19150] Update job data 2026-03-18T03:28:42Z\n 2 files changed, 465 insertions(+), 1595 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 10 jobs to data.json\n[main d4a5f12] Update job data 2026-03-18T03:34:09Z\n 2 files changed, 123 insertions(+), 280 deletions(-)\nPushed updated data.json\n",
       "wandb": null
     },
     {
@@ -168,7 +325,7 @@
       "partition": "l40s_courant",
       "nodes": "gl017",
       "gpus": "1",
-      "elapsed": "9:08",
+      "elapsed": "14:35",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-17T23:20:55",
       "gpu_avg_util": 0.0,
@@ -184,25 +341,157 @@
       "wandb": null
     },
     {
+      "job_id": "4469246",
+      "name": "a-lact2MMW",
+      "state": "RUNNING",
+      "partition": "l40s_courant",
+      "nodes": "gl045",
+      "gpus": "1",
+      "elapsed": "0:50",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:34:36",
+      "gpu_avg_util": 0.0,
+      "gpu_current": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 3.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "batch script for job 4469246 written to slurm/scripts/4469246.sh\nSeed: 42\nLearning rate: 1e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon_w32.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172338\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-3-seed42\n+ RUN_NAME=-run0-lr1e-3-seed42\n+ RUN_ID=-run0-lr1e-3-seed42-202603172338\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-c32-lr1e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr1e-3-seed42-202603172338\n+ WANDB_RUN_ID=-run0-lr1e-3-seed42-202603172338\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl045.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon_w32.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4469226",
+      "name": "a-lact2MMW",
+      "state": "RUNNING",
+      "partition": "l40s_courant",
+      "nodes": "gl045",
+      "gpus": "1",
+      "elapsed": "0:54",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:33:52",
+      "gpu_avg_util": 0.0,
+      "gpu_current": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 3.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "frame #21: _PyRun_AnyFileObject + 0x43 (0x6118c3 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #22: Py_RunMain + 0x3a7 (0x60e707 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #23: Py_BytesMain + 0x39 (0x5c5bd9 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #24: <unknown function> + 0x295d0 (0x14e16ac295d0 in /lib64/libc.so.6)\nframe #25: __libc_start_main + 0x80 (0x14e16ac29680 in /lib64/libc.so.6)\nframe #26: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x5c5a09]\n\n[W317 23:39:27.178488500 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=22, addr=[gl045.hpc.nyu.edu]:43612, remote=[gl045.hpc.nyu.edu]:12345): Broken pipe\nException raised from sendBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:653 (most recent call first):\nframe #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x14e08c51ffdd in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libc10.so)\nframe #1: <unknown function> + 0x6a326f1 (0x14e0b15106f1 in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)\nframe #2: <unknown function> + 0x6a3379c (0x14e0b151179c in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)\nframe #3: <unknown function> + 0x6a338fd (0x14e0b15118fd in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)\nframe #4: c10d::TCPStore::doWait(c10::ArrayRef<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0xc8 (0x14e0b150b118 in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)\nframe #5: c10d::TCPStore::doGet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x2a (0x14e0b150b64a in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)\nframe #6: c10d::TCPStore::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x112 (0x14e0b150b7e2 in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)\nframe #7: <unknown function> + 0xeb49d9 (0x14e0c0dfc9d9 in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_python.so)\nframe #8: <unknown function> + 0x40e460 (0x14e0c0356460 in /scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/lib/libtorch_python.so)\nframe #9: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x5434d4]\nframe #10: _PyObject_MakeTpCall + 0x2fc (0x5172ac in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #11: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x56c4d0]\nframe #12: _PyEval_EvalFrameDefault + 0x50c3 (0x525e33 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #13: _PyObject_FastCallDictTstate + 0x1e7 (0x519a47 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #14: _PyObject_Call_Prepend + 0xe0 (0x552a40 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #15: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x627356]\nframe #16: _PyObject_Call + 0xb5 (0x555605 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #17: _PyEval_EvalFrameDefault + 0x50c3 (0x525e33 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #18: PyEval_EvalCode + 0xae (0x5dd60e in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #19: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x61a827]\nframe #20: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x615367]\nframe #21: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x612222]\nframe #22: _PyRun_SimpleFileObject + 0x1b0 (0x611dc0 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #23: _PyRun_AnyFileObject + 0x43 (0x6118c3 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #24: Py_RunMain + 0x3a7 (0x60e707 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #25: Py_BytesMain + 0x39 (0x5c5bd9 in /scratch/sl12886/ttt/lact2/bin/python3.12)\nframe #26: <unknown function> + 0x295d0 (0x14e16ac295d0 in /lib64/libc.so.6)\nframe #27: __libc_start_main + 0x80 (0x14e16ac29680 in /lib64/libc.so.6)\nframe #28: /scratch/sl12886/ttt/lact2/bin/python3.12() [0x5c5a09]\n\nW0317 23:39:27.510000 2356533 site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1293] The node 'gl045.hpc.nyu.edu_2356533_0' has failed to shutdown the rendezvous 'none' due to an error of type RendezvousConnectionError.\nTraceback (most recent call last):\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py\", line 114, in _call_store\n    return getattr(self._store, store_op)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.distributed.DistNetworkError: Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scratch/sl12886/ttt/lact2/bin/torchrun\", line 6, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/run.py\", line 991, in main\n    run(args)\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/run.py\", line 982, in run\n    elastic_launch(\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n    return launch_agent(self._config, self._entrypoint, list(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/launcher/api.py\", line 308, in launch_agent\n    result = agent.run()\n             ^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py\", line 134, in wrapper\n    result = f(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py\", line 731, in run\n    result = self._invoke_run(role)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py\", line 902, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py\", line 134, in wrapper\n    result = f(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py\", line 699, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py\", line 134, in wrapper\n    result = f(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py\", line 514, in _rendezvous\n    rdzv_info = spec.rdzv_handler.next_rendezvous()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py\", line 1171, in next_rendezvous\n    self._op_executor.run(join_op, deadline, self._get_deadline)\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py\", line 649, in run\n    has_set = self._state_holder.sync()\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py\", line 438, in sync\n    get_response = self._backend.get_state()\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py\", line 75, in get_state\n    base64_state: bytes = self._call_store(\"get\", self._key)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py\", line 116, in _call_store\n    raise RendezvousConnectionError(\ntorch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.\n+ echo 'EVAL DONE!'\nEVAL DONE!\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4469245",
+      "name": "a-lact2MMW",
+      "state": "RUNNING",
+      "partition": "l40s_courant",
+      "nodes": "gl045",
+      "gpus": "1",
+      "elapsed": "0:54",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:34:36",
+      "gpu_avg_util": 0.0,
+      "gpu_current": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 3.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "batch script for job 4469245 written to slurm/scripts/4469245.sh\nSeed: 42\nLearning rate: 4e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr4e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon_w32.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172338\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr4e-3-seed42\n+ RUN_NAME=-run0-lr4e-3-seed42\n+ RUN_ID=-run0-lr4e-3-seed42-202603172338\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-c32-lr4e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr4e-3-seed42-202603172338\n+ WANDB_RUN_ID=-run0-lr4e-3-seed42-202603172338\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl045.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr4e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr4e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon_w32.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n[rank0]:Traceback (most recent call last):\n[rank0]:  File \"<frozen runpy>\", line 198, in _run_module_as_main\n[rank0]:  File \"<frozen runpy>\", line 88, in _run_code\n[rank0]:  File \"/scratch/sl12886/ttt/flame/flame/eval.py\", line 418, in <module>\n[rank0]:    ckpt = max([name.split(\"-\")[-1] for name in os.listdir(ckpt_path)])\n[rank0]:                                                ^^^^^^^^^^^^^^^^^^^^^\n[rank0]:FileNotFoundError: [Errno 2] No such file or directory: 'exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr4e-3-seed42/checkpoint'\nE0317 23:39:27.292000 2356510 site-packages/torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 2356605) of binary: /scratch/sl12886/ttt/lact2/bin/python3.12\nTraceback (most recent call last):\n  File \"/scratch/sl12886/ttt/lact2/bin/torchrun\", line 6, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/run.py\", line 991, in main\n    run(args)\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/run.py\", line 982, in run\n    elastic_launch(\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n    return launch_agent(self._config, self._entrypoint, list(args))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/sl12886/ttt/lact2/lib/python3.12/site-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n    raise ChildFailedError(\ntorch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n============================================================\nflame.eval FAILED\n------------------------------------------------------------\nFailures:\n  <NO_OTHER_FAILURES>\n------------------------------------------------------------\nRoot Cause (first observed failure):\n[0]:\n  time      : 2026-03-17_23:39:27\n  host      : gl045.hpc.nyu.edu\n  rank      : 0 (local_rank: 0)\n  exitcode  : 1 (pid: 2356605)\n  error_file: <N/A>\n  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n============================================================\n+ echo 'EVAL DONE!'\nEVAL DONE!\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4469219",
+      "name": "a-lact2MM",
+      "state": "RUNNING",
+      "partition": "l40s_courant",
+      "nodes": "gl025",
+      "gpus": "1",
+      "elapsed": "3:39",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:33:46",
+      "gpu_avg_util": 89.0,
+      "gpu_current": [
+        {
+          "util": 89.0,
+          "mem_util": 18.0,
+          "mem_used": 31305.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "batch script for job 4469219 written to slurm/scripts/4469219.sh\nSeed: 42\nLearning rate: 3e-2\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-2-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172335\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-2-seed42\n+ RUN_NAME=-run0-lr3e-2-seed42\n+ RUN_ID=-run0-lr3e-2-seed42-202603172335\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-lr3e-2-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr3e-2-seed42-202603172335\n+ WANDB_RUN_ID=-run0-lr3e-2-seed42-202603172335\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl025.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-2-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-2-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n[rank0]:Converting the latest checkpoint 40960 to safetensor...\n[rank0]:Model safetensor saved to exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-2-seed42/model.safetensors\n[rank0]:Loading model from exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-2-seed42\n[rank0]:Loading tokenizer...\n[rank0]:LlamaTokenizerFast(name_or_path='fla-hub/transformer-1.3B-100B', vocab_size=32000, model_max_length=10000000000, is_fast=True, padding_side='left', truncation_side='right', special_tokens={'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>'}, clean_up_tokenization_spaces=False, added_tokens_decoder={\n[rank0]:\t0: AddedToken(\"<unk>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t1: AddedToken(\"<s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t2: AddedToken(\"</s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:}\n[rank0]:)\n[rank0]:Loading dataset arrow:default:train:/scratch/sl12886/data/long-data-collections-val:None\n[rank0]:Building dataloader...\n[rank0]:Evaluating the model...\n[rank0]:\n[rank0]:  0%|          | 0/512 [00:00<?, ?it/s][rank0]:\n[rank0]:  0%|          | 1/512 [00:06<56:37,  6.65s/it][rank0]:\n[rank0]:  0%|          | 2/512 [00:09<38:28,  4.53s/it][rank0]:\n[rank0]:  1%|          | 3/512 [00:13<35:02,  4.13s/it][rank0]:\n[rank0]:  1%|          | 4/512 [00:17<33:27,  3.95s/it][rank0]:\n[rank0]:  1%|          | 5/512 [00:20<32:31,  3.85s/it][rank0]:\n[rank0]:  1%|          | 6/512 [00:24<31:57,  3.79s/it][rank0]:\n[rank0]:  1%|\u258f         | 7/512 [00:28<31:33,  3.75s/it][rank0]:\n[rank0]:  2%|\u258f         | 8/512 [00:31<31:16,  3.72s/it][rank0]:\n[rank0]:  2%|\u258f         | 9/512 [00:35<31:03,  3.70s/it][rank0]:\n[rank0]:  2%|\u258f         | 10/512 [00:39<30:54,  3.69s/it][rank0]:\n[rank0]:  2%|\u258f         | 11/512 [00:42<30:46,  3.69s/it][rank0]:\n[rank0]:  2%|\u258f         | 12/512 [00:46<30:40,  3.68s/it][rank0]:\n[rank0]:  3%|\u258e         | 13/512 [00:50<30:32,  3.67s/it][rank0]:\n[rank0]:  3%|\u258e         | 14/512 [00:53<30:27,  3.67s/it][rank0]:\n[rank0]:  3%|\u258e         | 15/512 [00:57<30:22,  3.67s/it][rank0]:\n[rank0]:  3%|\u258e         | 16/512 [01:01<30:19,  3.67s/it][rank0]:\n[rank0]:  3%|\u258e         | 17/512 [01:04<30:16,  3.67s/it][rank0]:\n[rank0]:  4%|\u258e         | 18/512 [01:08<30:12,  3.67s/it][rank0]:\n[rank0]:  4%|\u258e         | 19/512 [01:12<30:06,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 20/512 [01:15<30:02,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 21/512 [01:19<29:58,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 22/512 [01:23<29:56,  3.67s/it][rank0]:\n[rank0]:  4%|\u258d         | 23/512 [01:26<29:52,  3.67s/it][rank0]:\n[rank0]:  5%|\u258d         | 24/512 [01:30<29:46,  3.66s/it][rank0]:\n[rank0]:  5%|\u258d         | 25/512 [01:33<29:43,  3.66s/it][rank0]:\n[rank0]:  5%|\u258c         | 26/512 [01:37<29:40,  3.66s/it][rank0]:\n[rank0]:  5%|\u258c         | 27/512 [01:41<29:34,  3.66s/it][rank0]:\n[rank0]:  5%|\u258c         | 28/512 [01:44<29:31,  3.66s/it][rank0]:\n[rank0]:  6%|\u258c         | 29/512 [01:48<29:29,  3.66s/it][rank0]:\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4469218",
+      "name": "a-lact2MM",
+      "state": "RUNNING",
+      "partition": "l40s_courant",
+      "nodes": "gl015",
+      "gpus": "1",
+      "elapsed": "4:02",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:33:46",
+      "gpu_avg_util": 49.0,
+      "gpu_current": [
+        {
+          "util": 49.0,
+          "mem_util": 0.0,
+          "mem_used": 33121.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "batch script for job 4469218 written to slurm/scripts/4469218.sh\nSeed: 42\nLearning rate: 1e-2\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-2-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172335\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-2-seed42\n+ RUN_NAME=-run0-lr1e-2-seed42\n+ RUN_ID=-run0-lr1e-2-seed42-202603172335\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-lr1e-2-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr1e-2-seed42-202603172335\n+ WANDB_RUN_ID=-run0-lr1e-2-seed42-202603172335\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl015.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-2-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-2-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n[rank0]:Converting the latest checkpoint 40960 to safetensor...\n[rank0]:Model safetensor saved to exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-2-seed42/model.safetensors\n[rank0]:Loading model from exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-2-seed42\n[rank0]:Loading tokenizer...\n[rank0]:LlamaTokenizerFast(name_or_path='fla-hub/transformer-1.3B-100B', vocab_size=32000, model_max_length=10000000000, is_fast=True, padding_side='left', truncation_side='right', special_tokens={'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>'}, clean_up_tokenization_spaces=False, added_tokens_decoder={\n[rank0]:\t0: AddedToken(\"<unk>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t1: AddedToken(\"<s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t2: AddedToken(\"</s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:}\n[rank0]:)\n[rank0]:Loading dataset arrow:default:train:/scratch/sl12886/data/long-data-collections-val:None\n[rank0]:Building dataloader...\n[rank0]:Evaluating the model...\n[rank0]:\n[rank0]:  0%|          | 0/512 [00:00<?, ?it/s][rank0]:\n[rank0]:  0%|          | 1/512 [00:05<44:14,  5.20s/it][rank0]:\n[rank0]:  0%|          | 2/512 [00:08<33:06,  3.89s/it][rank0]:\n[rank0]:  1%|          | 3/512 [00:11<31:51,  3.76s/it][rank0]:\n[rank0]:  1%|          | 4/512 [00:15<31:22,  3.71s/it][rank0]:\n[rank0]:  1%|          | 5/512 [00:18<30:57,  3.66s/it][rank0]:\n[rank0]:  1%|          | 6/512 [00:22<30:42,  3.64s/it][rank0]:\n[rank0]:  1%|\u258f         | 7/512 [00:26<30:32,  3.63s/it][rank0]:\n[rank0]:  2%|\u258f         | 8/512 [00:29<30:23,  3.62s/it][rank0]:\n[rank0]:  2%|\u258f         | 9/512 [00:33<30:17,  3.61s/it][rank0]:\n[rank0]:  2%|\u258f         | 10/512 [00:36<30:12,  3.61s/it][rank0]:\n[rank0]:  2%|\u258f         | 11/512 [00:40<30:04,  3.60s/it][rank0]:\n[rank0]:  2%|\u258f         | 12/512 [00:44<30:00,  3.60s/it][rank0]:\n[rank0]:  3%|\u258e         | 13/512 [00:47<29:55,  3.60s/it][rank0]:\n[rank0]:  3%|\u258e         | 14/512 [00:51<29:51,  3.60s/it][rank0]:\n[rank0]:  3%|\u258e         | 15/512 [00:54<29:47,  3.60s/it][rank0]:\n[rank0]:  3%|\u258e         | 16/512 [00:58<29:43,  3.60s/it][rank0]:\n[rank0]:  3%|\u258e         | 17/512 [01:02<29:39,  3.60s/it][rank0]:\n[rank0]:  4%|\u258e         | 18/512 [01:05<29:36,  3.60s/it][rank0]:\n[rank0]:  4%|\u258e         | 19/512 [01:09<29:33,  3.60s/it][rank0]:\n[rank0]:  4%|\u258d         | 20/512 [01:12<29:30,  3.60s/it][rank0]:\n[rank0]:  4%|\u258d         | 21/512 [01:16<29:27,  3.60s/it][rank0]:\n[rank0]:  4%|\u258d         | 22/512 [01:20<29:24,  3.60s/it][rank0]:\n[rank0]:  4%|\u258d         | 23/512 [01:23<29:19,  3.60s/it][rank0]:\n[rank0]:  5%|\u258d         | 24/512 [01:27<29:15,  3.60s/it][rank0]:\n[rank0]:  5%|\u258d         | 25/512 [01:30<29:11,  3.60s/it][rank0]:\n[rank0]:  5%|\u258c         | 26/512 [01:34<29:08,  3.60s/it][rank0]:\n[rank0]:  5%|\u258c         | 27/512 [01:38<29:05,  3.60s/it][rank0]:\n[rank0]:  5%|\u258c         | 28/512 [01:41<29:02,  3.60s/it][rank0]:\n[rank0]:  6%|\u258c         | 29/512 [01:45<29:00,  3.60s/it][rank0]:\n[rank0]:  6%|\u258c         | 30/512 [01:48<28:56,  3.60s/it][rank0]:\n[rank0]:  6%|\u258c         | 31/512 [01:52<28:53,  3.60s/it][rank0]:\n[rank0]:  6%|\u258b         | 32/512 [01:56<28:49,  3.60s/it][rank0]:\n[rank0]:  6%|\u258b         | 33/512 [01:59<28:45,  3.60s/it][rank0]:\n[rank0]:  7%|\u258b         | 34/512 [02:03<28:41,  3.60s/it][rank0]:\n[rank0]:  7%|\u258b         | 35/512 [02:06<28:36,  3.60s/it][rank0]:\n[rank0]:  7%|\u258b         | 36/512 [02:10<28:32,  3.60s/it][rank0]:\n[rank0]:  7%|\u258b         | 37/512 [02:14<28:28,  3.60s/it][rank0]:\n[rank0]:  7%|\u258b         | 38/512 [02:17<28:25,  3.60s/it][rank0]:\n[rank0]:  8%|\u258a         | 39/512 [02:21<28:21,  3.60s/it][rank0]:\n[rank0]:  8%|\u258a         | 40/512 [02:24<28:18,  3.60s/it][rank0]:\n[rank0]:  8%|\u258a         | 41/512 [02:28<28:14,  3.60s/it][rank0]:\n[rank0]:  8%|\u258a         | 42/512 [02:32<28:10,  3.60s/it][rank0]:\n[rank0]:  8%|\u258a         | 43/512 [02:35<28:07,  3.60s/it][rank0]:\n[rank0]:  9%|\u258a         | 44/512 [02:39<28:04,  3.60s/it][rank0]:\n[rank0]:  9%|\u2589         | 45/512 [02:42<28:00,  3.60s/it][rank0]:\n[rank0]:  9%|\u2589         | 46/512 [02:46<27:57,  3.60s/it][rank0]:\n[rank0]:  9%|\u2589         | 47/512 [02:50<27:54,  3.60s/it][rank0]:\n[rank0]:  9%|\u2589         | 48/512 [02:53<27:50,  3.60s/it][rank0]:\n[rank0]: 10%|\u2589         | 49/512 [02:57<27:46,  3.60s/it][rank0]:\n[rank0]: 10%|\u2589         | 50/512 [03:00<27:43,  3.60s/it][rank0]:\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4469216",
+      "name": "a-lact2MM",
+      "state": "RUNNING",
+      "partition": "l40s_courant",
+      "nodes": "gl044",
+      "gpus": "1",
+      "elapsed": "4:43",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:33:46",
+      "gpu_avg_util": 57.0,
+      "gpu_current": [
+        {
+          "util": 57.0,
+          "mem_util": 12.0,
+          "mem_used": 33143.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "batch script for job 4469216 written to slurm/scripts/4469216.sh\nSeed: 42\nLearning rate: 1e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172334\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-3-seed42\n+ RUN_NAME=-run0-lr1e-3-seed42\n+ RUN_ID=-run0-lr1e-3-seed42-202603172334\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-lr1e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr1e-3-seed42-202603172334\n+ WANDB_RUN_ID=-run0-lr1e-3-seed42-202603172334\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl044.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n[rank0]:Converting the latest checkpoint 40960 to safetensor...\n[rank0]:Model safetensor saved to exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-3-seed42/model.safetensors\n[rank0]:Loading model from exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr1e-3-seed42\n[rank0]:Loading tokenizer...\n[rank0]:LlamaTokenizerFast(name_or_path='fla-hub/transformer-1.3B-100B', vocab_size=32000, model_max_length=10000000000, is_fast=True, padding_side='left', truncation_side='right', special_tokens={'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>'}, clean_up_tokenization_spaces=False, added_tokens_decoder={\n[rank0]:\t0: AddedToken(\"<unk>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t1: AddedToken(\"<s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t2: AddedToken(\"</s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:}\n[rank0]:)\n[rank0]:Loading dataset arrow:default:train:/scratch/sl12886/data/long-data-collections-val:None\n[rank0]:Building dataloader...\n[rank0]:Evaluating the model...\n[rank0]:\n[rank0]:  0%|          | 0/512 [00:00<?, ?it/s][rank0]:\n[rank0]:  0%|          | 1/512 [00:06<54:39,  6.42s/it][rank0]:\n[rank0]:  0%|          | 2/512 [00:09<37:33,  4.42s/it][rank0]:\n[rank0]:  1%|          | 3/512 [00:13<34:25,  4.06s/it][rank0]:\n[rank0]:  1%|          | 4/512 [00:16<32:58,  3.89s/it][rank0]:\n[rank0]:  1%|          | 5/512 [00:20<32:06,  3.80s/it][rank0]:\n[rank0]:  1%|          | 6/512 [00:23<31:35,  3.75s/it][rank0]:\n[rank0]:  1%|\u258f         | 7/512 [00:27<31:12,  3.71s/it][rank0]:\n[rank0]:  2%|\u258f         | 8/512 [00:31<30:57,  3.69s/it][rank0]:\n[rank0]:  2%|\u258f         | 9/512 [00:34<30:45,  3.67s/it][rank0]:\n[rank0]:  2%|\u258f         | 10/512 [00:38<30:36,  3.66s/it][rank0]:\n[rank0]:  2%|\u258f         | 11/512 [00:42<30:28,  3.65s/it][rank0]:\n[rank0]:  2%|\u258f         | 12/512 [00:45<30:22,  3.65s/it][rank0]:\n[rank0]:  3%|\u258e         | 13/512 [00:49<30:17,  3.64s/it][rank0]:\n[rank0]:  3%|\u258e         | 14/512 [00:53<30:09,  3.63s/it][rank0]:\n[rank0]:  3%|\u258e         | 15/512 [00:56<30:08,  3.64s/it][rank0]:\n[rank0]:  3%|\u258e         | 16/512 [01:00<30:03,  3.64s/it][rank0]:\n[rank0]:  3%|\u258e         | 17/512 [01:03<29:59,  3.64s/it][rank0]:\n[rank0]:  4%|\u258e         | 18/512 [01:07<29:56,  3.64s/it][rank0]:\n[rank0]:  4%|\u258e         | 19/512 [01:11<29:52,  3.64s/it][rank0]:\n[rank0]:  4%|\u258d         | 20/512 [01:14<29:47,  3.63s/it][rank0]:\n[rank0]:  4%|\u258d         | 21/512 [01:18<29:53,  3.65s/it][rank0]:\n[rank0]:  4%|\u258d         | 22/512 [01:22<29:46,  3.65s/it][rank0]:\n[rank0]:  4%|\u258d         | 23/512 [01:25<29:41,  3.64s/it][rank0]:\n[rank0]:  5%|\u258d         | 24/512 [01:29<29:36,  3.64s/it][rank0]:\n[rank0]:  5%|\u258d         | 25/512 [01:33<29:32,  3.64s/it][rank0]:\n[rank0]:  5%|\u258c         | 26/512 [01:36<29:28,  3.64s/it][rank0]:\n[rank0]:  5%|\u258c         | 27/512 [01:40<29:23,  3.64s/it][rank0]:\n[rank0]:  5%|\u258c         | 28/512 [01:43<29:20,  3.64s/it][rank0]:\n[rank0]:  6%|\u258c         | 29/512 [01:47<29:17,  3.64s/it][rank0]:\n[rank0]:  6%|\u258c         | 30/512 [01:51<29:12,  3.64s/it][rank0]:\n[rank0]:  6%|\u258c         | 31/512 [01:54<29:08,  3.64s/it][rank0]:\n[rank0]:  6%|\u258b         | 32/512 [01:58<29:06,  3.64s/it][rank0]:\n[rank0]:  6%|\u258b         | 33/512 [02:02<29:02,  3.64s/it][rank0]:\n[rank0]:  7%|\u258b         | 34/512 [02:05<28:58,  3.64s/it][rank0]:\n[rank0]:  7%|\u258b         | 35/512 [02:09<28:55,  3.64s/it][rank0]:\n[rank0]:  7%|\u258b         | 36/512 [02:13<28:52,  3.64s/it][rank0]:\n[rank0]:  7%|\u258b         | 37/512 [02:16<28:48,  3.64s/it][rank0]:\n[rank0]:  7%|\u258b         | 38/512 [02:20<28:41,  3.63s/it][rank0]:\n[rank0]:  8%|\u258a         | 39/512 [02:23<28:38,  3.63s/it][rank0]:\n[rank0]:  8%|\u258a         | 40/512 [02:27<28:35,  3.64s/it][rank0]:\n[rank0]:  8%|\u258a         | 41/512 [02:31<28:31,  3.63s/it][rank0]:\n[rank0]:  8%|\u258a         | 42/512 [02:34<28:28,  3.64s/it][rank0]:\n[rank0]:  8%|\u258a         | 43/512 [02:38<28:24,  3.63s/it][rank0]:\n[rank0]:  9%|\u258a         | 44/512 [02:42<28:20,  3.63s/it][rank0]:\n[rank0]:  9%|\u2589         | 45/512 [02:45<28:15,  3.63s/it][rank0]:\n[rank0]:  9%|\u2589         | 46/512 [02:49<28:12,  3.63s/it][rank0]:\n[rank0]:  9%|\u2589         | 47/512 [02:53<28:09,  3.63s/it][rank0]:\n[rank0]:  9%|\u2589         | 48/512 [02:56<28:08,  3.64s/it][rank0]:\n[rank0]: 10%|\u2589         | 49/512 [03:00<28:04,  3.64s/it][rank0]:\n",
+      "wandb": null
+    },
+    {
       "job_id": "4469212",
       "name": "a-lact2M",
       "state": "RUNNING",
       "partition": "l40s_courant",
       "nodes": "gl036",
       "gpus": "1",
-      "elapsed": "0:02",
+      "elapsed": "5:29",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-17T23:33:40",
-      "gpu_avg_util": 0.0,
+      "gpu_avg_util": 26.5,
       "gpu_current": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 1.0,
+          "util": 53.0,
+          "mem_util": 1.0,
+          "mem_used": 33119.0,
           "mem_total": 46068.0
         }
       ],
-      "log_tail": "batch script for job 4469212 written to slurm/scripts/4469212.sh\nSeed: 42\nLearning rate: 3e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172333\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-3-seed42\n+ RUN_NAME=-run0-lr3e-3-seed42\n+ RUN_ID=-run0-lr3e-3-seed42-202603172333\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-lr3e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr3e-3-seed42-202603172333\n+ WANDB_RUN_ID=-run0-lr3e-3-seed42-202603172333\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl036.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n",
+      "log_tail": "[rank0]: 11%|\u2588\u258f        | 58/512 [01:35<12:20,  1.63s/it][rank0]:\n[rank0]: 12%|\u2588\u258f        | 59/512 [01:37<12:18,  1.63s/it][rank0]:\n[rank0]: 12%|\u2588\u258f        | 60/512 [01:38<12:16,  1.63s/it][rank0]:\n[rank0]: 12%|\u2588\u258f        | 61/512 [01:40<12:14,  1.63s/it][rank0]:\n[rank0]: 12%|\u2588\u258f        | 62/512 [01:42<12:12,  1.63s/it][rank0]:\n[rank0]: 12%|\u2588\u258f        | 63/512 [01:43<12:10,  1.63s/it][rank0]:\n[rank0]: 12%|\u2588\u258e        | 64/512 [01:45<12:08,  1.63s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 65/512 [01:47<12:07,  1.63s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 66/512 [01:48<12:07,  1.63s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 67/512 [01:50<12:05,  1.63s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 68/512 [01:52<12:03,  1.63s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 69/512 [01:53<12:00,  1.63s/it][rank0]:\n[rank0]: 14%|\u2588\u258e        | 70/512 [01:55<11:58,  1.63s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 71/512 [01:56<11:56,  1.63s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 72/512 [01:58<11:55,  1.63s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 73/512 [02:00<11:53,  1.62s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 74/512 [02:01<11:51,  1.62s/it][rank0]:\n[rank0]: 15%|\u2588\u258d        | 75/512 [02:03<11:49,  1.62s/it][rank0]:\n[rank0]: 15%|\u2588\u258d        | 76/512 [02:05<11:48,  1.62s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 77/512 [02:06<11:46,  1.62s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 78/512 [02:08<11:44,  1.62s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 79/512 [02:09<11:43,  1.62s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 80/512 [02:11<11:41,  1.62s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 81/512 [02:13<11:40,  1.63s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 82/512 [02:14<11:39,  1.63s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 83/512 [02:16<11:37,  1.63s/it][rank0]:\n[rank0]: 16%|\u2588\u258b        | 84/512 [02:18<11:36,  1.63s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 85/512 [02:19<11:34,  1.63s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 86/512 [02:21<11:32,  1.63s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 87/512 [02:22<11:31,  1.63s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 88/512 [02:24<11:30,  1.63s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 89/512 [02:26<11:28,  1.63s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 90/512 [02:27<11:27,  1.63s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 91/512 [02:29<11:25,  1.63s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 92/512 [02:31<11:23,  1.63s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 93/512 [02:32<11:21,  1.63s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 94/512 [02:34<11:19,  1.63s/it][rank0]:\n[rank0]: 19%|\u2588\u258a        | 95/512 [02:35<11:17,  1.63s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 96/512 [02:37<11:25,  1.65s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 97/512 [02:39<11:26,  1.65s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 98/512 [02:40<11:21,  1.65s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 99/512 [02:42<11:17,  1.64s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 100/512 [02:44<11:14,  1.64s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 101/512 [02:45<11:11,  1.63s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 102/512 [02:47<11:09,  1.63s/it][rank0]:\n[rank0]: 20%|\u2588\u2588        | 103/512 [02:49<11:07,  1.63s/it][rank0]:\n[rank0]: 20%|\u2588\u2588        | 104/512 [02:50<11:05,  1.63s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 105/512 [02:52<11:03,  1.63s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 106/512 [02:53<11:01,  1.63s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 107/512 [02:55<10:59,  1.63s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 108/512 [02:57<10:57,  1.63s/it][rank0]:\n[rank0]: 21%|\u2588\u2588\u258f       | 109/512 [02:58<10:56,  1.63s/it][rank0]:\n[rank0]: 21%|\u2588\u2588\u258f       | 110/512 [03:00<10:54,  1.63s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 111/512 [03:02<10:53,  1.63s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 112/512 [03:03<10:51,  1.63s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 113/512 [03:05<10:49,  1.63s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 114/512 [03:06<10:49,  1.63s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 115/512 [03:08<10:56,  1.65s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 116/512 [03:10<10:51,  1.65s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 117/512 [03:11<10:48,  1.64s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 118/512 [03:13<10:46,  1.64s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 119/512 [03:15<10:43,  1.64s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 120/512 [03:16<10:40,  1.64s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258e       | 121/512 [03:18<10:38,  1.63s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 122/512 [03:20<10:35,  1.63s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 123/512 [03:21<10:33,  1.63s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 124/512 [03:23<10:31,  1.63s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 125/512 [03:24<10:30,  1.63s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258d       | 126/512 [03:26<10:28,  1.63s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258d       | 127/512 [03:28<10:26,  1.63s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 128/512 [03:29<10:24,  1.63s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 129/512 [03:31<10:22,  1.63s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 130/512 [03:33<10:21,  1.63s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 131/512 [03:34<10:19,  1.63s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 132/512 [03:36<10:17,  1.63s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 133/512 [03:37<10:16,  1.63s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 134/512 [03:39<10:14,  1.63s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258b       | 135/512 [03:41<10:12,  1.63s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 136/512 [03:42<10:11,  1.63s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 137/512 [03:44<10:09,  1.63s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 138/512 [03:46<10:08,  1.63s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 139/512 [03:47<10:07,  1.63s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 140/512 [03:49<10:05,  1.63s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 141/512 [03:50<10:03,  1.63s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 142/512 [03:52<10:01,  1.63s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 143/512 [03:54<10:00,  1.63s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 144/512 [03:55<09:58,  1.63s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 145/512 [03:57<10:02,  1.64s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u258a       | 146/512 [03:59<09:59,  1.64s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u258a       | 147/512 [04:00<09:56,  1.63s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 148/512 [04:02<09:54,  1.63s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 149/512 [04:04<09:52,  1.63s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 150/512 [04:05<09:50,  1.63s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 151/512 [04:07<09:48,  1.63s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2589       | 152/512 [04:08<09:46,  1.63s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2589       | 153/512 [04:10<09:45,  1.63s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 154/512 [04:12<09:43,  1.63s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 155/512 [04:13<09:41,  1.63s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 156/512 [04:15<09:39,  1.63s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 157/512 [04:17<09:38,  1.63s/it][rank0]:\n",
       "wandb": null
     },
     {
@@ -212,15 +501,15 @@
       "partition": "l40s_courant",
       "nodes": "gl041",
       "gpus": "1",
-      "elapsed": "0:02",
+      "elapsed": "5:29",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-17T23:33:40",
-      "gpu_avg_util": 0.0,
+      "gpu_avg_util": 50.0,
       "gpu_current": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 1.0,
+          "util": 100.0,
+          "mem_util": 9.0,
+          "mem_used": 23003.0,
           "mem_total": 46068.0
         }
       ],
@@ -234,41 +523,41 @@
       "partition": "l40s_courant",
       "nodes": "gl041",
       "gpus": "1",
-      "elapsed": "0:02",
+      "elapsed": "5:29",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-17T23:33:40",
-      "gpu_avg_util": 0.0,
+      "gpu_avg_util": 33.0,
       "gpu_current": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 1.0,
+          "util": 66.0,
+          "mem_util": 26.0,
+          "mem_used": 33123.0,
           "mem_total": 46068.0
         }
       ],
-      "log_tail": "batch script for job 4469214 written to slurm/scripts/4469214.sh\nSeed: 42\nLearning rate: 3e-2\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-2-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172333\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-2-seed42\n+ RUN_NAME=-run0-lr3e-2-seed42\n+ RUN_ID=-run0-lr3e-2-seed42-202603172333\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-lr3e-2-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr3e-2-seed42-202603172333\n+ WANDB_RUN_ID=-run0-lr3e-2-seed42-202603172333\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl041.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-2-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr3e-2-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n",
+      "log_tail": "[rank0]: 13%|\u2588\u258e        | 65/512 [01:44<11:55,  1.60s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 66/512 [01:46<11:53,  1.60s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 67/512 [01:47<11:51,  1.60s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 68/512 [01:49<11:50,  1.60s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 69/512 [01:50<11:48,  1.60s/it][rank0]:\n[rank0]: 14%|\u2588\u258e        | 70/512 [01:52<11:46,  1.60s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 71/512 [01:54<11:45,  1.60s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 72/512 [01:55<11:43,  1.60s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 73/512 [01:57<11:42,  1.60s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 74/512 [01:58<11:40,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258d        | 75/512 [02:00<11:39,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258d        | 76/512 [02:02<11:37,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 77/512 [02:03<11:36,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 78/512 [02:05<11:34,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 79/512 [02:06<11:32,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 80/512 [02:08<11:31,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 81/512 [02:10<11:29,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 82/512 [02:11<11:28,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 83/512 [02:13<11:26,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258b        | 84/512 [02:14<11:25,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 85/512 [02:16<11:23,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 86/512 [02:18<11:22,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 87/512 [02:19<11:20,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 88/512 [02:21<11:19,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 89/512 [02:22<11:18,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 90/512 [02:24<11:16,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 91/512 [02:26<11:15,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 92/512 [02:27<11:12,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 93/512 [02:29<11:10,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 94/512 [02:30<11:09,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u258a        | 95/512 [02:32<11:07,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 96/512 [02:34<11:06,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 97/512 [02:35<11:04,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 98/512 [02:37<11:02,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 99/512 [02:38<11:01,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 100/512 [02:40<10:59,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 101/512 [02:42<10:57,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 102/512 [02:43<10:56,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2588        | 103/512 [02:45<10:54,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2588        | 104/512 [02:46<10:53,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 105/512 [02:48<10:51,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 106/512 [02:50<10:50,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 107/512 [02:51<10:48,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 108/512 [02:53<10:46,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588\u258f       | 109/512 [02:54<10:44,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588\u258f       | 110/512 [02:56<10:43,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 111/512 [02:58<10:42,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 112/512 [02:59<10:40,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 113/512 [03:01<10:38,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 114/512 [03:02<10:37,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 115/512 [03:04<10:35,  1.60s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 116/512 [03:06<10:34,  1.60s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 117/512 [03:07<10:33,  1.60s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 118/512 [03:09<10:31,  1.60s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 119/512 [03:10<10:29,  1.60s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 120/512 [03:12<10:27,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258e       | 121/512 [03:14<10:27,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 122/512 [03:15<10:25,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 123/512 [03:17<10:23,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 124/512 [03:18<10:21,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 125/512 [03:20<10:19,  1.60s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258d       | 126/512 [03:22<10:18,  1.60s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258d       | 127/512 [03:23<10:16,  1.60s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 128/512 [03:25<10:14,  1.60s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 129/512 [03:26<10:12,  1.60s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 130/512 [03:28<10:11,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 131/512 [03:30<10:09,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 132/512 [03:31<10:08,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 133/512 [03:33<10:10,  1.61s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 134/512 [03:35<10:07,  1.61s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258b       | 135/512 [03:36<10:05,  1.61s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 136/512 [03:38<10:03,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 137/512 [03:39<10:01,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 138/512 [03:41<09:59,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 139/512 [03:43<09:57,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 140/512 [03:44<09:55,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 141/512 [03:46<09:53,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 142/512 [03:47<09:52,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 143/512 [03:49<09:50,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 144/512 [03:51<09:48,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 145/512 [03:52<09:47,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u258a       | 146/512 [03:54<09:46,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u258a       | 147/512 [03:55<09:44,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 148/512 [03:57<09:43,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 149/512 [03:59<09:41,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 150/512 [04:00<09:39,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 151/512 [04:02<09:38,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2589       | 152/512 [04:03<09:36,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2589       | 153/512 [04:05<09:34,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 154/512 [04:07<09:33,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 155/512 [04:08<09:31,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 156/512 [04:10<09:29,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 157/512 [04:11<09:27,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 158/512 [04:13<09:26,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 159/512 [04:15<09:24,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588\u258f      | 160/512 [04:16<09:23,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588\u258f      | 161/512 [04:18<09:22,  1.60s/it][rank0]:\n[rank0]: 32%|\u2588\u2588\u2588\u258f      | 162/512 [04:19<09:20,  1.60s/it][rank0]:\n[rank0]: 32%|\u2588\u2588\u2588\u258f      | 163/512 [04:21<09:19,  1.60s/it][rank0]:\n[rank0]: 32%|\u2588\u2588\u2588\u258f      | 164/512 [04:23<09:17,  1.60s/it][rank0]:\n",
       "wandb": null
     },
     {
-      "job_id": "4469210",
-      "name": "a-lact2M",
+      "job_id": "4469217",
+      "name": "a-lact2MM",
       "state": "RUNNING",
       "partition": "l40s_mren",
       "nodes": "gl010",
       "gpus": "1",
-      "elapsed": "0:02",
+      "elapsed": "4:12",
       "time_limit": "1:00:00",
-      "submit_time": "2026-03-17T23:33:40",
-      "gpu_avg_util": 0.0,
+      "submit_time": "2026-03-17T23:33:46",
+      "gpu_avg_util": 49.0,
       "gpu_current": [
         {
-          "util": 0.0,
+          "util": 49.0,
           "mem_util": 0.0,
-          "mem_used": 1.0,
+          "mem_used": 32565.0,
           "mem_total": 46068.0
         }
       ],
-      "log_tail": "batch script for job 4469210 written to slurm/scripts/4469210.sh\nSeed: 42\nLearning rate: 4e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr4e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172333\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr4e-3-seed42\n+ RUN_NAME=-run0-lr4e-3-seed42\n+ RUN_ID=-run0-lr4e-3-seed42-202603172333\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-lr4e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr4e-3-seed42-202603172333\n+ WANDB_RUN_ID=-run0-lr4e-3-seed42-202603172333\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl010.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr4e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr4e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n",
+      "log_tail": "batch script for job 4469217 written to slurm/scripts/4469217.sh\nSeed: 42\nLearning rate: 3e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172335\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-3-seed42\n+ RUN_NAME=-run0-lr3e-3-seed42\n+ RUN_ID=-run0-lr3e-3-seed42-202603172335\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-lr3e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr3e-3-seed42-202603172335\n+ WANDB_RUN_ID=-run0-lr3e-3-seed42-202603172335\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl010.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n[rank0]:Converting the latest checkpoint 40960 to safetensor...\n[rank0]:Model safetensor saved to exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-3-seed42/model.safetensors\n[rank0]:Loading model from exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon/run0-lr3e-3-seed42\n[rank0]:Loading tokenizer...\n[rank0]:LlamaTokenizerFast(name_or_path='fla-hub/transformer-1.3B-100B', vocab_size=32000, model_max_length=10000000000, is_fast=True, padding_side='left', truncation_side='right', special_tokens={'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>'}, clean_up_tokenization_spaces=False, added_tokens_decoder={\n[rank0]:\t0: AddedToken(\"<unk>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t1: AddedToken(\"<s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:\t2: AddedToken(\"</s>\", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n[rank0]:}\n[rank0]:)\n[rank0]:Loading dataset arrow:default:train:/scratch/sl12886/data/long-data-collections-val:None\n[rank0]:Building dataloader...\n[rank0]:Evaluating the model...\n[rank0]:\n[rank0]:  0%|          | 0/512 [00:00<?, ?it/s][rank0]:\n[rank0]:  0%|          | 1/512 [00:06<56:40,  6.65s/it][rank0]:\n[rank0]:  0%|          | 2/512 [00:09<38:28,  4.53s/it][rank0]:\n[rank0]:  1%|          | 3/512 [00:13<35:08,  4.14s/it][rank0]:\n[rank0]:  1%|          | 4/512 [00:17<33:29,  3.96s/it][rank0]:\n[rank0]:  1%|          | 5/512 [00:20<32:35,  3.86s/it][rank0]:\n[rank0]:  1%|          | 6/512 [00:24<32:04,  3.80s/it][rank0]:\n[rank0]:  1%|\u258f         | 7/512 [00:28<31:37,  3.76s/it][rank0]:\n[rank0]:  2%|\u258f         | 8/512 [00:31<31:22,  3.74s/it][rank0]:\n[rank0]:  2%|\u258f         | 9/512 [00:35<31:06,  3.71s/it][rank0]:\n[rank0]:  2%|\u258f         | 10/512 [00:39<30:56,  3.70s/it][rank0]:\n[rank0]:  2%|\u258f         | 11/512 [00:42<30:43,  3.68s/it][rank0]:\n[rank0]:  2%|\u258f         | 12/512 [00:46<30:37,  3.68s/it][rank0]:\n[rank0]:  3%|\u258e         | 13/512 [00:50<30:30,  3.67s/it][rank0]:\n[rank0]:  3%|\u258e         | 14/512 [00:53<30:24,  3.66s/it][rank0]:\n[rank0]:  3%|\u258e         | 15/512 [00:57<30:20,  3.66s/it][rank0]:\n[rank0]:  3%|\u258e         | 16/512 [01:01<30:16,  3.66s/it][rank0]:\n[rank0]:  3%|\u258e         | 17/512 [01:04<30:12,  3.66s/it][rank0]:\n[rank0]:  4%|\u258e         | 18/512 [01:08<30:08,  3.66s/it][rank0]:\n[rank0]:  4%|\u258e         | 19/512 [01:12<30:04,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 20/512 [01:15<30:01,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 21/512 [01:19<29:58,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 22/512 [01:23<29:54,  3.66s/it][rank0]:\n[rank0]:  4%|\u258d         | 23/512 [01:26<29:50,  3.66s/it][rank0]:\n[rank0]:  5%|\u258d         | 24/512 [01:30<29:47,  3.66s/it][rank0]:\n[rank0]:  5%|\u258d         | 25/512 [01:33<29:43,  3.66s/it][rank0]:\n[rank0]:  5%|\u258c         | 26/512 [01:37<29:39,  3.66s/it][rank0]:\n[rank0]:  5%|\u258c         | 27/512 [01:41<29:37,  3.66s/it][rank0]:\n[rank0]:  5%|\u258c         | 28/512 [01:44<29:34,  3.67s/it][rank0]:\n[rank0]:  6%|\u258c         | 29/512 [01:48<29:30,  3.67s/it][rank0]:\n[rank0]:  6%|\u258c         | 30/512 [01:52<29:27,  3.67s/it][rank0]:\n[rank0]:  6%|\u258c         | 31/512 [01:55<29:23,  3.67s/it][rank0]:\n[rank0]:  6%|\u258b         | 32/512 [01:59<29:20,  3.67s/it][rank0]:\n[rank0]:  6%|\u258b         | 33/512 [02:03<29:15,  3.67s/it][rank0]:\n[rank0]:  7%|\u258b         | 34/512 [02:06<29:12,  3.67s/it][rank0]:\n[rank0]:  7%|\u258b         | 35/512 [02:10<29:08,  3.67s/it][rank0]:\n[rank0]:  7%|\u258b         | 36/512 [02:14<29:04,  3.67s/it][rank0]:\n[rank0]:  7%|\u258b         | 37/512 [02:17<29:00,  3.66s/it][rank0]:\n[rank0]:  7%|\u258b         | 38/512 [02:21<28:56,  3.66s/it][rank0]:\n[rank0]:  8%|\u258a         | 39/512 [02:25<28:52,  3.66s/it][rank0]:\n[rank0]:  8%|\u258a         | 40/512 [02:28<28:51,  3.67s/it][rank0]:\n[rank0]:  8%|\u258a         | 41/512 [02:32<28:45,  3.66s/it][rank0]:\n[rank0]:  8%|\u258a         | 42/512 [02:36<28:41,  3.66s/it][rank0]:\n[rank0]:  8%|\u258a         | 43/512 [02:39<28:36,  3.66s/it][rank0]:\n[rank0]:  9%|\u258a         | 44/512 [02:43<28:29,  3.65s/it][rank0]:\n[rank0]:  9%|\u2589         | 45/512 [02:47<28:25,  3.65s/it][rank0]:\n[rank0]:  9%|\u2589         | 46/512 [02:50<28:23,  3.66s/it][rank0]:\n[rank0]:  9%|\u2589         | 47/512 [02:54<28:18,  3.65s/it][rank0]:\n[rank0]:  9%|\u2589         | 48/512 [02:58<28:15,  3.65s/it][rank0]:\n[rank0]: 10%|\u2589         | 49/512 [03:01<28:10,  3.65s/it][rank0]:\n[rank0]: 10%|\u2589         | 50/512 [03:05<28:07,  3.65s/it][rank0]:\n[rank0]: 10%|\u2589         | 51/512 [03:09<28:01,  3.65s/it][rank0]:\n",
       "wandb": null
     },
     {
@@ -278,19 +567,109 @@
       "partition": "l40s_mren",
       "nodes": "gl016",
       "gpus": "1",
-      "elapsed": "0:02",
+      "elapsed": "5:29",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-17T23:33:40",
-      "gpu_avg_util": 0.0,
+      "gpu_avg_util": 45.0,
       "gpu_current": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 0.0,
+          "util": 90.0,
+          "mem_util": 8.0,
+          "mem_used": 33107.0,
           "mem_total": 46068.0
         }
       ],
-      "log_tail": "batch script for job 4469211 written to slurm/scripts/4469211.sh\nSeed: 42\nLearning rate: 1e-3\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr1e-3-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172333\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr1e-3-seed42\n+ RUN_NAME=-run0-lr1e-3-seed42\n+ RUN_ID=-run0-lr1e-3-seed42-202603172333\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-lr1e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr1e-3-seed42-202603172333\n+ WANDB_RUN_ID=-run0-lr1e-3-seed42-202603172333\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl016.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr1e-3-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum/run0-lr1e-3-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n",
+      "log_tail": "[rank0]: 12%|\u2588\u258e        | 64/512 [01:42<11:57,  1.60s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 65/512 [01:44<11:57,  1.61s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 66/512 [01:45<11:56,  1.61s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 67/512 [01:47<11:54,  1.61s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 68/512 [01:49<12:01,  1.62s/it][rank0]:\n[rank0]: 13%|\u2588\u258e        | 69/512 [01:50<11:56,  1.62s/it][rank0]:\n[rank0]: 14%|\u2588\u258e        | 70/512 [01:52<11:52,  1.61s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 71/512 [01:54<11:49,  1.61s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 72/512 [01:55<11:53,  1.62s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 73/512 [01:57<11:49,  1.62s/it][rank0]:\n[rank0]: 14%|\u2588\u258d        | 74/512 [01:58<11:45,  1.61s/it][rank0]:\n[rank0]: 15%|\u2588\u258d        | 75/512 [02:00<11:42,  1.61s/it][rank0]:\n[rank0]: 15%|\u2588\u258d        | 76/512 [02:02<11:40,  1.61s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 77/512 [02:03<11:37,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 78/512 [02:05<11:35,  1.60s/it][rank0]:\n[rank0]: 15%|\u2588\u258c        | 79/512 [02:06<11:33,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 80/512 [02:08<11:31,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 81/512 [02:10<11:29,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 82/512 [02:11<11:28,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258c        | 83/512 [02:13<11:26,  1.60s/it][rank0]:\n[rank0]: 16%|\u2588\u258b        | 84/512 [02:14<11:25,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 85/512 [02:16<11:23,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 86/512 [02:18<11:21,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 87/512 [02:19<11:20,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 88/512 [02:21<11:19,  1.60s/it][rank0]:\n[rank0]: 17%|\u2588\u258b        | 89/512 [02:22<11:17,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 90/512 [02:24<11:16,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 91/512 [02:26<11:14,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 92/512 [02:27<11:12,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 93/512 [02:29<11:10,  1.60s/it][rank0]:\n[rank0]: 18%|\u2588\u258a        | 94/512 [02:30<11:09,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u258a        | 95/512 [02:32<11:07,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 96/512 [02:34<11:05,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 97/512 [02:35<11:03,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 98/512 [02:37<11:01,  1.60s/it][rank0]:\n[rank0]: 19%|\u2588\u2589        | 99/512 [02:38<11:00,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 100/512 [02:40<10:58,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 101/512 [02:42<10:57,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2589        | 102/512 [02:43<10:56,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2588        | 103/512 [02:45<10:54,  1.60s/it][rank0]:\n[rank0]: 20%|\u2588\u2588        | 104/512 [02:46<10:52,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 105/512 [02:48<10:51,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 106/512 [02:50<10:49,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 107/512 [02:51<10:48,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588        | 108/512 [02:53<10:46,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588\u258f       | 109/512 [02:54<10:44,  1.60s/it][rank0]:\n[rank0]: 21%|\u2588\u2588\u258f       | 110/512 [02:56<10:42,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 111/512 [02:58<10:42,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 112/512 [02:59<10:40,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 113/512 [03:01<10:38,  1.60s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 114/512 [03:02<10:43,  1.62s/it][rank0]:\n[rank0]: 22%|\u2588\u2588\u258f       | 115/512 [03:04<10:40,  1.61s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 116/512 [03:06<10:37,  1.61s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 117/512 [03:07<10:35,  1.61s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 118/512 [03:09<10:33,  1.61s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 119/512 [03:10<10:30,  1.61s/it][rank0]:\n[rank0]: 23%|\u2588\u2588\u258e       | 120/512 [03:12<10:28,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258e       | 121/512 [03:14<10:28,  1.61s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 122/512 [03:15<10:25,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 123/512 [03:17<10:23,  1.60s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 124/512 [03:19<10:34,  1.63s/it][rank0]:\n[rank0]: 24%|\u2588\u2588\u258d       | 125/512 [03:20<10:28,  1.62s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258d       | 126/512 [03:22<10:24,  1.62s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258d       | 127/512 [03:23<10:20,  1.61s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 128/512 [03:25<10:18,  1.61s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 129/512 [03:27<10:15,  1.61s/it][rank0]:\n[rank0]: 25%|\u2588\u2588\u258c       | 130/512 [03:28<10:13,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 131/512 [03:30<10:10,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 132/512 [03:31<10:09,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 133/512 [03:33<10:08,  1.60s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258c       | 134/512 [03:35<10:07,  1.61s/it][rank0]:\n[rank0]: 26%|\u2588\u2588\u258b       | 135/512 [03:36<10:04,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 136/512 [03:38<10:02,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 137/512 [03:39<10:00,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 138/512 [03:41<09:58,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 139/512 [03:43<09:56,  1.60s/it][rank0]:\n[rank0]: 27%|\u2588\u2588\u258b       | 140/512 [03:44<09:55,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 141/512 [03:46<09:53,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 142/512 [03:47<09:51,  1.60s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 143/512 [03:49<09:58,  1.62s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 144/512 [03:51<09:54,  1.62s/it][rank0]:\n[rank0]: 28%|\u2588\u2588\u258a       | 145/512 [03:52<09:51,  1.61s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u258a       | 146/512 [03:54<09:48,  1.61s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u258a       | 147/512 [03:55<09:46,  1.61s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 148/512 [03:57<09:44,  1.61s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 149/512 [03:59<09:42,  1.61s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 150/512 [04:00<09:40,  1.60s/it][rank0]:\n[rank0]: 29%|\u2588\u2588\u2589       | 151/512 [04:02<09:38,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2589       | 152/512 [04:03<09:36,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2589       | 153/512 [04:05<09:34,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 154/512 [04:07<09:35,  1.61s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 155/512 [04:08<09:32,  1.60s/it][rank0]:\n[rank0]: 30%|\u2588\u2588\u2588       | 156/512 [04:10<09:30,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 157/512 [04:12<09:28,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 158/512 [04:13<09:26,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588       | 159/512 [04:15<09:24,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588\u258f      | 160/512 [04:16<09:23,  1.60s/it][rank0]:\n[rank0]: 31%|\u2588\u2588\u2588\u258f      | 161/512 [04:18<09:21,  1.60s/it][rank0]:\n[rank0]: 32%|\u2588\u2588\u2588\u258f      | 162/512 [04:20<09:20,  1.60s/it][rank0]:\n[rank0]: 32%|\u2588\u2588\u2588\u258f      | 163/512 [04:21<09:19,  1.60s/it][rank0]:\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4469267",
+      "name": "a-lact2MMW",
+      "state": "PENDING",
+      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
+      "nodes": "-",
+      "gpus": "1",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:35:31",
+      "gpu_avg_util": null,
+      "gpu_current": null,
+      "log_tail": null,
+      "wandb": null
+    },
+    {
+      "job_id": "4469262",
+      "name": "a-lact2MM",
+      "state": "PENDING",
+      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
+      "nodes": "-",
+      "gpus": "1",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:35:26",
+      "gpu_avg_util": null,
+      "gpu_current": null,
+      "log_tail": null,
+      "wandb": null
+    },
+    {
+      "job_id": "4469261",
+      "name": "a-lact2M",
+      "state": "PENDING",
+      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
+      "nodes": "-",
+      "gpus": "1",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:35:20",
+      "gpu_avg_util": null,
+      "gpu_current": null,
+      "log_tail": null,
+      "wandb": null
+    },
+    {
+      "job_id": "4469249",
+      "name": "a-lact2MMW",
+      "state": "PENDING",
+      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
+      "nodes": "-",
+      "gpus": "1",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:34:36",
+      "gpu_avg_util": null,
+      "gpu_current": null,
+      "log_tail": null,
+      "wandb": null
+    },
+    {
+      "job_id": "4469248",
+      "name": "a-lact2MMW",
+      "state": "PENDING",
+      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
+      "nodes": "-",
+      "gpus": "1",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:34:36",
+      "gpu_avg_util": null,
+      "gpu_current": null,
+      "log_tail": null,
+      "wandb": null
+    },
+    {
+      "job_id": "4469247",
+      "name": "a-lact2MMW",
+      "state": "PENDING",
+      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
+      "nodes": "-",
+      "gpus": "1",
+      "elapsed": "0:00",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:34:36",
+      "gpu_avg_util": null,
+      "gpu_current": null,
+      "log_tail": null,
       "wandb": null
     },
     {
@@ -300,7 +679,7 @@
       "partition": "l40s_public",
       "nodes": "gl017",
       "gpus": "1",
-      "elapsed": "20:37",
+      "elapsed": "26:04",
       "time_limit": "1:00:00",
       "submit_time": "2026-03-17T23:12:39",
       "gpu_avg_util": 0.0,
@@ -312,40 +691,31 @@
           "mem_total": 46068.0
         }
       ],
-      "log_tail": "[rank0]:[titan] 2026-03-17 23:30:22,118 - root - INFO - \u001b[34mlr: 1.5264e-04 gnorm:  0.95 \u001b[35m[ 4:33:43< 0:48:54]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:26,817 - root - INFO - \u001b[31mstep: 34760  \u001b[32mloss:  3.6125  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,493  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:26,817 - root - INFO - \u001b[34mlr: 1.5247e-04 gnorm:  1.03 \u001b[35m[ 4:33:47< 0:48:50]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:31,521 - root - INFO - \u001b[31mstep: 34770  \u001b[32mloss:  3.4508  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,347  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:31,521 - root - INFO - \u001b[34mlr: 1.5230e-04 gnorm:  1.14 \u001b[35m[ 4:33:52< 0:48:45]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:36,225 - root - INFO - \u001b[31mstep: 34780  \u001b[32mloss:  3.9064  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,364  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:36,225 - root - INFO - \u001b[34mlr: 1.5214e-04 gnorm:  0.97 \u001b[35m[ 4:33:57< 0:48:40]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:40,927 - root - INFO - \u001b[31mstep: 34790  \u001b[32mloss:  3.6984  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,406  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:40,927 - root - INFO - \u001b[34mlr: 1.5197e-04 gnorm:  0.90 \u001b[35m[ 4:34:02< 0:48:35]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:45,160 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:30:45,633 - root - INFO - \u001b[31mstep: 34800  \u001b[32mloss:  3.6166  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,291  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:45,633 - root - INFO - \u001b[34mlr: 1.5181e-04 gnorm:  0.86 \u001b[35m[ 4:34:06< 0:48:31]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:50,338 - root - INFO - \u001b[31mstep: 34810  \u001b[32mloss:  3.7271  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,324  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:50,338 - root - INFO - \u001b[34mlr: 1.5164e-04 gnorm:  1.02 \u001b[35m[ 4:34:11< 0:48:26]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:55,042 - root - INFO - \u001b[31mstep: 34820  \u001b[32mloss:  4.1614  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,341  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:55,042 - root - INFO - \u001b[34mlr: 1.5148e-04 gnorm:  0.91 \u001b[35m[ 4:34:16< 0:48:21]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:59,747 - root - INFO - \u001b[31mstep: 34830  \u001b[32mloss:  3.7791  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,330  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:30:59,747 - root - INFO - \u001b[34mlr: 1.5131e-04 gnorm:  0.87 \u001b[35m[ 4:34:20< 0:48:17]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:04,449 - root - INFO - \u001b[31mstep: 34840  \u001b[32mloss:  4.1185  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,398  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:04,450 - root - INFO - \u001b[34mlr: 1.5115e-04 gnorm:  0.88 \u001b[35m[ 4:34:25< 0:48:12]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:08,682 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:31:09,155 - root - INFO - \u001b[31mstep: 34850  \u001b[32mloss:  4.1484  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,301  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:09,155 - root - INFO - \u001b[34mlr: 1.5099e-04 gnorm:  1.14 \u001b[35m[ 4:34:30< 0:48:07]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:13,856 - root - INFO - \u001b[31mstep: 34860  \u001b[32mloss:  3.3368  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,440  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:13,856 - root - INFO - \u001b[34mlr: 1.5082e-04 gnorm:  1.75 \u001b[35m[ 4:34:34< 0:48:02]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:18,560 - root - INFO - \u001b[31mstep: 34870  \u001b[32mloss:  3.7719  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,355  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:18,560 - root - INFO - \u001b[34mlr: 1.5066e-04 gnorm:  0.98 \u001b[35m[ 4:34:39< 0:47:58]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:23,263 - root - INFO - \u001b[31mstep: 34880  \u001b[32mloss:  4.1362  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,380  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:23,263 - root - INFO - \u001b[34mlr: 1.5050e-04 gnorm:  0.82 \u001b[35m[ 4:34:44< 0:47:53]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:27,968 - root - INFO - \u001b[31mstep: 34890  \u001b[32mloss:  4.4626  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,308  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:27,969 - root - INFO - \u001b[34mlr: 1.5033e-04 gnorm:  1.00 \u001b[35m[ 4:34:49< 0:47:48]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:32,200 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:31:32,674 - root - INFO - \u001b[31mstep: 34900  \u001b[32mloss:  3.8759  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,298  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:32,675 - root - INFO - \u001b[34mlr: 1.5017e-04 gnorm:  0.84 \u001b[35m[ 4:34:53< 0:47:43]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:37,382 - root - INFO - \u001b[31mstep: 34910  \u001b[32mloss:  4.0947  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,235  \u001b[36mtflops: 17.17  \u001b[35mmfu: 5.50%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:37,383 - root - INFO - \u001b[34mlr: 1.5001e-04 gnorm:  0.90 \u001b[35m[ 4:34:58< 0:47:39]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:42,090 - root - INFO - \u001b[31mstep: 34920  \u001b[32mloss:  3.8206  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,244  \u001b[36mtflops: 17.17  \u001b[35mmfu: 5.50%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:42,090 - root - INFO - \u001b[34mlr: 1.4985e-04 gnorm:  0.87 \u001b[35m[ 4:35:03< 0:47:34]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:46,795 - root - INFO - \u001b[31mstep: 34930  \u001b[32mloss:  3.5478  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,306  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:46,796 - root - INFO - \u001b[34mlr: 1.4969e-04 gnorm:  1.08 \u001b[35m[ 4:35:07< 0:47:29]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:51,504 - root - INFO - \u001b[31mstep: 34940  \u001b[32mloss:  3.7574  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,204  \u001b[36mtflops: 17.17  \u001b[35mmfu: 5.50%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:51,505 - root - INFO - \u001b[34mlr: 1.4952e-04 gnorm:  0.85 \u001b[35m[ 4:35:12< 0:47:25]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:55,739 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:31:56,213 - root - INFO - \u001b[31mstep: 34950  \u001b[32mloss:  4.0805  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,219  \u001b[36mtflops: 17.17  \u001b[35mmfu: 5.50%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:31:56,213 - root - INFO - \u001b[34mlr: 1.4936e-04 gnorm:  0.78 \u001b[35m[ 4:35:17< 0:47:20]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:00,918 - root - INFO - \u001b[31mstep: 34960  \u001b[32mloss:  3.3676  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,326  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:00,918 - root - INFO - \u001b[34mlr: 1.4920e-04 gnorm:  1.21 \u001b[35m[ 4:35:21< 0:47:15]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:05,621 - root - INFO - \u001b[31mstep: 34970  \u001b[32mloss:  3.7423  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,364  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:05,621 - root - INFO - \u001b[34mlr: 1.4904e-04 gnorm:  0.80 \u001b[35m[ 4:35:26< 0:47:10]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:10,324 - root - INFO - \u001b[31mstep: 34980  \u001b[32mloss:  3.4747  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,385  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:10,324 - root - INFO - \u001b[34mlr: 1.4888e-04 gnorm:  0.93 \u001b[35m[ 4:35:31< 0:47:06]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:15,030 - root - INFO - \u001b[31mstep: 34990  \u001b[32mloss:  3.7597  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,297  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:15,030 - root - INFO - \u001b[34mlr: 1.4872e-04 gnorm:  0.85 \u001b[35m[ 4:35:36< 0:47:01]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:19,262 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:32:19,735 - root - INFO - \u001b[31mstep: 35000  \u001b[32mloss:  3.8391  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,333  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:19,735 - root - INFO - \u001b[34mlr: 1.4856e-04 gnorm:  1.09 \u001b[35m[ 4:35:40< 0:46:56]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:24,440 - root - INFO - \u001b[31mstep: 35010  \u001b[32mloss:  3.7840  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,301  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:24,441 - root - INFO - \u001b[34mlr: 1.4840e-04 gnorm:  1.02 \u001b[35m[ 4:35:45< 0:46:51]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:29,144 - root - INFO - \u001b[31mstep: 35020  \u001b[32mloss:  3.7556  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,356  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:29,145 - root - INFO - \u001b[34mlr: 1.4824e-04 gnorm:  1.06 \u001b[35m[ 4:35:50< 0:46:47]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:33,847 - root - INFO - \u001b[31mstep: 35030  \u001b[32mloss:  3.5693  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,389  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:33,847 - root - INFO - \u001b[34mlr: 1.4808e-04 gnorm:  1.03 \u001b[35m[ 4:35:54< 0:46:42]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:38,550 - root - INFO - \u001b[31mstep: 35040  \u001b[32mloss:  4.1123  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,380  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:38,551 - root - INFO - \u001b[34mlr: 1.4792e-04 gnorm:  0.98 \u001b[35m[ 4:35:59< 0:46:37]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:42,784 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:32:43,257 - root - INFO - \u001b[31mstep: 35050  \u001b[32mloss:  3.4807  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,276  \u001b[36mtflops: 17.17  \u001b[35mmfu: 5.50%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:43,257 - root - INFO - \u001b[34mlr: 1.4776e-04 gnorm:  1.20 \u001b[35m[ 4:36:04< 0:46:33]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:47,957 - root - INFO - \u001b[31mstep: 35060  \u001b[32mloss:  3.7774  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,463  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:47,957 - root - INFO - \u001b[34mlr: 1.4760e-04 gnorm:  0.76 \u001b[35m[ 4:36:09< 0:46:28]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:52,660 - root - INFO - \u001b[31mstep: 35070  \u001b[32mloss:  3.8714  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,385  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:52,660 - root - INFO - \u001b[34mlr: 1.4745e-04 gnorm:  0.75 \u001b[35m[ 4:36:13< 0:46:23]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:57,363 - root - INFO - \u001b[31mstep: 35080  \u001b[32mloss:  3.6311  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,371  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:32:57,364 - root - INFO - \u001b[34mlr: 1.4729e-04 gnorm:  0.75 \u001b[35m[ 4:36:18< 0:46:18]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:02,067 - root - INFO - \u001b[31mstep: 35090  \u001b[32mloss:  4.1476  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,361  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:02,067 - root - INFO - \u001b[34mlr: 1.4713e-04 gnorm:  0.98 \u001b[35m[ 4:36:23< 0:46:14]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:06,298 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:33:06,771 - root - INFO - \u001b[31mstep: 35100  \u001b[32mloss:  3.3585  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,354  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:06,771 - root - INFO - \u001b[34mlr: 1.4697e-04 gnorm:  1.36 \u001b[35m[ 4:36:27< 0:46:09]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:11,473 - root - INFO - \u001b[31mstep: 35110  \u001b[32mloss:  5.2621  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,398  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:11,473 - root - INFO - \u001b[34mlr: 1.4682e-04 gnorm:  1.91 \u001b[35m[ 4:36:32< 0:46:04]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:16,174 - root - INFO - \u001b[31mstep: 35120  \u001b[32mloss:  4.3301  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,437  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:16,175 - root - INFO - \u001b[34mlr: 1.4666e-04 gnorm:  0.72 \u001b[35m[ 4:36:37< 0:45:59]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:20,878 - root - INFO - \u001b[31mstep: 35130  \u001b[32mloss:  3.8048  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,371  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:20,878 - root - INFO - \u001b[34mlr: 1.4650e-04 gnorm:  1.01 \u001b[35m[ 4:36:41< 0:45:55]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:25,580 - root - INFO - \u001b[31mstep: 35140  \u001b[32mloss:  3.5646  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,407  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:25,580 - root - INFO - \u001b[34mlr: 1.4634e-04 gnorm:  1.09 \u001b[35m[ 4:36:46< 0:45:50]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:29,814 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:33:30,287 - root - INFO - \u001b[31mstep: 35150  \u001b[32mloss:  4.2308  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,250  \u001b[36mtflops: 17.17  \u001b[35mmfu: 5.50%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:30,287 - root - INFO - \u001b[34mlr: 1.4619e-04 gnorm:  0.81 \u001b[35m[ 4:36:51< 0:45:45]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:34,991 - root - INFO - \u001b[31mstep: 35160  \u001b[32mloss:  4.3916  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,362  \u001b[36mtflops: 17.19  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:34,991 - root - INFO - \u001b[34mlr: 1.4603e-04 gnorm:  0.78 \u001b[35m[ 4:36:56< 0:45:40]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:39,697 - root - INFO - \u001b[31mstep: 35170  \u001b[32mloss:  4.0959  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,296  \u001b[36mtflops: 17.18  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:39,697 - root - INFO - \u001b[34mlr: 1.4588e-04 gnorm:  0.82 \u001b[35m[ 4:37:00< 0:45:36]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:44,394 - root - INFO - \u001b[31mstep: 35180  \u001b[32mloss:  4.4246  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,550  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:44,394 - root - INFO - \u001b[34mlr: 1.4572e-04 gnorm:  0.85 \u001b[35m[ 4:37:05< 0:45:31]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:49,091 - root - INFO - \u001b[31mstep: 35190  \u001b[32mloss:  3.5109  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,546  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:49,092 - root - INFO - \u001b[34mlr: 1.4557e-04 gnorm:  0.89 \u001b[35m[ 4:37:10< 0:45:26]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:53,319 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:33:53,791 - root - INFO - \u001b[31mstep: 35200  \u001b[32mloss:  3.5236  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,470  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:33:53,792 - root - INFO - \u001b[34mlr: 1.4541e-04 gnorm:  0.90 \u001b[35m[ 4:37:14< 0:45:22]\u001b[39m\n",
+      "log_tail": "[rank0]:[titan] 2026-03-17 23:35:37,108 - root - INFO - \u001b[34mlr: 1.4206e-04 gnorm:  0.91 \u001b[35m[ 4:38:58< 0:43:37]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:41,800 - root - INFO - \u001b[31mstep: 35430  \u001b[32mloss:  3.7329  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,704  \u001b[36mtflops: 17.23  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:41,800 - root - INFO - \u001b[34mlr: 1.4191e-04 gnorm:  0.80 \u001b[35m[ 4:39:02< 0:43:33]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:46,491 - root - INFO - \u001b[31mstep: 35440  \u001b[32mloss:  3.1298  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,714  \u001b[36mtflops: 17.23  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:46,492 - root - INFO - \u001b[34mlr: 1.4176e-04 gnorm:  1.20 \u001b[35m[ 4:39:07< 0:43:28]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:50,716 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:35:51,188 - root - INFO - \u001b[31mstep: 35450  \u001b[32mloss:  4.1709  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,574  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:51,188 - root - INFO - \u001b[34mlr: 1.4161e-04 gnorm:  0.93 \u001b[35m[ 4:39:12< 0:43:23]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:55,882 - root - INFO - \u001b[31mstep: 35460  \u001b[32mloss:  3.5998  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,641  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:35:55,882 - root - INFO - \u001b[34mlr: 1.4147e-04 gnorm:  1.14 \u001b[35m[ 4:39:16< 0:43:19]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:00,579 - root - INFO - \u001b[31mstep: 35470  \u001b[32mloss:  3.6250  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,548  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:00,580 - root - INFO - \u001b[34mlr: 1.4132e-04 gnorm:  1.02 \u001b[35m[ 4:39:21< 0:43:14]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:05,273 - root - INFO - \u001b[31mstep: 35480  \u001b[32mloss:  4.3239  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,654  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:05,273 - root - INFO - \u001b[34mlr: 1.4117e-04 gnorm:  0.93 \u001b[35m[ 4:39:26< 0:43:09]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:09,968 - root - INFO - \u001b[31mstep: 35490  \u001b[32mloss:  4.2771  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,629  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:09,968 - root - INFO - \u001b[34mlr: 1.4102e-04 gnorm:  1.00 \u001b[35m[ 4:39:30< 0:43:04]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:14,190 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:36:14,662 - root - INFO - \u001b[31mstep: 35500  \u001b[32mloss:  3.5922  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,644  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:14,662 - root - INFO - \u001b[34mlr: 1.4087e-04 gnorm:  1.08 \u001b[35m[ 4:39:35< 0:43:00]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:19,357 - root - INFO - \u001b[31mstep: 35510  \u001b[32mloss:  3.5520  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,617  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:19,357 - root - INFO - \u001b[34mlr: 1.4073e-04 gnorm:  1.03 \u001b[35m[ 4:39:40< 0:42:55]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:24,053 - root - INFO - \u001b[31mstep: 35520  \u001b[32mloss:  4.2490  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,602  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:24,053 - root - INFO - \u001b[34mlr: 1.4058e-04 gnorm:  0.84 \u001b[35m[ 4:39:45< 0:42:50]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:28,745 - root - INFO - \u001b[31mstep: 35530  \u001b[32mloss:  4.0522  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,685  \u001b[36mtflops: 17.23  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:28,746 - root - INFO - \u001b[34mlr: 1.4043e-04 gnorm:  0.96 \u001b[35m[ 4:39:49< 0:42:45]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:33,438 - root - INFO - \u001b[31mstep: 35540  \u001b[32mloss:  3.6477  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,678  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:33,439 - root - INFO - \u001b[34mlr: 1.4029e-04 gnorm:  0.82 \u001b[35m[ 4:39:54< 0:42:41]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:37,660 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:36:38,132 - root - INFO - \u001b[31mstep: 35550  \u001b[32mloss:  3.3965  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,664  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:38,132 - root - INFO - \u001b[34mlr: 1.4014e-04 gnorm:  1.68 \u001b[35m[ 4:39:59< 0:42:36]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:42,826 - root - INFO - \u001b[31mstep: 35560  \u001b[32mloss:  3.8738  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,643  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:42,826 - root - INFO - \u001b[34mlr: 1.3999e-04 gnorm:  0.78 \u001b[35m[ 4:40:03< 0:42:31]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:47,520 - root - INFO - \u001b[31mstep: 35570  \u001b[32mloss:  3.2166  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,646  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:47,520 - root - INFO - \u001b[34mlr: 1.3985e-04 gnorm:  1.01 \u001b[35m[ 4:40:08< 0:42:27]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:52,214 - root - INFO - \u001b[31mstep: 35580  \u001b[32mloss:  4.2806  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,638  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:52,215 - root - INFO - \u001b[34mlr: 1.3970e-04 gnorm:  1.84 \u001b[35m[ 4:40:13< 0:42:22]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:56,908 - root - INFO - \u001b[31mstep: 35590  \u001b[32mloss:  3.5873  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,659  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:36:56,908 - root - INFO - \u001b[34mlr: 1.3956e-04 gnorm:  0.92 \u001b[35m[ 4:40:17< 0:42:17]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:01,129 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:37:01,601 - root - INFO - \u001b[31mstep: 35600  \u001b[32mloss:  3.7733  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,685  \u001b[36mtflops: 17.23  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:01,601 - root - INFO - \u001b[34mlr: 1.3941e-04 gnorm:  0.80 \u001b[35m[ 4:40:22< 0:42:12]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:06,292 - root - INFO - \u001b[31mstep: 35610  \u001b[32mloss:  3.4234  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,741  \u001b[36mtflops: 17.23  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:06,292 - root - INFO - \u001b[34mlr: 1.3927e-04 gnorm:  0.93 \u001b[35m[ 4:40:27< 0:42:08]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:10,986 - root - INFO - \u001b[31mstep: 35620  \u001b[32mloss:  3.9794  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,627  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:10,987 - root - INFO - \u001b[34mlr: 1.3912e-04 gnorm:  0.81 \u001b[35m[ 4:40:31< 0:42:03]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:15,679 - root - INFO - \u001b[31mstep: 35630  \u001b[32mloss:  3.4956  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,672  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:15,680 - root - INFO - \u001b[34mlr: 1.3898e-04 gnorm:  0.97 \u001b[35m[ 4:40:36< 0:41:58]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:20,372 - root - INFO - \u001b[31mstep: 35640  \u001b[32mloss:  4.2572  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,678  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:20,372 - root - INFO - \u001b[34mlr: 1.3884e-04 gnorm:  1.15 \u001b[35m[ 4:40:41< 0:41:53]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:24,594 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:37:25,065 - root - INFO - \u001b[31mstep: 35650  \u001b[32mloss:  3.7876  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,672  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:25,065 - root - INFO - \u001b[34mlr: 1.3869e-04 gnorm:  0.86 \u001b[35m[ 4:40:46< 0:41:49]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:29,760 - root - INFO - \u001b[31mstep: 35660  \u001b[32mloss:  3.3426  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,617  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:29,761 - root - INFO - \u001b[34mlr: 1.3855e-04 gnorm:  1.17 \u001b[35m[ 4:40:50< 0:41:44]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:34,458 - root - INFO - \u001b[31mstep: 35670  \u001b[32mloss:  3.9328  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,542  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:34,458 - root - INFO - \u001b[34mlr: 1.3841e-04 gnorm:  0.96 \u001b[35m[ 4:40:55< 0:41:39]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:39,157 - root - INFO - \u001b[31mstep: 35680  \u001b[32mloss:  3.8193  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,483  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:39,158 - root - INFO - \u001b[34mlr: 1.3826e-04 gnorm:  1.61 \u001b[35m[ 4:41:00< 0:41:34]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:43,856 - root - INFO - \u001b[31mstep: 35690  \u001b[32mloss:  4.1190  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,513  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:43,856 - root - INFO - \u001b[34mlr: 1.3812e-04 gnorm:  1.06 \u001b[35m[ 4:41:04< 0:41:30]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:48,084 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:37:48,557 - root - INFO - \u001b[31mstep: 35700  \u001b[32mloss:  3.5682  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,449  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:48,557 - root - INFO - \u001b[34mlr: 1.3798e-04 gnorm:  0.81 \u001b[35m[ 4:41:09< 0:41:25]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:53,254 - root - INFO - \u001b[31mstep: 35710  \u001b[32mloss:  3.3765  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,555  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:53,254 - root - INFO - \u001b[34mlr: 1.3783e-04 gnorm:  0.92 \u001b[35m[ 4:41:14< 0:41:20]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:57,952 - root - INFO - \u001b[31mstep: 35720  \u001b[32mloss:  3.9243  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,530  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:37:57,952 - root - INFO - \u001b[34mlr: 1.3769e-04 gnorm:  0.81 \u001b[35m[ 4:41:18< 0:41:16]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:02,651 - root - INFO - \u001b[31mstep: 35730  \u001b[32mloss:  3.5925  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,496  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:02,651 - root - INFO - \u001b[34mlr: 1.3755e-04 gnorm:  1.30 \u001b[35m[ 4:41:23< 0:41:11]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:07,347 - root - INFO - \u001b[31mstep: 35740  \u001b[32mloss:  3.7406  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,592  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:07,347 - root - INFO - \u001b[34mlr: 1.3741e-04 gnorm:  0.93 \u001b[35m[ 4:41:28< 0:41:06]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:11,571 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:38:12,043 - root - INFO - \u001b[31mstep: 35750  \u001b[32mloss:  3.9343  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,579  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:12,043 - root - INFO - \u001b[34mlr: 1.3727e-04 gnorm:  0.74 \u001b[35m[ 4:41:33< 0:41:01]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:16,740 - root - INFO - \u001b[31mstep: 35760  \u001b[32mloss:  3.7772  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,560  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:16,740 - root - INFO - \u001b[34mlr: 1.3713e-04 gnorm:  0.83 \u001b[35m[ 4:41:37< 0:40:57]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:21,437 - root - INFO - \u001b[31mstep: 35770  \u001b[32mloss:  3.1753  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,553  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:21,438 - root - INFO - \u001b[34mlr: 1.3699e-04 gnorm:  1.14 \u001b[35m[ 4:41:42< 0:40:52]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:26,135 - root - INFO - \u001b[31mstep: 35780  \u001b[32mloss:  3.9264  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,539  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:26,136 - root - INFO - \u001b[34mlr: 1.3685e-04 gnorm:  1.21 \u001b[35m[ 4:41:47< 0:40:47]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:30,833 - root - INFO - \u001b[31mstep: 35790  \u001b[32mloss:  3.6252  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,535  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:30,833 - root - INFO - \u001b[34mlr: 1.3671e-04 gnorm:  1.22 \u001b[35m[ 4:41:51< 0:40:42]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:35,056 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:38:35,528 - root - INFO - \u001b[31mstep: 35800  \u001b[32mloss:  3.6329  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,625  \u001b[36mtflops: 17.22  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:35,528 - root - INFO - \u001b[34mlr: 1.3657e-04 gnorm:  1.15 \u001b[35m[ 4:41:56< 0:40:38]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:40,225 - root - INFO - \u001b[31mstep: 35810  \u001b[32mloss:  4.2860  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,553  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:40,225 - root - INFO - \u001b[34mlr: 1.3643e-04 gnorm:  0.83 \u001b[35m[ 4:42:01< 0:40:33]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:44,922 - root - INFO - \u001b[31mstep: 35820  \u001b[32mloss:  4.3148  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,565  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:44,922 - root - INFO - \u001b[34mlr: 1.3629e-04 gnorm:  0.76 \u001b[35m[ 4:42:05< 0:40:28]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:49,619 - root - INFO - \u001b[31mstep: 35830  \u001b[32mloss:  4.1701  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,563  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:49,619 - root - INFO - \u001b[34mlr: 1.3615e-04 gnorm:  0.83 \u001b[35m[ 4:42:10< 0:40:24]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:54,315 - root - INFO - \u001b[31mstep: 35840  \u001b[32mloss:  3.6917  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,586  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:54,315 - root - INFO - \u001b[34mlr: 1.3601e-04 gnorm:  1.16 \u001b[35m[ 4:42:15< 0:40:19]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:58,541 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-17 23:38:59,014 - root - INFO - \u001b[31mstep: 35850  \u001b[32mloss:  3.4569  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,510  \u001b[36mtflops: 17.20  \u001b[35mmfu: 5.51%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:38:59,014 - root - INFO - \u001b[34mlr: 1.3587e-04 gnorm:  0.97 \u001b[35m[ 4:42:19< 0:40:14]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:39:03,709 - root - INFO - \u001b[31mstep: 35860  \u001b[32mloss:  3.9407  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,602  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:39:03,709 - root - INFO - \u001b[34mlr: 1.3573e-04 gnorm:  0.99 \u001b[35m[ 4:42:24< 0:40:09]\u001b[39m\n[rank0]:[titan] 2026-03-17 23:39:08,407 - root - INFO - \u001b[31mstep: 35870  \u001b[32mloss:  3.4564  \u001b[33mmemory: 25.00GiB(56.33%)  \u001b[34mtps: 139,541  \u001b[36mtflops: 17.21  \u001b[35mmfu: 5.52%\u001b[39m\n[rank0]:[titan] 2026-03-17 23:39:08,407 - root - INFO - \u001b[34mlr: 1.3559e-04 gnorm:  0.75 \u001b[35m[ 4:42:29< 0:40:05]\u001b[39m\n",
       "wandb": {
         "run_id": "-run0-lr1e-3-seed42-202603172313",
         "url": "https://wandb.ai/stevenluots/fla/runs/-run0-lr1e-3-seed42-202603172313",
         "metric_name": "loss_metrics/global_avg_loss",
-        "metric_latest": 4.424638,
+        "metric_latest": 3.456853,
         "metric_history": [
           3.660157,
-          3.827923,
-          3.549257,
           3.560775,
           3.289958,
           4.072097,
           3.303033,
           3.864539,
-          3.789448,
           3.63307,
           3.978845,
           3.284675,
-          3.861998,
           3.144841,
           3.851103,
           3.881166,
-          4.162837,
           3.287119,
           3.872297,
           3.605142,
           3.109313,
-          3.694627,
           3.970927,
-          4.138999,
-          3.927147,
           3.830195,
-          4.161127,
           4.025073,
           4.178689,
           3.58113,
@@ -368,10 +738,41 @@
           3.820611,
           3.547752,
           3.48068,
-          4.424638
+          3.753245,
+          3.16081,
+          3.678922,
+          3.406658,
+          3.444531,
+          3.732943,
+          3.599816,
+          3.740572,
+          4.314811,
+          3.456853
         ],
-        "step": 35180
+        "step": 35850
       }
+    },
+    {
+      "job_id": "4469225",
+      "name": "a-lact2MMW",
+      "state": "RUNNING",
+      "partition": "l40s_public",
+      "nodes": "gl020",
+      "gpus": "1",
+      "elapsed": "1:02",
+      "time_limit": "1:00:00",
+      "submit_time": "2026-03-17T23:33:52",
+      "gpu_avg_util": 0.0,
+      "gpu_current": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 3.0,
+          "mem_total": 46068.0
+        }
+      ],
+      "log_tail": "batch script for job 4469225 written to slurm/scripts/4469225.sh\nSeed: 42\nLearning rate: 1e-2\nRunning evaluation...\nLaunching eval...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-2-seed42\n++ grep -oP '(?<=--eval.steps )[^ ]+'\n+ steps=512\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-5/XS_lact2_momentum_muon_w32.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603172338\n++ basename exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-2-seed42\n+ RUN_NAME=-run0-lr1e-2-seed42\n+ RUN_ID=-run0-lr1e-2-seed42-202603172338\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact-ablation-lact2-momentum-muon-c32-lr1e-2-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-run0-lr1e-2-seed42-202603172338\n+ WANDB_RUN_ID=-run0-lr1e-2-seed42-202603172338\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gl020.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-2-seed42/logs -m flame.eval --job.config_file flame/models/fla.toml --job.dump_folder exp/lact/ablations/section-5/lact-ablation-lact2-momentum-muon-c32/run0-lr1e-2-seed42 --model.config configs/ablations/section-5/XS_lact2_momentum_muon_w32.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --eval.batch_size 16 --eval.seq_len 16384 --eval.context_len 16384 --eval.steps 512 --eval.dataset arrow --eval.dataset_split train --eval.data_dir /scratch/sl12886/data/long-data-collections-val --eval.num_workers 2 --eval.prefetch_factor 1 --eval.seed 42\n",
+      "wandb": null
     }
   ]
 }
