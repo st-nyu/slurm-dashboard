@@ -1,34 +1,12 @@
 {
-  "4468117": [
+  "4470690": [
     {
-      "timestamp": "2026-03-18T04:22:27Z",
+      "timestamp": "2026-03-18T04:38:34Z",
       "gpus": [
         {
-          "util": 100.0,
-          "mem_util": 53.0,
-          "mem_used": 92303.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:27:48Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 53.0,
-          "mem_used": 92303.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:33:11Z",
-      "gpus": [
-        {
-          "util": 99.0,
-          "mem_util": 52.0,
-          "mem_used": 92303.0,
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 0.0,
           "mem_total": 143771.0
         }
       ]
