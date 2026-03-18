@@ -1,106 +1,7 @@
 {
-  "4470690": [
+  "4483599": [
     {
-      "timestamp": "2026-03-18T04:38:34Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 0.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:43:53Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:49:15Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:54:41Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
           "util": 0.0,
@@ -111,198 +12,48 @@
       ]
     }
   ],
-  "4470691": [
+  "4483600": [
     {
-      "timestamp": "2026-03-18T04:43:53Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:49:15Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:54:41Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 95.0,
-          "mem_util": 51.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 53.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 90601.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 90601.0,
+          "util": 86.0,
+          "mem_util": 46.0,
+          "mem_used": 90611.0,
           "mem_total": 143771.0
         }
       ]
     }
   ],
-  "4470692": [
+  "4483601": [
     {
-      "timestamp": "2026-03-18T04:43:53Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
+          "util": 100.0,
+          "mem_util": 54.0,
+          "mem_used": 90611.0,
           "mem_total": 143771.0
         }
       ]
-    },
+    }
+  ],
+  "4483603": [
     {
-      "timestamp": "2026-03-18T04:49:15Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
+          "util": 100.0,
+          "mem_util": 54.0,
+          "mem_used": 90599.0,
           "mem_total": 143771.0
         }
       ]
-    },
+    }
+  ],
+  "4483606": [
     {
-      "timestamp": "2026-03-18T04:54:41Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
           "util": 0.0,
@@ -313,97 +64,9 @@
       ]
     }
   ],
-  "4470693": [
+  "4483607": [
     {
-      "timestamp": "2026-03-18T04:43:53Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 0.0,
-          "mem_used": 527.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:49:15Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:54:41Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
           "util": 0.0,
@@ -414,363 +77,40 @@
       ]
     }
   ],
-  "4470694": [
+  "4483610": [
     {
-      "timestamp": "2026-03-18T04:49:15Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:54:41Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
+          "util": 100.0,
+          "mem_util": 58.0,
+          "mem_used": 17124.0,
           "mem_total": 143771.0
         }
       ]
     }
   ],
-  "4470697": [
+  "4483612": [
     {
-      "timestamp": "2026-03-18T04:49:15Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:54:41Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
-      "gpus": [
-        {
-          "util": 0.0,
-          "mem_util": 0.0,
-          "mem_used": 4.0,
+          "util": 100.0,
+          "mem_util": 58.0,
+          "mem_used": 17039.0,
           "mem_total": 143771.0
         }
       ]
     }
   ],
-  "4470698": [
+  "4483613": [
     {
-      "timestamp": "2026-03-18T04:49:15Z",
-      "gpus": [
-        {
-          "util": 93.0,
-          "mem_util": 49.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T04:54:41Z",
+      "timestamp": "2026-03-18T16:43:10Z",
       "gpus": [
         {
           "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:00:06Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:05:31Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 97.0,
-          "mem_util": 53.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    }
-  ],
-  "4470699": [
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 53.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 53.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    }
-  ],
-  "4470700": [
-    {
-      "timestamp": "2026-03-18T05:10:54Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:16:22Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 54.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:21:47Z",
-      "gpus": [
-        {
-          "util": 100.0,
-          "mem_util": 55.0,
-          "mem_used": 91235.0,
-          "mem_total": 143771.0
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-03-18T05:27:13Z",
-      "gpus": [
-        {
-          "util": 81.0,
-          "mem_util": 42.0,
-          "mem_used": 91235.0,
+          "mem_util": 57.0,
+          "mem_used": 17039.0,
           "mem_total": 143771.0
         }
       ]
