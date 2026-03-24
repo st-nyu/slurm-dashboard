@@ -1,124 +1,14 @@
 {
-  "updated_at": "2026-03-24T16:16:35Z",
+  "updated_at": "2026-03-24T16:21:57Z",
   "gpu_history": {
-    "4852365": [
+    "4856444": [
       {
-        "timestamp": "2026-03-24T15:22:47Z",
-        "gpus": [
-          {
-            "util": 100.0,
-            "mem_util": 69.0,
-            "mem_used": 18253.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T15:28:10Z",
-        "gpus": [
-          {
-            "util": 94.0,
-            "mem_util": 64.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T15:33:32Z",
-        "gpus": [
-          {
-            "util": 96.0,
-            "mem_util": 64.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T15:38:55Z",
-        "gpus": [
-          {
-            "util": 100.0,
-            "mem_util": 68.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T15:44:26Z",
-        "gpus": [
-          {
-            "util": 95.0,
-            "mem_util": 66.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T15:49:50Z",
-        "gpus": [
-          {
-            "util": 97.0,
-            "mem_util": 67.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T15:55:14Z",
-        "gpus": [
-          {
-            "util": 97.0,
-            "mem_util": 65.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T16:00:34Z",
-        "gpus": [
-          {
-            "util": 100.0,
-            "mem_util": 68.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T16:05:54Z",
+        "timestamp": "2026-03-24T16:21:57Z",
         "gpus": [
           {
             "util": 99.0,
-            "mem_util": 33.0,
-            "mem_used": 27919.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T16:11:16Z",
-        "gpus": [
-          {
-            "util": 96.0,
-            "mem_util": 66.0,
-            "mem_used": 18265.0,
-            "mem_total": 143771.0
-          }
-        ]
-      },
-      {
-        "timestamp": "2026-03-24T16:16:35Z",
-        "gpus": [
-          {
-            "util": 97.0,
-            "mem_util": 65.0,
-            "mem_used": 18265.0,
+            "mem_util": 71.0,
+            "mem_used": 18013.0,
             "mem_total": 143771.0
           }
         ]
@@ -133,7 +23,7 @@
       "partition": "cpu_short",
       "nodes": "cs605",
       "gpus": "-",
-      "elapsed": "0:59",
+      "elapsed": "6:20",
       "time_limit": "6:00:00",
       "submit_time": "2026-03-24T12:15:13",
       "gpu_avg_util": null,
@@ -148,108 +38,93 @@
       "partition": "cpu_short",
       "nodes": "cs606",
       "gpus": "-",
-      "elapsed": "1:09:29",
+      "elapsed": "1:14:50",
       "time_limit": "4:00:00",
       "submit_time": "2026-03-24T11:07:05",
       "gpu_avg_util": null,
       "gpu_current": null,
-      "log_tail": "Dashboard updater started: Tue Mar 24 11:07:09 AM EDT 2026\nInterval: 5 minutes\nDuration: 4 hours\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 111a1c8] Update job data 2026-03-24T15:07:23Z\n 1 file changed, 1343 insertions(+), 8 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main f2e4b7b] Update job data 2026-03-24T15:12:37Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 32 jobs to data.json\n[main 0c38cb8] Update job data 2026-03-24T15:17:45Z\n 1 file changed, 19 insertions(+), 889 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 3144c3f] Update job data 2026-03-24T15:23:09Z\n 2 files changed, 1003 insertions(+), 65 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 49a1be6] Update job data 2026-03-24T15:28:31Z\n 2 files changed, 673 insertions(+), 629 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 1608864] Update job data 2026-03-24T15:33:54Z\n 2 files changed, 391 insertions(+), 347 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 630d772] Update job data 2026-03-24T15:39:16Z\n 2 files changed, 367 insertions(+), 323 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main e200721] Update job data 2026-03-24T15:44:48Z\n 2 files changed, 243 insertions(+), 199 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 9cdd604] Update job data 2026-03-24T15:50:13Z\n 2 files changed, 277 insertions(+), 233 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 2/2 jobs to runs\nWrote 10 jobs to data.json\n[main efa6040] Update job data 2026-03-24T15:55:33Z\n 2 files changed, 70 insertions(+), 1139 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main d05ca3d] Update job data 2026-03-24T16:00:53Z\n 2 files changed, 23 insertions(+), 210 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main 7e79d73] Update job data 2026-03-24T16:06:15Z\n 2 files changed, 50 insertions(+), 28 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main 707e338] Update job data 2026-03-24T16:11:34Z\n 2 files changed, 53 insertions(+), 31 deletions(-)\nPushed updated data.json\n",
+      "log_tail": "Interval: 5 minutes\nDuration: 4 hours\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 111a1c8] Update job data 2026-03-24T15:07:23Z\n 1 file changed, 1343 insertions(+), 8 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main f2e4b7b] Update job data 2026-03-24T15:12:37Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 32 jobs to data.json\n[main 0c38cb8] Update job data 2026-03-24T15:17:45Z\n 1 file changed, 19 insertions(+), 889 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 3144c3f] Update job data 2026-03-24T15:23:09Z\n 2 files changed, 1003 insertions(+), 65 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 49a1be6] Update job data 2026-03-24T15:28:31Z\n 2 files changed, 673 insertions(+), 629 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 1608864] Update job data 2026-03-24T15:33:54Z\n 2 files changed, 391 insertions(+), 347 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 630d772] Update job data 2026-03-24T15:39:16Z\n 2 files changed, 367 insertions(+), 323 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main e200721] Update job data 2026-03-24T15:44:48Z\n 2 files changed, 243 insertions(+), 199 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 15/15 jobs to runs\nWrote 32 jobs to data.json\n[main 9cdd604] Update job data 2026-03-24T15:50:13Z\n 2 files changed, 277 insertions(+), 233 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 2/2 jobs to runs\nWrote 10 jobs to data.json\n[main efa6040] Update job data 2026-03-24T15:55:33Z\n 2 files changed, 70 insertions(+), 1139 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main d05ca3d] Update job data 2026-03-24T16:00:53Z\n 2 files changed, 23 insertions(+), 210 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main 7e79d73] Update job data 2026-03-24T16:06:15Z\n 2 files changed, 50 insertions(+), 28 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main 707e338] Update job data 2026-03-24T16:11:34Z\n 2 files changed, 53 insertions(+), 31 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 1/1 jobs to runs\nWrote 9 jobs to data.json\n[main 536b5f2] Update job data 2026-03-24T16:16:56Z\n 2 files changed, 43 insertions(+), 21 deletions(-)\nPushed updated data.json\n",
       "wandb": null
-    },
-    {
-      "job_id": "4852365",
-      "name": "lact",
-      "state": "RUNNING",
-      "partition": "h200_courant",
-      "nodes": "gh112",
-      "gpus": "1",
-      "elapsed": "58:34",
-      "time_limit": "3:00:00",
-      "submit_time": "2026-03-24T09:40:55",
-      "gpu_avg_util": 97.4,
-      "gpu_current": [
-        {
-          "util": 97.0,
-          "mem_util": 65.0,
-          "mem_used": 18265.0,
-          "mem_total": 143771.0
-        }
-      ],
-      "log_tail": "[rank0]:[titan] 2026-03-24 12:15:26,282 - root - INFO - \u001b[34mlr: 3.4480e-05 gnorm:  2.43 \u001b[35m[ 0:55:27< 0:04:42]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:27,980 - root - INFO - \u001b[31mstep: 18890  \u001b[32mloss:  3.6513  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,079  \u001b[36mtflops: 46.67  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:27,981 - root - INFO - \u001b[34mlr: 3.4425e-05 gnorm:  1.02 \u001b[35m[ 0:55:29< 0:04:40]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:29,508 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:15:29,680 - root - INFO - \u001b[31mstep: 18900  \u001b[32mloss:  3.4039  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,667  \u001b[36mtflops: 46.62  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:29,681 - root - INFO - \u001b[34mlr: 3.4370e-05 gnorm:  0.92 \u001b[35m[ 0:55:31< 0:04:38]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:31,388 - root - INFO - \u001b[31mstep: 18910  \u001b[32mloss:  3.7381  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,437  \u001b[36mtflops: 46.71  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:31,395 - root - INFO - \u001b[34mlr: 3.4315e-05 gnorm:  1.11 \u001b[35m[ 0:55:32< 0:04:36]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:33,091 - root - INFO - \u001b[31mstep: 18920  \u001b[32mloss:  3.0674  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,089  \u001b[36mtflops: 46.55  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:33,091 - root - INFO - \u001b[34mlr: 3.4260e-05 gnorm:  1.25 \u001b[35m[ 0:55:34< 0:04:34]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:34,806 - root - INFO - \u001b[31mstep: 18930  \u001b[32mloss:  3.6735  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 382,306  \u001b[36mtflops: 46.21  \u001b[35mmfu: 4.67%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:34,807 - root - INFO - \u001b[34mlr: 3.4206e-05 gnorm:  0.82 \u001b[35m[ 0:55:36< 0:04:33]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:36,503 - root - INFO - \u001b[31mstep: 18940  \u001b[32mloss:  3.8389  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,377  \u001b[36mtflops: 46.71  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:36,504 - root - INFO - \u001b[34mlr: 3.4152e-05 gnorm:  1.08 \u001b[35m[ 0:55:37< 0:04:31]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:38,032 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:15:38,204 - root - INFO - \u001b[31mstep: 18950  \u001b[32mloss:  3.1367  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,668  \u001b[36mtflops: 46.62  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:38,204 - root - INFO - \u001b[34mlr: 3.4099e-05 gnorm:  1.54 \u001b[35m[ 0:55:39< 0:04:29]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:39,916 - root - INFO - \u001b[31mstep: 18960  \u001b[32mloss:  3.9637  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,719  \u001b[36mtflops: 46.63  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:39,917 - root - INFO - \u001b[34mlr: 3.4046e-05 gnorm:  0.81 \u001b[35m[ 0:55:41< 0:04:27]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:41,614 - root - INFO - \u001b[31mstep: 18970  \u001b[32mloss:  3.8358  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,325  \u001b[36mtflops: 46.70  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:41,614 - root - INFO - \u001b[34mlr: 3.3993e-05 gnorm:  0.68 \u001b[35m[ 0:55:42< 0:04:26]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:43,314 - root - INFO - \u001b[31mstep: 18980  \u001b[32mloss:  3.8470  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,589  \u001b[36mtflops: 46.61  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:43,315 - root - INFO - \u001b[34mlr: 3.3941e-05 gnorm:  1.29 \u001b[35m[ 0:55:44< 0:04:24]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:45,019 - root - INFO - \u001b[31mstep: 18990  \u001b[32mloss:  3.2272  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 384,687  \u001b[36mtflops: 46.50  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:45,019 - root - INFO - \u001b[34mlr: 3.3888e-05 gnorm:  0.98 \u001b[35m[ 0:55:46< 0:04:22]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:46,548 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:15:46,719 - root - INFO - \u001b[31mstep: 19000  \u001b[32mloss:  3.6324  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,793  \u001b[36mtflops: 46.63  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:46,719 - root - INFO - \u001b[34mlr: 3.3837e-05 gnorm:  1.18 \u001b[35m[ 0:55:48< 0:04:20]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:48,417 - root - INFO - \u001b[31mstep: 19010  \u001b[32mloss:  4.9039  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,066  \u001b[36mtflops: 46.67  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:48,417 - root - INFO - \u001b[34mlr: 3.3785e-05 gnorm:  2.70 \u001b[35m[ 0:55:49< 0:04:19]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:50,114 - root - INFO - \u001b[31mstep: 19020  \u001b[32mloss:  3.3347  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,552  \u001b[36mtflops: 46.73  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:50,114 - root - INFO - \u001b[34mlr: 3.3734e-05 gnorm:  1.01 \u001b[35m[ 0:55:51< 0:04:17]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:51,813 - root - INFO - \u001b[31mstep: 19030  \u001b[32mloss:  3.4244  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,773  \u001b[36mtflops: 46.63  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:51,814 - root - INFO - \u001b[34mlr: 3.3683e-05 gnorm:  1.23 \u001b[35m[ 0:55:53< 0:04:15]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:53,509 - root - INFO - \u001b[31mstep: 19040  \u001b[32mloss:  3.3302  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,771  \u001b[36mtflops: 46.75  \u001b[35mmfu: 4.73%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:53,509 - root - INFO - \u001b[34mlr: 3.3633e-05 gnorm:  2.41 \u001b[35m[ 0:55:54< 0:04:13]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:55,036 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:15:55,207 - root - INFO - \u001b[31mstep: 19050  \u001b[32mloss:  3.9308  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,195  \u001b[36mtflops: 46.68  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:55,207 - root - INFO - \u001b[34mlr: 3.3583e-05 gnorm:  0.90 \u001b[35m[ 0:55:56< 0:04:11]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:56,905 - root - INFO - \u001b[31mstep: 19060  \u001b[32mloss:  3.6090  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,185  \u001b[36mtflops: 46.68  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:56,905 - root - INFO - \u001b[34mlr: 3.3533e-05 gnorm:  1.19 \u001b[35m[ 0:55:58< 0:04:10]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:58,605 - root - INFO - \u001b[31mstep: 19070  \u001b[32mloss:  3.9240  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,802  \u001b[36mtflops: 46.64  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:15:58,605 - root - INFO - \u001b[34mlr: 3.3484e-05 gnorm:  0.90 \u001b[35m[ 0:55:59< 0:04:08]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:00,303 - root - INFO - \u001b[31mstep: 19080  \u001b[32mloss:  3.7452  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,141  \u001b[36mtflops: 46.68  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:00,303 - root - INFO - \u001b[34mlr: 3.3435e-05 gnorm:  0.93 \u001b[35m[ 0:56:01< 0:04:06]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:02,013 - root - INFO - \u001b[31mstep: 19090  \u001b[32mloss:  3.1636  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 383,398  \u001b[36mtflops: 46.35  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:02,013 - root - INFO - \u001b[34mlr: 3.3386e-05 gnorm:  2.05 \u001b[35m[ 0:56:03< 0:04:04]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:03,542 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:16:03,714 - root - INFO - \u001b[31mstep: 19100  \u001b[32mloss:  3.4604  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,632  \u001b[36mtflops: 46.62  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:03,714 - root - INFO - \u001b[34mlr: 3.3338e-05 gnorm:  0.81 \u001b[35m[ 0:56:05< 0:04:03]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:05,413 - root - INFO - \u001b[31mstep: 19110  \u001b[32mloss:  3.2776  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,763  \u001b[36mtflops: 46.63  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:05,414 - root - INFO - \u001b[34mlr: 3.3290e-05 gnorm:  1.64 \u001b[35m[ 0:56:06< 0:04:01]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:07,119 - root - INFO - \u001b[31mstep: 19120  \u001b[32mloss:  3.9124  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 384,542  \u001b[36mtflops: 46.48  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:07,119 - root - INFO - \u001b[34mlr: 3.3242e-05 gnorm:  0.90 \u001b[35m[ 0:56:08< 0:03:59]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:08,815 - root - INFO - \u001b[31mstep: 19130  \u001b[32mloss:  3.8036  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,606  \u001b[36mtflops: 46.73  \u001b[35mmfu: 4.73%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:08,815 - root - INFO - \u001b[34mlr: 3.3195e-05 gnorm:  1.31 \u001b[35m[ 0:56:10< 0:03:57]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:10,517 - root - INFO - \u001b[31mstep: 19140  \u001b[32mloss:  3.4817  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,186  \u001b[36mtflops: 46.56  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:10,518 - root - INFO - \u001b[34mlr: 3.3148e-05 gnorm:  1.87 \u001b[35m[ 0:56:11< 0:03:56]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:12,043 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:16:12,227 - root - INFO - \u001b[31mstep: 19150  \u001b[32mloss:  3.3897  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 383,607  \u001b[36mtflops: 46.37  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:12,227 - root - INFO - \u001b[34mlr: 3.3101e-05 gnorm:  0.99 \u001b[35m[ 0:56:13< 0:03:54]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:14,049 - root - INFO - \u001b[31mstep: 19160  \u001b[32mloss:  4.1519  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 359,834  \u001b[36mtflops: 43.50  \u001b[35mmfu: 4.40%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:14,050 - root - INFO - \u001b[34mlr: 3.3055e-05 gnorm:  1.63 \u001b[35m[ 0:56:15< 0:03:52]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:15,759 - root - INFO - \u001b[31mstep: 19170  \u001b[32mloss:  3.4600  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 383,492  \u001b[36mtflops: 46.36  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:15,760 - root - INFO - \u001b[34mlr: 3.3009e-05 gnorm:  1.19 \u001b[35m[ 0:56:17< 0:03:50]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:17,462 - root - INFO - \u001b[31mstep: 19180  \u001b[32mloss:  3.6884  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,237  \u001b[36mtflops: 46.57  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:17,462 - root - INFO - \u001b[34mlr: 3.2963e-05 gnorm:  1.20 \u001b[35m[ 0:56:18< 0:03:49]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:19,169 - root - INFO - \u001b[31mstep: 19190  \u001b[32mloss:  3.7001  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 384,063  \u001b[36mtflops: 46.43  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:19,169 - root - INFO - \u001b[34mlr: 3.2918e-05 gnorm:  0.78 \u001b[35m[ 0:56:20< 0:03:47]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:20,696 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:16:20,867 - root - INFO - \u001b[31mstep: 19200  \u001b[32mloss:  3.3182  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,200  \u001b[36mtflops: 46.68  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:20,867 - root - INFO - \u001b[34mlr: 3.2873e-05 gnorm:  1.24 \u001b[35m[ 0:56:22< 0:03:45]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:22,565 - root - INFO - \u001b[31mstep: 19210  \u001b[32mloss:  3.5615  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,170  \u001b[36mtflops: 46.68  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:22,565 - root - INFO - \u001b[34mlr: 3.2829e-05 gnorm:  1.04 \u001b[35m[ 0:56:23< 0:03:43]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:24,270 - root - INFO - \u001b[31mstep: 19220  \u001b[32mloss:  3.5985  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 384,645  \u001b[36mtflops: 46.50  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:24,270 - root - INFO - \u001b[34mlr: 3.2784e-05 gnorm:  0.86 \u001b[35m[ 0:56:25< 0:03:41]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:25,968 - root - INFO - \u001b[31mstep: 19230  \u001b[32mloss:  3.9377  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,274  \u001b[36mtflops: 46.69  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:25,968 - root - INFO - \u001b[34mlr: 3.2741e-05 gnorm:  0.77 \u001b[35m[ 0:56:27< 0:03:40]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:27,670 - root - INFO - \u001b[31mstep: 19240  \u001b[32mloss:  3.9693  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,266  \u001b[36mtflops: 46.57  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:27,670 - root - INFO - \u001b[34mlr: 3.2697e-05 gnorm:  1.09 \u001b[35m[ 0:56:28< 0:03:38]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:29,198 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:16:29,374 - root - INFO - \u001b[31mstep: 19250  \u001b[32mloss:  3.9068  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 384,831  \u001b[36mtflops: 46.52  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:29,374 - root - INFO - \u001b[34mlr: 3.2654e-05 gnorm:  0.97 \u001b[35m[ 0:56:30< 0:03:36]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:31,071 - root - INFO - \u001b[31mstep: 19260  \u001b[32mloss:  3.8951  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,394  \u001b[36mtflops: 46.71  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:31,071 - root - INFO - \u001b[34mlr: 3.2611e-05 gnorm:  0.78 \u001b[35m[ 0:56:32< 0:03:34]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:32,781 - root - INFO - \u001b[31mstep: 19270  \u001b[32mloss:  3.5600  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 383,450  \u001b[36mtflops: 46.35  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:32,781 - root - INFO - \u001b[34mlr: 3.2569e-05 gnorm:  0.92 \u001b[35m[ 0:56:34< 0:03:33]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:34,479 - root - INFO - \u001b[31mstep: 19280  \u001b[32mloss:  3.7085  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,234  \u001b[36mtflops: 46.69  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:34,479 - root - INFO - \u001b[34mlr: 3.2526e-05 gnorm:  0.85 \u001b[35m[ 0:56:35< 0:03:31]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:36,178 - root - INFO - \u001b[31mstep: 19290  \u001b[32mloss:  3.0209  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,968  \u001b[36mtflops: 46.66  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:36,178 - root - INFO - \u001b[34mlr: 3.2485e-05 gnorm:  1.95 \u001b[35m[ 0:56:37< 0:03:29]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:37,713 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:16:37,884 - root - INFO - \u001b[31mstep: 19300  \u001b[32mloss:  4.1150  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 384,225  \u001b[36mtflops: 46.45  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:37,884 - root - INFO - \u001b[34mlr: 3.2443e-05 gnorm:  1.27 \u001b[35m[ 0:56:39< 0:03:27]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:39,583 - root - INFO - \u001b[31mstep: 19310  \u001b[32mloss:  3.8401  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,021  \u001b[36mtflops: 46.66  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:39,583 - root - INFO - \u001b[34mlr: 3.2402e-05 gnorm:  0.79 \u001b[35m[ 0:56:40< 0:03:26]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:41,280 - root - INFO - \u001b[31mstep: 19320  \u001b[32mloss:  3.2577  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 386,364  \u001b[36mtflops: 46.70  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:41,280 - root - INFO - \u001b[34mlr: 3.2361e-05 gnorm:  1.02 \u001b[35m[ 0:56:42< 0:03:24]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:42,980 - root - INFO - \u001b[31mstep: 19330  \u001b[32mloss:  3.3080  \u001b[33mmemory: 16.55GiB(11.84%)  \u001b[34mtps: 385,822  \u001b[36mtflops: 46.64  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:16:42,980 - root - INFO - \u001b[34mlr: 3.2321e-05 gnorm:  0.97 \u001b[35m[ 0:56:44< 0:03:22]\u001b[39m\n",
-      "wandb": {
-        "run_id": "-lact-64-lr3e-4-seed42-202603241118",
-        "url": "https://wandb.ai/stevenluots/fla/runs/-lact-64-lr3e-4-seed42-202603241118",
-        "metric_name": "loss_metrics/global_avg_loss",
-        "metric_latest": 3.70849,
-        "metric_history": [
-          5.718042,
-          5.231565,
-          4.784144,
-          5.041767,
-          4.099559,
-          4.816757,
-          4.170012,
-          4.07,
-          3.59356,
-          3.470597,
-          4.495964,
-          3.401546,
-          4.182178,
-          3.491549,
-          4.808784,
-          3.566383,
-          4.433631,
-          3.469886,
-          4.246974,
-          4.323306,
-          3.921051,
-          4.033452,
-          3.61443,
-          3.908428,
-          4.056518,
-          3.733522,
-          3.74961,
-          3.379161,
-          3.834987,
-          3.388967,
-          3.847991,
-          3.241086,
-          3.767464,
-          3.99209,
-          3.82536,
-          3.58341,
-          4.015893,
-          3.890654,
-          3.662584,
-          4.163584,
-          2.761919,
-          3.644882,
-          3.094586,
-          3.67971,
-          4.31986,
-          3.68726,
-          3.451588,
-          4.121592,
-          3.50941,
-          3.70849
-        ],
-        "step": 19280
-      }
     },
     {
       "job_id": "4856444",
       "name": "lact2-mm-nC",
-      "state": "PENDING",
-      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
-      "nodes": "-",
+      "state": "RUNNING",
+      "partition": "h200_courant",
+      "nodes": "gh106",
       "gpus": "1",
-      "elapsed": "0:00",
+      "elapsed": "3:55",
       "time_limit": "3:00:00",
       "submit_time": "2026-03-24T11:06:44",
-      "gpu_avg_util": null,
-      "gpu_current": null,
-      "log_tail": null,
-      "wandb": null
+      "gpu_avg_util": 99.0,
+      "gpu_current": [
+        {
+          "util": 99.0,
+          "mem_util": 71.0,
+          "mem_used": 18013.0,
+          "mem_total": 143771.0
+        }
+      ],
+      "log_tail": "[rank0]:[titan] 2026-03-24 12:20:49,746 - root - INFO - \u001b[34mlr: 7.3535e-05 gnorm:  1.16 \u001b[35m[ 0:00:48< 1:05:35]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:51,452 - root - INFO - \u001b[31mstep: 260  \u001b[32mloss:  7.9137  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,371  \u001b[36mtflops: 46.49  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:51,453 - root - INFO - \u001b[34mlr: 7.6465e-05 gnorm:  1.27 \u001b[35m[ 0:00:50< 1:05:15]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:53,159 - root - INFO - \u001b[31mstep: 270  \u001b[32mloss:  7.2032  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,284  \u001b[36mtflops: 46.48  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:53,159 - root - INFO - \u001b[34mlr: 7.9395e-05 gnorm:  2.00 \u001b[35m[ 0:00:52< 1:04:55]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:54,864 - root - INFO - \u001b[31mstep: 280  \u001b[32mloss:  7.3751  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,546  \u001b[36mtflops: 46.51  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:54,865 - root - INFO - \u001b[34mlr: 8.2324e-05 gnorm:  1.95 \u001b[35m[ 0:00:53< 1:04:37]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:56,571 - root - INFO - \u001b[31mstep: 290  \u001b[32mloss:  7.1575  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,252  \u001b[36mtflops: 46.48  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:56,571 - root - INFO - \u001b[34mlr: 8.5254e-05 gnorm:  1.48 \u001b[35m[ 0:00:55< 1:04:21]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:58,121 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:20:58,292 - root - INFO - \u001b[31mstep: 300  \u001b[32mloss:  7.2564  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 380,938  \u001b[36mtflops: 46.08  \u001b[35mmfu: 4.66%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:58,293 - root - INFO - \u001b[34mlr: 8.8184e-05 gnorm:  0.96 \u001b[35m[ 0:00:57< 1:04:06]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:59,998 - root - INFO - \u001b[31mstep: 310  \u001b[32mloss:  7.3176  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,549  \u001b[36mtflops: 46.51  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:20:59,998 - root - INFO - \u001b[34mlr: 9.1113e-05 gnorm:  0.85 \u001b[35m[ 0:00:58< 1:03:51]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:01,702 - root - INFO - \u001b[31mstep: 320  \u001b[32mloss:  7.1805  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,791  \u001b[36mtflops: 46.54  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:01,702 - root - INFO - \u001b[34mlr: 9.4043e-05 gnorm:  0.86 \u001b[35m[ 0:01:00< 1:03:36]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:03,410 - root - INFO - \u001b[31mstep: 330  \u001b[32mloss:  6.6965  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,015  \u001b[36mtflops: 46.45  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:03,410 - root - INFO - \u001b[34mlr: 9.6973e-05 gnorm:  1.23 \u001b[35m[ 0:01:02< 1:03:23]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:05,118 - root - INFO - \u001b[31mstep: 340  \u001b[32mloss:  7.0009  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 383,914  \u001b[36mtflops: 46.44  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:05,118 - root - INFO - \u001b[34mlr: 9.9902e-05 gnorm:  0.77 \u001b[35m[ 0:01:04< 1:03:11]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:06,653 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:06,825 - root - INFO - \u001b[31mstep: 350  \u001b[32mloss:  6.9759  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,024  \u001b[36mtflops: 46.45  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:06,826 - root - INFO - \u001b[34mlr: 1.0283e-04 gnorm:  0.81 \u001b[35m[ 0:01:05< 1:02:59]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:08,576 - root - INFO - \u001b[31mstep: 360  \u001b[32mloss:  6.5821  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 374,624  \u001b[36mtflops: 45.31  \u001b[35mmfu: 4.58%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:08,576 - root - INFO - \u001b[34mlr: 1.0576e-04 gnorm:  0.97 \u001b[35m[ 0:01:07< 1:02:50]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:10,283 - root - INFO - \u001b[31mstep: 370  \u001b[32mloss:  6.7140  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,130  \u001b[36mtflops: 46.46  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:10,283 - root - INFO - \u001b[34mlr: 1.0869e-04 gnorm:  0.70 \u001b[35m[ 0:01:09< 1:02:39]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:11,991 - root - INFO - \u001b[31mstep: 380  \u001b[32mloss:  6.7850  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,031  \u001b[36mtflops: 46.45  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:11,991 - root - INFO - \u001b[34mlr: 1.1162e-04 gnorm:  0.72 \u001b[35m[ 0:01:10< 1:02:28]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:13,700 - root - INFO - \u001b[31mstep: 390  \u001b[32mloss:  6.7640  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 383,781  \u001b[36mtflops: 46.42  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:13,700 - root - INFO - \u001b[34mlr: 1.1455e-04 gnorm:  0.85 \u001b[35m[ 0:01:12< 1:02:18]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:15,233 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:15,405 - root - INFO - \u001b[31mstep: 400  \u001b[32mloss:  6.2113  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,436  \u001b[36mtflops: 46.50  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:15,406 - root - INFO - \u001b[34mlr: 1.1748e-04 gnorm:  1.09 \u001b[35m[ 0:01:14< 1:02:08]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:17,136 - root - INFO - \u001b[31mstep: 410  \u001b[32mloss:  6.6877  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 379,047  \u001b[36mtflops: 45.85  \u001b[35mmfu: 4.64%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:17,136 - root - INFO - \u001b[34mlr: 1.2041e-04 gnorm:  0.99 \u001b[35m[ 0:01:16< 1:02:00]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:18,885 - root - INFO - \u001b[31mstep: 420  \u001b[32mloss:  6.2822  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 374,837  \u001b[36mtflops: 45.34  \u001b[35mmfu: 4.58%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:18,885 - root - INFO - \u001b[34mlr: 1.2334e-04 gnorm:  1.06 \u001b[35m[ 0:01:17< 1:01:53]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:20,592 - root - INFO - \u001b[31mstep: 430  \u001b[32mloss:  5.9288  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,106  \u001b[36mtflops: 46.46  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:20,593 - root - INFO - \u001b[34mlr: 1.2627e-04 gnorm:  1.41 \u001b[35m[ 0:01:19< 1:01:45]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:22,304 - root - INFO - \u001b[31mstep: 440  \u001b[32mloss:  6.2145  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 383,128  \u001b[36mtflops: 46.34  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:22,304 - root - INFO - \u001b[34mlr: 1.2920e-04 gnorm:  1.72 \u001b[35m[ 0:01:21< 1:01:37]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:23,893 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:24,063 - root - INFO - \u001b[31mstep: 450  \u001b[32mloss:  6.0625  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 372,809  \u001b[36mtflops: 45.09  \u001b[35mmfu: 4.56%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:24,063 - root - INFO - \u001b[34mlr: 1.3213e-04 gnorm:  1.02 \u001b[35m[ 0:01:22< 1:01:31]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:25,885 - root - INFO - \u001b[31mstep: 460  \u001b[32mloss:  6.2494  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 359,863  \u001b[36mtflops: 43.53  \u001b[35mmfu: 4.40%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:25,885 - root - INFO - \u001b[34mlr: 1.3506e-04 gnorm:  1.37 \u001b[35m[ 0:01:24< 1:01:28]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:29,064 - root - INFO - \u001b[31mstep: 470  \u001b[32mloss:  6.0197  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 206,262  \u001b[36mtflops: 24.95  \u001b[35mmfu: 2.52%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:29,064 - root - INFO - \u001b[34mlr: 1.3799e-04 gnorm:  1.41 \u001b[35m[ 0:01:27< 1:02:23]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:30,762 - root - INFO - \u001b[31mstep: 480  \u001b[32mloss:  6.2746  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 386,048  \u001b[36mtflops: 46.69  \u001b[35mmfu: 4.72%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:30,763 - root - INFO - \u001b[34mlr: 1.4092e-04 gnorm:  1.83 \u001b[35m[ 0:01:29< 1:02:14]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:32,469 - root - INFO - \u001b[31mstep: 490  \u001b[32mloss:  6.3672  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,255  \u001b[36mtflops: 46.48  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:32,469 - root - INFO - \u001b[34mlr: 1.4385e-04 gnorm:  0.81 \u001b[35m[ 0:01:31< 1:02:06]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:34,000 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:34,173 - root - INFO - \u001b[31mstep: 500  \u001b[32mloss:  5.8384  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,861  \u001b[36mtflops: 46.55  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:34,173 - root - INFO - \u001b[34mlr: 1.4678e-04 gnorm:  1.18 \u001b[35m[ 0:01:33< 1:01:57]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:35,875 - root - INFO - \u001b[31mstep: 510  \u001b[32mloss:  6.1610  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 385,328  \u001b[36mtflops: 46.61  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:35,875 - root - INFO - \u001b[34mlr: 1.4971e-04 gnorm:  1.03 \u001b[35m[ 0:01:34< 1:01:49]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:37,580 - root - INFO - \u001b[31mstep: 520  \u001b[32mloss:  5.9189  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,487  \u001b[36mtflops: 46.51  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:37,581 - root - INFO - \u001b[34mlr: 1.5264e-04 gnorm:  1.24 \u001b[35m[ 0:01:36< 1:01:41]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:39,282 - root - INFO - \u001b[31mstep: 530  \u001b[32mloss:  5.8276  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 385,325  \u001b[36mtflops: 46.61  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:39,283 - root - INFO - \u001b[34mlr: 1.5557e-04 gnorm:  1.00 \u001b[35m[ 0:01:38< 1:01:34]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:40,988 - root - INFO - \u001b[31mstep: 540  \u001b[32mloss:  6.1664  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,467  \u001b[36mtflops: 46.50  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:40,988 - root - INFO - \u001b[34mlr: 1.5850e-04 gnorm:  1.37 \u001b[35m[ 0:01:39< 1:01:26]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:42,541 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:42,713 - root - INFO - \u001b[31mstep: 550  \u001b[32mloss:  5.3343  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 380,088  \u001b[36mtflops: 45.97  \u001b[35mmfu: 4.65%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:42,714 - root - INFO - \u001b[34mlr: 1.6143e-04 gnorm:  3.16 \u001b[35m[ 0:01:41< 1:01:20]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:44,422 - root - INFO - \u001b[31mstep: 560  \u001b[32mloss:  5.3194  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 383,796  \u001b[36mtflops: 46.42  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:44,422 - root - INFO - \u001b[34mlr: 1.6436e-04 gnorm:  1.49 \u001b[35m[ 0:01:43< 1:01:13]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:46,125 - root - INFO - \u001b[31mstep: 570  \u001b[32mloss:  6.0861  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,938  \u001b[36mtflops: 46.56  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:46,126 - root - INFO - \u001b[34mlr: 1.6729e-04 gnorm:  0.99 \u001b[35m[ 0:01:44< 1:01:07]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:47,837 - root - INFO - \u001b[31mstep: 580  \u001b[32mloss:  5.4384  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 383,076  \u001b[36mtflops: 46.34  \u001b[35mmfu: 4.69%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:47,838 - root - INFO - \u001b[34mlr: 1.7021e-04 gnorm:  1.18 \u001b[35m[ 0:01:46< 1:01:00]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:49,541 - root - INFO - \u001b[31mstep: 590  \u001b[32mloss:  5.9725  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,895  \u001b[36mtflops: 46.56  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:49,541 - root - INFO - \u001b[34mlr: 1.7314e-04 gnorm:  1.39 \u001b[35m[ 0:01:48< 1:00:54]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:51,074 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:51,246 - root - INFO - \u001b[31mstep: 600  \u001b[32mloss:  5.5582  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,571  \u001b[36mtflops: 46.52  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:51,247 - root - INFO - \u001b[34mlr: 1.7607e-04 gnorm:  1.00 \u001b[35m[ 0:01:50< 1:00:47]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:52,949 - root - INFO - \u001b[31mstep: 610  \u001b[32mloss:  5.5468  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 385,053  \u001b[36mtflops: 46.57  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:52,950 - root - INFO - \u001b[34mlr: 1.7900e-04 gnorm:  0.98 \u001b[35m[ 0:01:51< 1:00:41]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:54,653 - root - INFO - \u001b[31mstep: 620  \u001b[32mloss:  5.8190  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,941  \u001b[36mtflops: 46.56  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:54,653 - root - INFO - \u001b[34mlr: 1.8193e-04 gnorm:  0.94 \u001b[35m[ 0:01:53< 1:00:35]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:56,358 - root - INFO - \u001b[31mstep: 630  \u001b[32mloss:  5.0193  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,622  \u001b[36mtflops: 46.52  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:56,358 - root - INFO - \u001b[34mlr: 1.8486e-04 gnorm:  1.37 \u001b[35m[ 0:01:55< 1:00:29]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:58,062 - root - INFO - \u001b[31mstep: 640  \u001b[32mloss:  5.9873  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,814  \u001b[36mtflops: 46.55  \u001b[35mmfu: 4.71%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:58,062 - root - INFO - \u001b[34mlr: 1.8779e-04 gnorm:  1.13 \u001b[35m[ 0:01:56< 1:00:24]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:59,598 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:21:59,770 - root - INFO - \u001b[31mstep: 650  \u001b[32mloss:  5.6311  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 383,916  \u001b[36mtflops: 46.44  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:21:59,771 - root - INFO - \u001b[34mlr: 1.9072e-04 gnorm:  0.79 \u001b[35m[ 0:01:58< 1:00:18]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:01,476 - root - INFO - \u001b[31mstep: 660  \u001b[32mloss:  5.1570  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,342  \u001b[36mtflops: 46.49  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:01,477 - root - INFO - \u001b[34mlr: 1.9365e-04 gnorm:  2.08 \u001b[35m[ 0:02:00< 1:00:13]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:03,182 - root - INFO - \u001b[31mstep: 670  \u001b[32mloss:  5.6597  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,565  \u001b[36mtflops: 46.52  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:03,182 - root - INFO - \u001b[34mlr: 1.9658e-04 gnorm:  1.49 \u001b[35m[ 0:02:02< 1:00:08]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:04,938 - root - INFO - \u001b[31mstep: 680  \u001b[32mloss:  5.8043  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 373,418  \u001b[36mtflops: 45.17  \u001b[35mmfu: 4.57%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:04,938 - root - INFO - \u001b[34mlr: 1.9951e-04 gnorm:  0.99 \u001b[35m[ 0:02:03< 1:00:04]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:06,643 - root - INFO - \u001b[31mstep: 690  \u001b[32mloss:  5.0530  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 384,558  \u001b[36mtflops: 46.51  \u001b[35mmfu: 4.70%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:06,643 - root - INFO - \u001b[34mlr: 2.0244e-04 gnorm:  0.97 \u001b[35m[ 0:02:05< 0:59:59]\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:08,187 - root - INFO - [GC] Peforming periodical GC collection. 0.00 seconds.\n[rank0]:[titan] 2026-03-24 12:22:08,360 - root - INFO - \u001b[31mstep: 700  \u001b[32mloss:  5.1940  \u001b[33mmemory: 16.31GiB(11.67%)  \u001b[34mtps: 382,011  \u001b[36mtflops: 46.21  \u001b[35mmfu: 4.67%\u001b[39m\n[rank0]:[titan] 2026-03-24 12:22:08,360 - root - INFO - \u001b[34mlr: 2.0537e-04 gnorm:  1.36 \u001b[35m[ 0:02:07< 0:59:54]\u001b[39m\n",
+      "wandb": {
+        "run_id": "-lact2-momentum-muon-noClip-w32-64-lr3e-4-seed42-202603241218",
+        "url": "https://wandb.ai/stevenluots/fla/runs/-lact2-momentum-muon-noClip-w32-64-lr3e-4-seed42-202603241218",
+        "metric_name": "loss_metrics/global_avg_loss",
+        "metric_latest": 5.078405,
+        "metric_history": [
+          10.414532,
+          10.364197,
+          10.292924,
+          10.268972,
+          10.15512,
+          10.068956,
+          9.980265,
+          9.770376,
+          9.783945,
+          9.667109,
+          9.584896,
+          9.463705,
+          9.37443,
+          9.018917,
+          8.725533,
+          8.230239,
+          8.46885,
+          8.007926,
+          8.04199,
+          7.913725,
+          7.203208,
+          7.256376,
+          7.317557,
+          6.69651,
+          7.00093,
+          6.975923,
+          6.764016,
+          6.211277,
+          6.282197,
+          5.928817,
+          6.214454,
+          6.249434,
+          6.019741,
+          6.3672,
+          5.838429,
+          5.9189,
+          6.166361,
+          5.319406,
+          5.438401,
+          5.558225,
+          5.546848,
+          5.81901,
+          5.987276,
+          5.631104,
+          5.157043,
+          5.804303,
+          5.052969,
+          5.193985,
+          5.631287,
+          5.078405
+        ],
+        "step": 730
+      }
     },
     {
       "job_id": "4856445",
