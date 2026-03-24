@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T18:42:58Z",
+  "updated_at": "2026-03-24T18:48:15Z",
   "gpu_history": {
     "4887348": [
       {
@@ -56,6 +56,30 @@
             "mem_total": 143771.0
           }
         ]
+      },
+      {
+        "timestamp": "2026-03-24T18:48:15Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 0.0,
+            "mem_total": 143771.0
+          }
+        ]
+      }
+    ],
+    "4890606": [
+      {
+        "timestamp": "2026-03-24T18:48:15Z",
+        "gpus": [
+          {
+            "util": 0.0,
+            "mem_util": 0.0,
+            "mem_used": 0.0,
+            "mem_total": 143771.0
+          }
+        ]
       }
     ]
   },
@@ -67,7 +91,7 @@
       "partition": "cpu_short",
       "nodes": "cs605",
       "gpus": "-",
-      "elapsed": "2:27:21",
+      "elapsed": "2:32:38",
       "time_limit": "6:00:00",
       "submit_time": "2026-03-24T12:15:13",
       "gpu_avg_util": null,
@@ -82,12 +106,34 @@
       "partition": "cpu_short",
       "nodes": "cs606",
       "gpus": "-",
-      "elapsed": "3:35:51",
+      "elapsed": "3:41:08",
       "time_limit": "4:00:00",
       "submit_time": "2026-03-24T11:07:05",
       "gpu_avg_util": null,
       "gpu_current": null,
-      "log_tail": " 2 files changed, 6 insertions(+), 134 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main c58ffc8] Update job data 2026-03-24T17:30:30Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main e43f7d7] Update job data 2026-03-24T17:35:38Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main bb17946] Update job data 2026-03-24T17:40:49Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main 77b1412] Update job data 2026-03-24T17:45:56Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main bb4e9be] Update job data 2026-03-24T17:51:03Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main e7c7445] Update job data 2026-03-24T17:56:10Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 6085aef] Update job data 2026-03-24T18:01:19Z\n 1 file changed, 19 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 42c4010] Update job data 2026-03-24T18:06:26Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main ad21b16] Update job data 2026-03-24T18:11:32Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 5 jobs to data.json\n[main 259d8cb] Update job data 2026-03-24T18:16:41Z\n 1 file changed, 34 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 2/2 jobs to runs\nWrote 5 jobs to data.json\n[main 5a87d66] Update job data 2026-03-24T18:22:03Z\n 2 files changed, 205 insertions(+), 21 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 9047047] Update job data 2026-03-24T18:27:21Z\n 2 files changed, 11 insertions(+), 168 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main c098c04] Update job data 2026-03-24T18:32:40Z\n 2 files changed, 28 insertions(+), 6 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 74fc2fc] Update job data 2026-03-24T18:37:57Z\n 2 files changed, 28 insertions(+), 6 deletions(-)\nPushed updated data.json\n",
+      "log_tail": " 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main e43f7d7] Update job data 2026-03-24T17:35:38Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main bb17946] Update job data 2026-03-24T17:40:49Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main 77b1412] Update job data 2026-03-24T17:45:56Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main bb4e9be] Update job data 2026-03-24T17:51:03Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 2 jobs to data.json\n[main e7c7445] Update job data 2026-03-24T17:56:10Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 6085aef] Update job data 2026-03-24T18:01:19Z\n 1 file changed, 19 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 42c4010] Update job data 2026-03-24T18:06:26Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main ad21b16] Update job data 2026-03-24T18:11:32Z\n 1 file changed, 4 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 5 jobs to data.json\n[main 259d8cb] Update job data 2026-03-24T18:16:41Z\n 1 file changed, 34 insertions(+), 4 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 2/2 jobs to runs\nWrote 5 jobs to data.json\n[main 5a87d66] Update job data 2026-03-24T18:22:03Z\n 2 files changed, 205 insertions(+), 21 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 9047047] Update job data 2026-03-24T18:27:21Z\n 2 files changed, 11 insertions(+), 168 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main c098c04] Update job data 2026-03-24T18:32:40Z\n 2 files changed, 28 insertions(+), 6 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 3 jobs to data.json\n[main 74fc2fc] Update job data 2026-03-24T18:37:57Z\n 2 files changed, 28 insertions(+), 6 deletions(-)\nPushed updated data.json\n<stdin>:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\nwandb: [wandb.Api()] Loaded credentials for https://api.wandb.ai from /home/sl12886/.netrc.\nW&B: matched 0/0 jobs to runs\nWrote 30 jobs to data.json\n[main 7efced9] Update job data 2026-03-24T18:43:14Z\n 2 files changed, 432 insertions(+), 5 deletions(-)\nPushed updated data.json\n",
+      "wandb": null
+    },
+    {
+      "job_id": "4890606",
+      "name": "lact2",
+      "state": "RUNNING",
+      "partition": "h200_courant",
+      "nodes": "gh115",
+      "gpus": "1",
+      "elapsed": "0:12",
+      "time_limit": "3:00:00",
+      "submit_time": "2026-03-24T14:38:17",
+      "gpu_avg_util": 0.0,
+      "gpu_current": [
+        {
+          "util": 0.0,
+          "mem_util": 0.0,
+          "mem_used": 0.0,
+          "mem_total": 143771.0
+        }
+      ],
+      "log_tail": "batch script for job 4890606 written to slurm/scripts/4890606.sh\nSeed: 42\nLearning rate: 1e-3\nSequence length: 64\nRunning training...\nLaunching training...\n++ grep -oP '(?<=--job.dump_folder )[^ ]+'\n+ path=exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\n++ grep -oP '(?<=--training.steps )[^ ]+'\n+ steps=20480\n++ grep -oP '(?<=--model.config )[^ ]+'\n+ config=configs/ablations/section-6/XS_lact2_w32.json\n++ grep -oP '(?<=--model.tokenizer_path )[^ ]+'\n+ tokenizer=fla-hub/transformer-1.3B-100B\n+ mkdir -p exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\n+ cp build configs convert_model.sh custom_models eval_debug.sh eval.sh eval_tmp.py exp flame flame.egg-info LICENSE PLANS.md pyproject.toml README.md results scripts setup.py slurm slurm-4821019.out slurm-4887348.out tests train.sh utils exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\ncp: -r not specified; omitting directory 'build'\ncp: -r not specified; omitting directory 'configs'\ncp: -r not specified; omitting directory 'custom_models'\ncp: -r not specified; omitting directory 'exp'\ncp: -r not specified; omitting directory 'flame'\ncp: -r not specified; omitting directory 'flame.egg-info'\ncp: -r not specified; omitting directory 'results'\ncp: -r not specified; omitting directory 'scripts'\ncp: -r not specified; omitting directory 'slurm'\ncp: -r not specified; omitting directory 'tests'\ncp: -r not specified; omitting directory 'utils'\n+ cp -r configs exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\n+ cp -r flame exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\n+ cp -r 3rdparty/flash-linear-attention/fla exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\ncp: cannot stat '3rdparty/flash-linear-attention/fla': No such file or directory\n+ cp -r 3rdparty/torchtitan/torchtitan exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\ncp: cannot stat '3rdparty/torchtitan/torchtitan': No such file or directory\n+ '[' '' == '' ']'\n++ date +%Y%m%d%H%M\n+ date=202603241448\n++ basename exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42\n+ RUN_NAME=-lact2-w32-64-lr1e-3-seed42\n+ RUN_ID=-lact2-w32-64-lr1e-3-seed42-202603241448\n+ export WANDB_RESUME=allow\n+ WANDB_RESUME=allow\n+ [[ -z '' ]]\n+ export WANDB_PROJECT=fla\n+ WANDB_PROJECT=fla\n+ [[ -z lact2-w32-64-lr1e-3-seed42 ]]\n+ [[ -z '' ]]\n+ export WANDB_RUN_ID=-lact2-w32-64-lr1e-3-seed42-202603241448\n+ WANDB_RUN_ID=-lact2-w32-64-lr1e-3-seed42-202603241448\n+ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True\n+ torchrun --nnodes=1 --nproc_per_node=1 --rdzv_backend c10d --rdzv_endpoint gh115.hpc.nyu.edu:12345 --local-ranks-filter 0 --role rank --tee 3 --log-dir exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42/logs -m flame.train --job.config_file flame/models/fla.toml --job.dump_folder exp/lact2/ablations/section-6/lact2-w32-64/lact2-w32-64-lr1e-3-seed42 --job.description 4890606 --model.config configs/ablations/section-6/XS_lact2_w32.json --model.tokenizer_path fla-hub/transformer-1.3B-100B --optimizer.name AdamW --optimizer.eps 1e-15 --optimizer.lr 1e-3 --lr_scheduler.warmup_steps 1024 --lr_scheduler.lr_min 0.1 --lr_scheduler.decay_type cosine --training.batch_size 1024 --training.seq_len 64 --training.context_len 64 --training.gradient_accumulation_steps 1 --activation_checkpoint.mode selective --activation_checkpoint.selective_ac_option 2 --training.steps 20480 --training.max_norm 1.0 --training.skip_nan_inf --training.dataset arrow --training.dataset_split train --training.data_dir /scratch/sl12886/data/long-data-collections --training.num_workers 2 --training.prefetch_factor 1 --training.seed 42 --training.compile --checkpoint.interval 4096 --checkpoint.load_step -1 --checkpoint.keep_latest_k 2 --metrics.log_freq 10 --profiling.profile_freq 2000\n",
       "wandb": null
     },
     {
@@ -97,7 +143,7 @@
       "partition": "h200_courant",
       "nodes": "gh118",
       "gpus": "1",
-      "elapsed": "24:53",
+      "elapsed": "30:10",
       "time_limit": "2:00:00",
       "submit_time": "2026-03-24T14:16:19",
       "gpu_avg_util": 0.0,
@@ -109,21 +155,6 @@
           "mem_total": 143771.0
         }
       ],
-      "log_tail": null,
-      "wandb": null
-    },
-    {
-      "job_id": "4890606",
-      "name": "lact2",
-      "state": "PENDING",
-      "partition": "l40s_mren,l40s_courant,l40s_public,h200_courant,h200_cds,h200_public",
-      "nodes": "-",
-      "gpus": "1",
-      "elapsed": "0:00",
-      "time_limit": "3:00:00",
-      "submit_time": "2026-03-24T14:38:17",
-      "gpu_avg_util": null,
-      "gpu_current": null,
       "log_tail": null,
       "wandb": null
     },
